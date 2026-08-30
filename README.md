@@ -4,15 +4,7 @@
 
 > **Stochastic intelligence. Deterministically gated.**
 
-$$
-\mathfrak{A}(\Delta)
-=
-\bigwedge_{g\in\mathcal{G}} g(\Delta)
-\qquad
-\neg\mathfrak{A}(\Delta)
-\Rightarrow
-\Delta \not\mapsto \Sigma
-$$
+$$\mathfrak{A}(\Delta) = \bigwedge_{g\in\mathcal{G}} g(\Delta) \qquad \neg\mathfrak{A}(\Delta) \Rightarrow \Delta \not\mapsto \Sigma$$
 
 <!-- ρₙ = MerkleRoot(a₁, …, aₙ) // every branch remembers its root. -->
 
