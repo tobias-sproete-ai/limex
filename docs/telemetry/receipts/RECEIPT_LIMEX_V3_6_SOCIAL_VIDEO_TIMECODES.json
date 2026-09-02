@@ -1,0 +1,85 @@
+{
+  "schema_version": "limex-social-video-timecode-receipt-v1.0.0",
+  "status": "COMMITTED_TO_PUBLIC_GIT_TREE",
+  "evidence_class": "STATIC_ARTIFACT_AND_DECODED_FRAME_INTEGRITY",
+  "captured_event_readback": "LINKEDIN_PUBLIC_DISPATCH_CONFIRMED",
+  "timing_model": {
+    "fps": "30/1_CFR",
+    "duration_seconds": "46.000000",
+    "frame_count": 1380,
+    "interval_semantics": "HALF_OPEN_[START_FRAME,END_FRAME)"
+  },
+  "phase_hash_method": {
+    "algorithm": "SHA-256",
+    "ffmpeg_version": "8.1.2",
+    "preimage": "FFMPEG_DECODED_YUV420P_FRAME_BYTES_IN_DISPLAY_ORDER",
+    "audio_included": false,
+    "meaning": "TAMPER_EVIDENT_FRAME_RANGE_IDENTITY__NOT_TRUTH_OR_AUTHORSHIP_PROOF"
+  },
+  "phases": [
+    {
+      "id": "REALTIME_EXECUTION",
+      "timecode": "00:00.000-00:09.000",
+      "frames": "[0,270)",
+      "frame_count": 270,
+      "landscape_sha256": "2e33e06d2e82fd9b5c283d12242159882e01bda031339df9a08746e9f1066df2",
+      "vertical_sha256": "8310e6932e3d235da28aae5ee0a2dbd923b1d7040a51e75d617b6fba2ebf3f86"
+    },
+    {
+      "id": "TELEMETRY_SEPARATOR",
+      "timecode": "00:09.000-00:11.000",
+      "frames": "[270,330)",
+      "frame_count": 60,
+      "landscape_sha256": "cd4cf11f596220b96506197b00ec1488df0626e58e270eb45d651a9a47af7555",
+      "vertical_sha256": "e9679a798ac9f88a69b341101bcddbaf9da4a414f4673522e39d2ace13d24025"
+    },
+    {
+      "id": "LINEAR_REPLAY_0_25X",
+      "timecode": "00:11.000-00:43.000",
+      "frames": "[330,1290)",
+      "frame_count": 960,
+      "landscape_sha256": "f3a583059456f2a511ef1f7a57ff1ad8a957fdc57d2349bb58b466e500db3df6",
+      "vertical_sha256": "abd833ea0f5803f7f84a4612b0104c35e8c9497ad8dc661a76ccf60f77ac46be"
+    },
+    {
+      "id": "OUTRO_PROTOCOL",
+      "timecode": "00:43.000-00:46.000",
+      "frames": "[1290,1380)",
+      "frame_count": 90,
+      "landscape_sha256": "72dbd2ec3e26deabd25751e916cc93c4d176b03b894500b05422d823205fcdec",
+      "vertical_sha256": "64d520b1aa8bd2f611a2806a2c816ee8d64f2604dddffd483d94b6e6c3b38814"
+    }
+  ],
+  "artifacts": {
+    "linkedin": {
+      "file": "LIMEX_V3_6_LINKEDIN_16X9.mp4",
+      "bytes": 6750840,
+      "sha256": "00664c59fda108ec14e16854f1e9d37c30d4ab3cffef750dd003ad443e511865"
+    },
+    "x": {
+      "file": "LIMEX_V3_6_X_16X9.mp4",
+      "bytes": 6719184,
+      "sha256": "00c725dcf8ad9f41e592017fef485b837bb319d0f647ade02f0fa9fdcd632893"
+    },
+    "tiktok": {
+      "file": "LIMEX_V3_6_TIKTOK_9X16.mp4",
+      "bytes": 4363977,
+      "sha256": "cff1f952e5b4d51f424783e5cff13c291b827efd64f2d91fd725a04d22a82c2f"
+    },
+    "youtube_shorts": {
+      "file": "LIMEX_V3_6_SHORTS_9X16.mp4",
+      "bytes": 4363977,
+      "sha256": "cff1f952e5b4d51f424783e5cff13c291b827efd64f2d91fd725a04d22a82c2f"
+    }
+  },
+  "parity_observations": {
+    "landscape_decoded_phase_hashes_match": true,
+    "vertical_derivatives_are_byte_identical": true
+  },
+  "non_implications": [
+    "NO_CLAIM_OF_AUTHORSHIP_FROM_HASH_ALONE",
+    "NO_CLAIM_OF_CONTENT_TRUTH_FROM_HASH_ALONE",
+    "NO_CLAIM_OF_PUBLICATION_OF_THESE_DERIVATIVES",
+    "NO_CLAIM_OF_FORMAL_RUNTIME_PROOF"
+  ]
+}
