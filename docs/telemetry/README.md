@@ -21,3 +21,8 @@ These hashes are tamper-evident identity measurements. They make later byte or
 decoded-frame-range changes detectable when compared with the bound preimages.
 They do not prove authorship, semantic truth, platform publication, formal
 correctness, or universal runtime behavior.
+
+The additive agentic-trace receipt binds this downstream video receipt while
+recording that no contemporaneous upstream inference trace exists for V3.6.
+It therefore specifies the pre-action evidence required for a future causal audit
+without retroactively claiming that an LLM rather than a static script caused it.
