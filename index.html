@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="description" content="LIMEX deployment-gate countdown. Display only; no release authority.">
+    <title>LIMEX // Deployment Gate</title>
+    <style>
+      :root { color-scheme: dark; background: #0a0a0a; }
+      body {
+        min-block-size: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 1rem;
+        background: #0a0a0a;
+      }
+      main { inline-size: min(70rem, 100%); }
+      .boundary {
+        margin-block-start: 0.8rem;
+        color: #8f8f8f;
+        font: 0.68rem/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+    </style>
+    <script type="module" src="./components/release-countdown/src/countdown-widget.mjs"></script>
+  </head>
+  <body>
+    <main>
+      <limex-release-countdown
+        target-utc="2026-09-15T21:59:00Z"
+        time-endpoint="./"
+        resync-ms="300000"
+      ></limex-release-countdown>
+      <p class="boundary">Display only // Release authority remains server-side and receipt-bound.</p>
+      <noscript>The countdown requires JavaScript. No release authority is affected.</noscript>
+    </main>
+  </body>
+</html>

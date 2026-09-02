@@ -43,6 +43,8 @@ Specifications, formula collections and reference implementations will be releas
 
 Target: **2026-09-15 23:59:00 MESZ** (`2026-09-15T21:59:00Z`)
 
+**[Open the live countdown](https://tobias-sproete-ai.github.io/limex/)**
+
 The [zero-dependency countdown utility](components/release-countdown/) uses an
 initial server-time sample and a monotonic in-page clock. It is display-only:
 reaching zero never grants release, runtime or deployment authority.
