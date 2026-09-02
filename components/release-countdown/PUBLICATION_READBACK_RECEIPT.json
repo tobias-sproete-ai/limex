@@ -1,0 +1,26 @@
+{
+  "schema_version": "limex-publication-readback-v1.0.0",
+  "status": "PUBLICATION_READBACK_PASS",
+  "repository": "tobias-sproete-ai/limex",
+  "branch": "main",
+  "public_commit": "ae05e35f67c30a6059f414ae2081775653abb34e",
+  "public_path": "components/release-countdown",
+  "readback": {
+    "transport": "RAW_GITHUB_HTTPS",
+    "files_expected": 13,
+    "files_matched": 13,
+    "byte_identity": "13_OF_13_SHA256_MATCH",
+    "sha256_list": "588111437507714e42f25a0832091bad22c8572d6466ee7a1fe8c74ee9d0f149"
+  },
+  "component_binding": {
+    "artifact_manifest_sha256": "05f9c291298a0b40548ca565e60793de75644a1665a6578844196f4e7e45d5ec",
+    "manifest_tree_sha256": "cca734739101c77901602cb17759037a7a9e8bd146cac97d2681729754ab996c",
+    "predecessor_manifest_sha256": "15a326f50dab6a6c2212decaf6fa73d593ecae8929a5270378ddf35d2c97fe65"
+  },
+  "scope": "POST_PUBLICATION_EVIDENCE__NOT_MEMBER_OF_COMPONENT_TREE_PREIMAGE",
+  "non_implications": [
+    "HASH_MATCH_DOES_NOT_PROVE_SEMANTIC_CORRECTNESS",
+    "COUNTDOWN_DOES_NOT_GRANT_RELEASE_AUTHORITY",
+    "PUBLICATION_DOES_NOT_RELEASE_LIMEX_CORE"
+  ]
+}
