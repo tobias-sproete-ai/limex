@@ -1,0 +1,82 @@
+{
+  "schema_id": "urn:limex:receipt:agentic-trace:v1",
+  "schema_version": "limex-agentic-trace-receipt-v1.0.0",
+  "status": "BOUND_MINIMAL__AGENTIC_CAUSALITY_NOT_ATTESTED",
+  "evidence_class": "STATIC_CROSS_RECEIPT_BINDING_AND_EVIDENCE_GAP_DECLARATION",
+  "causal_link": {
+    "downstream_receipt_ref": "RECEIPT_LIMEX_V3_6_SOCIAL_VIDEO_TIMECODES.json",
+    "downstream_receipt_sha256": "0f521e675c77dead1b8ec6d48ce4fc57f1c99a7f439bbd141fafaa7d6624bc38",
+    "target_phase": "REALTIME_EXECUTION",
+    "bound_frame_interval": "[0,270)",
+    "bound_landscape_frame_range_sha256": "2e33e06d2e82fd9b5c283d12242159882e01bda031339df9a08746e9f1066df2",
+    "hash_semantics": "SHA256_OF_DECODED_YUV420P_BYTES_FOR_COMPLETE_FRAME_RANGE__NOT_FRAME_0_HASH"
+  },
+  "observed_downstream_execution": {
+    "source": "BOUND_VIDEO_AND_SOCIAL_VIDEO_TIMECODE_RECEIPT",
+    "supported_claims": [
+      "THE_BOUND_FRAME_RANGE_RECORDS_THE_REALTIME_UI_PHASE",
+      "THE_DOWNSTREAM_RECEIPT_BINDS_CONTIGUOUS_FRAME_RANGES_AND_ARTIFACT_DIGESTS"
+    ]
+  },
+  "upstream_agent_trace": {
+    "perception_snapshot_sha256": null,
+    "perception_capture_method": null,
+    "engine_identity": null,
+    "prompt_context_commitment": null,
+    "tool_call_receipt_sha256": null,
+    "tool_selection_provenance": null,
+    "policy_decision_receipt_sha256": null,
+    "inference_timestamp_utc": null,
+    "execution_delta_ms": null,
+    "availability": "NOT_RECORDED_AT_CAPTURE_TIME"
+  },
+  "rejected_unbacked_fields": [
+    {
+      "field": "dynamic_target_selector",
+      "reason": "NO_CONTEMPORANEOUS_TRACE_PROVES_DYNAMIC_SYNTHESIS_OR_DISTINGUISHES_IT_FROM_A_HARDCODED_SELECTOR"
+    },
+    {
+      "field": "reasoning_tokens",
+      "reason": "NO_BOUND_PROVIDER_OR_RUNTIME_RECEIPT"
+    },
+    {
+      "field": "stochastic_confidence_score",
+      "reason": "NO_CALIBRATED_RUNTIME_MEASUREMENT"
+    },
+    {
+      "field": "execution_delta_ms",
+      "reason": "NO_BOUND_MONOTONIC_CLOCK_TRACE"
+    },
+    {
+      "field": "gate_decision",
+      "reason": "NO_CONTEMPORANEOUS_SIGNED_ADMISSION_RECEIPT"
+    }
+  ],
+  "future_capture_contract": {
+    "capture_boundary": "BEFORE_FRAME_0_AND_BEFORE_ANY_EFFECTFUL_BROWSER_ACTION",
+    "required_records": [
+      "HASH_BOUND_PRE_ACTION_ACCESSIBILITY_OR_DOM_SNAPSHOT",
+      "ENGINE_AND_MODEL_CONFIGURATION_RECEIPT",
+      "SANITIZED_PUBLIC_PROMPT_COMMITMENT_WITH_PRIVATE_SOURCE_CUSTODY",
+      "TOOL_CALL_ID_AND_CANONICAL_TOOL_ARGUMENT_DIGEST",
+      "SIGNED_ADMISSION_DECISION_RECEIPT",
+      "MONOTONIC_PRE_ACTION_AND_POST_ACTION_TIMESTAMPS",
+      "POST_ACTION_PLATFORM_READBACK_RECEIPT"
+    ],
+    "prohibited_substitutions": [
+      "RETROACTIVE_RECONSTRUCTION_FROM_VIDEO_ONLY",
+      "UNMEASURED_CONFIDENCE_VALUES",
+      "UNOBSERVED_REASONING_TOKEN_COUNTS",
+      "SELECTOR_TEXT_PRESENTED_AS_PROOF_OF_DYNAMIC_SYNTHESIS"
+    ],
+    "promotion_condition": "ALL_REQUIRED_RECORDS_HASH_BOUND_AND_INDEPENDENTLY_AUDITED"
+  },
+  "non_implications": [
+    "NO_PROOF_THAT_AN_LLM_RATHER_THAN_A_STATIC_SCRIPT_CAUSED_THE_BOUND_ACTION",
+    "NO_PROOF_OF_DYNAMIC_SELECTOR_SYNTHESIS",
+    "NO_CLAIM_OF_GENERAL_CONSCIOUSNESS",
+    "NO_CLAIM_OF_UNBOUNDED_AUTONOMY",
+    "NO_FORMAL_RUNTIME_PROOF",
+    "HASH_BINDING_PROVES_IDENTITY_RELATIONSHIPS_ONLY__NOT_CAUSAL_TRUTH"
+  ]
+}
