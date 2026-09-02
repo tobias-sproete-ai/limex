@@ -1,0 +1,37 @@
+{
+  "manifest_version": "limex-countdown-public-manifest-v1.0.0",
+  "candidate_version": "v0.1.1-public-successor",
+  "status": "PUBLIC_SOURCE__CEO_AUTHORIZED",
+  "target_utc": "2026-09-15T21:59:00Z",
+  "tree_preimage_format": "SORTED_SHA256_TWO_SPACES_RELATIVE_PATH_NEWLINE",
+  "tree_sha256": "cca734739101c77901602cb17759037a7a9e8bd146cac97d2681729754ab996c",
+  "files": {
+    "ACCEPTANCE_RECEIPT.json": "93d14ca7197bf840ff625fccf55d684157ed206c4fdbcc58bcee9b52b7d4f4e0",
+    "PUBLICATION_AUTHORIZATION.json": "162ba516036551495ebba23cdae881bd74d47ef25a36db7a7b4e1c90ff4a3838",
+    "README.md": "c272341020a10ee9ddef67d56fcda71b347677528ee9c45e6ac4b14a0f3f2a3a",
+    "cli/countdown-status.mjs": "8a750f76e4cdf1b13c30f2296784539a4f29c7c67905b8dcfc7fc92fc451110a",
+    "demo/index.html": "562fd80606068ebec9479268ef5b624e969a02529fa5e68bf8b0d814fe5f432f",
+    "package.json": "32ae4f1f4f562e9cf29d7b5b72071d77c9c2490b68088163a836972c0c271256",
+    "scripts/validate-manifest.mjs": "dda6693ca1bd8fcce96b585e7df9c66ffb2772b08d9dc623eb23166f5ca9d25b",
+    "server/dev-server.mjs": "f4dde0a770ab15720ca941d7f021b74bd2967db6d432810303ee9fb9921fcafd",
+    "src/countdown-core.mjs": "a2ac35d73722e702a6a1c5d7cb27d704e71d7820b1b0b4fd8cfd2d7a34c8d04d",
+    "src/countdown-widget.mjs": "5264cc5617a36df7e4fa616f2a4ae8ea6493e76a4c58e6d391fca371c5ecf89c",
+    "test/countdown-core.test.mjs": "6175d875215d3619b921e719bb76bf5469917ef7d1ebd6661fcf048dbf883acc"
+  },
+  "evidence": {
+    "static_contract": "PASS",
+    "bounded_node_tests": "9/9_PASS",
+    "bounded_browser_acceptance": "PASS",
+    "terminal_fail_closed": "PASS"
+  },
+  "predecessor": {
+    "candidate_manifest_sha256": "15a326f50dab6a6c2212decaf6fa73d593ecae8929a5270378ddf35d2c97fe65",
+    "candidate_tree_sha256": "d3c209533d8816afe4bf3b71a9c1840ed5c801776e53bbbe7777ab23ab4ac013",
+    "transition": "APPEND_ONLY_PUBLIC_SUCCESSOR"
+  },
+  "authority": {
+    "public_merge": true,
+    "release_dispatch": false,
+    "server_protected_resource_unlock": false
+  }
+}

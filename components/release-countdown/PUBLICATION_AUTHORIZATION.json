@@ -1,0 +1,17 @@
+{
+  "schema_version": "limex-publication-authorization-v1.0.0",
+  "status": "CEO_AUTHORIZED__PUBLIC_SOURCE_PUBLICATION",
+  "authorization_date": "2026-09-02",
+  "scope": {
+    "repository": "tobias-sproete-ai/limex",
+    "branch": "main",
+    "path": "components/release-countdown",
+    "private_archive_included": false,
+    "limex_core_release_authority": false,
+    "deployment_authority": false
+  },
+  "predecessor": {
+    "candidate_manifest_sha256": "15a326f50dab6a6c2212decaf6fa73d593ecae8929a5270378ddf35d2c97fe65",
+    "candidate_tree_sha256": "d3c209533d8816afe4bf3b71a9c1840ed5c801776e53bbbe7777ab23ab4ac013"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "limex-countdown-acceptance-v1.0.0",
+  "status": "PASS_BOUNDED_CANDIDATE__CEO_PUBLICATION_AUTHORIZED",
+  "target_utc": "2026-09-15T21:59:00Z",
+  "target_berlin": "2026-09-15T23:59:00+02:00",
+  "evidence_class": [
+    "STATIC_CONTRACT_CONFORMITY_PASS",
+    "BOUNDED_TRACE_PASS"
+  ],
+  "checks": {
+    "node_unit_tests": "9/9_PASS",
+    "node_syntax_checks": "4/4_PASS",
+    "browser_server_sync": "COUNTDOWN_ACTIVE_OBSERVED",
+    "browser_wall_clock_mutation": "DATE_NOW_REPLACED__MONOTONIC_COUNTDOWN_CONTINUED",
+    "browser_layout_widths_css_px": [
+      158.9375,
+      158.9375,
+      158.9375,
+      158.9375
+    ],
+    "browser_t_zero": "TARGET_REACHED__RELEASE_LOCKED",
+    "browser_t_zero_display": "00:00:00:00",
+    "browser_numeric_feature": "TABULAR_NUMS_OBSERVED",
+    "browser_resource_scope": "LOCAL_SAME_ORIGIN_ONLY",
+    "cli_time_endpoint": "COUNTDOWN_ACTIVE__DISPLAY_ONLY",
+    "cli_missing_time_endpoint": "EXIT_2__FAIL_CLOSED"
+  },
+  "release_authority": {
+    "countdown_can_grant_authority": false,
+    "protected_resource_enforcement": "SERVER_SIDE_REQUIRED",
+    "candidate_receipt_verifier": "CALLBACK_CONTRACT_ONLY__NO_PRODUCTION_KEY_BOUND"
+  },
+  "predecessor_binding": {
+    "candidate_manifest_sha256": "15a326f50dab6a6c2212decaf6fa73d593ecae8929a5270378ddf35d2c97fe65",
+    "candidate_tree_sha256": "d3c209533d8816afe4bf3b71a9c1840ed5c801776e53bbbe7777ab23ab4ac013",
+    "transition": "APPEND_ONLY_PUBLIC_SUCCESSOR"
+  },
+  "non_implications": [
+    "PUBLICATION_DOES_NOT_GRANT_RELEASE_AUTHORITY",
+    "NO_RELEASE_AUTHORITY",
+    "NO_PRODUCTION_KEY_ATTESTATION",
+    "NO_PHYSICAL_CLOCK_GUARANTEE_ACROSS_PROCESS_RESTART_OR_ALL_SUSPEND_MODES",
+    "NO_FORMAL_ALL_STATE_PROOF_FROM_BOUNDED_TESTS"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "limex-release-countdown",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "validate": "node scripts/validate-manifest.mjs && node --test",
+    "demo": "node server/dev-server.mjs"
+  }
+}

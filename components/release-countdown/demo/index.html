@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <title>LIMEX Deployment Gate</title>
+    <style>
+      html { background: #0a0a0a; }
+      body {
+        min-block-size: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 1rem;
+        background: #0a0a0a;
+      }
+      limex-release-countdown { inline-size: min(70rem, 100%); }
+    </style>
+    <script type="module" src="/src/countdown-widget.mjs"></script>
+  </head>
+  <body>
+    <limex-release-countdown
+      target-utc="2026-09-15T21:59:00Z"
+      time-endpoint="/api/time"
+      resync-ms="300000"
+    ></limex-release-countdown>
+  </body>
+</html>

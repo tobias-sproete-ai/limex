@@ -26,15 +26,26 @@ If one required term is missing, stale, substituted or contradictory:
 
 ```text
 STATE           PRE-RELEASE
-PUBLIC SURFACE  ANNOUNCEMENT ONLY
-CODE            NOT YET RELEASED
+PUBLIC SURFACE  ANNOUNCEMENT + COUNTDOWN UTILITY
+CODE            COUNTDOWN UTILITY PUBLIC; LIMEX CORE NOT RELEASED
 AUDIT           RELEASE GATES PENDING
 AUTHORITY       NO RUNTIME OR DEPLOYMENT GRANT
 ```
 
-This repository currently establishes the public announcement boundary only.
+This repository currently establishes the public announcement boundary and
+publishes one narrowly scoped release-gate countdown utility.
 
 Specifications, formula collections and reference implementations will be released only after their respective security, disclosure, licensing and publication gates have passed.
+
+---
+
+## Deployment gate countdown
+
+Target: **2026-09-15 23:59:00 MESZ** (`2026-09-15T21:59:00Z`)
+
+The [zero-dependency countdown utility](components/release-countdown/) uses an
+initial server-time sample and a monotonic in-page clock. It is display-only:
+reaching zero never grants release, runtime or deployment authority.
 
 ---
 
@@ -48,7 +59,9 @@ It is not a claim of universal safety, semantic truth, legal compliance, certifi
 
 ## License
 
-No source code or public software-license grant is included at this pre-release stage.
+No public software-license grant is included at this pre-release stage. The
+published countdown source remains all rights reserved unless and until a
+separate license is added.
 
 ---
 
