@@ -25,30 +25,34 @@ If one required term is missing, stale, substituted or contradictory:
 ## Status
 
 ```text
-STATE           PRE-RELEASE
-PUBLIC SURFACE  ANNOUNCEMENT + COUNTDOWN + GOLDBACH LEAN AUDIT CAPSULE
-CODE            COUNTDOWN + MATHEMATICAL LEAN SOURCES; LIMEX CORE NOT RELEASED
-AUDIT           GOLDBACH CAPSULE BUILT; LIMEX CORE RELEASE GATES PENDING
+STATE           LIMITED PUBLIC RELEASE
+PUBLIC SURFACE  GOLDBACH LEAN AUDIT + SEALED LIMEX-LLM CLEANROOM CAPSULE
+CODE            MATHEMATICAL LEAN SOURCES + SEALED CLEANROOM SKILL CAPSULE
+AUDIT           CLEANROOM V1.1.0 RELEASED AS TECHNICAL_PASS_WITH_LIMITS
 AUTHORITY       NO RUNTIME OR DEPLOYMENT GRANT
 ```
 
-This repository currently establishes the public announcement boundary and
-publishes a narrowly scoped release-gate countdown utility plus a reproducible
-mathematical Lean audit capsule.
+This repository publishes a reproducible mathematical Lean audit capsule and
+the exact sealed LIMEX-LLM Public Cleanroom Capsule V1.1.0.
 
 Specifications, formula collections and reference implementations will be released only after their respective security, disclosure, licensing and publication gates have passed.
 
 ---
 
-## Deployment gate countdown
+## LIMEX-LLM Public Cleanroom Capsule
 
-Target: **2026-09-15 23:59:00 MESZ** (`2026-09-15T21:59:00Z`)
+The exact sealed V1.1.0 capsule is available from the
+[GitHub release](https://github.com/tobias-sproete-ai/limex/releases/tag/limex-llm-cleanroom-v1.1.0).
 
-**[Open the live countdown](https://tobias-sproete-ai.github.io/limex/)**
+SHA-256: 6a8116f7e3960328bec5a70e7f475efa63c5e3f501edbddd53200cedd59d3cac
 
-The [zero-dependency countdown utility](components/release-countdown/) uses an
-initial server-time sample and a monotonic in-page clock. It is display-only:
-reaching zero never grants release, runtime or deployment authority.
+Status: TECHNICAL_PASS_WITH_LIMITS
+
+No public software license is granted by that artifact. Native Windows
+execution, independent audit closure and successor security corrections remain
+separate gates. Publication is not certification or production admission.
+
+The minimal release telemetry is recorded in [release/README.md](release/README.md).
 
 ---
 
@@ -76,11 +80,16 @@ It is not a claim of universal safety, semantic truth, legal compliance, certifi
 
 ---
 
+## Dedication
+
+Read [Tobias Spröte's dedication](DEDICATION.md).
+
+---
+
 ## License
 
-No public software-license grant is included at this pre-release stage. The
-published countdown source remains all rights reserved unless and until a
-separate license is added.
+No public software-license grant is included. Published materials remain all
+rights reserved unless and until a separate license is added.
 
 ---
 
