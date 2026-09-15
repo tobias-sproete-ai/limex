@@ -1,0 +1,15 @@
+import GoldbachCircleMethodActualQ3FullConditionalClosureV18767
+
+/-!
+# Public audit entry point
+
+This module prints the assumptions used by the final q=3 conditional closure
+and its directly preceding scale bridge.  The output must not contain
+`sorryAx` or project-specific axioms.
+-/
+
+#print axioms GoldbachCircleMethodActualQ3ScaleEstimateBridgeV18764.dirichletCharacterPartialSum_norm_le_largePrefixScaleEstimate
+#print axioms GoldbachCircleMethodActualQ3ScaleCombinedPrefixEnvelopeV18765.actualQ3DirichletCharacterPartialSumCeiling_of_scaleEstimate
+#print axioms GoldbachCircleMethodActualQ3ScaleProjectAbsorptionV18766.eventually_actualQ3ScaleProjectEnvelope_lt_linear
+#print axioms GoldbachCircleMethodActualQ3FullConditionalClosureV18767.eventually_actualQ3_scale_prerequisites
+#print axioms GoldbachCircleMethodActualQ3FullConditionalClosureV18767.eventually_actualQ3_projectBranch_positive

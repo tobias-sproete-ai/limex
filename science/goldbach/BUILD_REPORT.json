@@ -1,0 +1,22 @@
+{
+  "schema": "limex-goldbach-public-build-report-v1",
+  "capsule_version": "1.8.767",
+  "built_at_utc": "2026-09-15T01:37:28Z",
+  "build_command": "lake build",
+  "build_exit_code": 0,
+  "build_job_count": 9341,
+  "custom_source_module_count": 634,
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "lean_binary_sha256_on_attesting_host": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "warning_as_error": true,
+  "audit_targets": 5,
+  "reported_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sorry_ax_reported": false,
+  "global_goldbach_status": "NO_PROOF",
+  "scope_note": "Exit code and axiom output attest the published conditional Lean closure only. They do not inhabit its open analytic hypotheses and do not prove the binary Goldbach conjecture."
+}

@@ -1,0 +1,2622 @@
+{
+  "schema": "limex-goldbach-exact-import-closure-v1",
+  "root_modules": [
+    "GoldbachCircleMethodActualQ3FullConditionalClosureV18767"
+  ],
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "custom_source_module_count": 634,
+  "external_mathlib_import_count": 72,
+  "external_mathlib_imports": [
+    "Mathlib",
+    "Mathlib.Algebra.BigOperators.Module",
+    "Mathlib.Algebra.BigOperators.Ring.Finset",
+    "Mathlib.Algebra.Order.Floor.Semifield",
+    "Mathlib.Algebra.Order.Floor.Semiring",
+    "Mathlib.Algebra.Ring.GeomSum",
+    "Mathlib.Algebra.Star.BigOperators",
+    "Mathlib.Analysis.Calculus.MeanValue",
+    "Mathlib.Analysis.Complex.Exponential",
+    "Mathlib.Analysis.Complex.ExponentialBounds",
+    "Mathlib.Analysis.Complex.Polynomial.Basic",
+    "Mathlib.Analysis.Complex.Trigonometric",
+    "Mathlib.Analysis.Distribution.SchwartzSpace.Fourier",
+    "Mathlib.Analysis.Fourier.AddCircle",
+    "Mathlib.Analysis.Fourier.ZMod",
+    "Mathlib.Analysis.Normed.Group.AddCircle",
+    "Mathlib.Analysis.Normed.Group.FunctionSeries",
+    "Mathlib.Analysis.PSeries",
+    "Mathlib.Analysis.Real.Pi.Bounds",
+    "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar",
+    "Mathlib.Analysis.SpecialFunctions.Exponential",
+    "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+    "Mathlib.Analysis.SpecialFunctions.Integrals.Basic",
+    "Mathlib.Analysis.SpecialFunctions.Log.Summable",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Deriv",
+    "Mathlib.Analysis.SpecialFunctions.Pow.NNReal",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+    "Mathlib.Analysis.SpecialFunctions.SmoothTransition",
+    "Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds",
+    "Mathlib.Analysis.SpecificLimits.Normed",
+    "Mathlib.Analysis.SumIntegralComparisons",
+    "Mathlib.Data.Nat.Factorization.Basic",
+    "Mathlib.Data.Nat.Factorization.Induction",
+    "Mathlib.Data.Nat.GCD.BigOperators",
+    "Mathlib.Data.Nat.Log",
+    "Mathlib.Data.Nat.Squarefree",
+    "Mathlib.Data.Nat.Totient",
+    "Mathlib.Data.Sigma.Basic",
+    "Mathlib.Data.ZMod.Basic",
+    "Mathlib.MeasureTheory.Function.LpSeminorm.Indicator",
+    "Mathlib.MeasureTheory.Function.LpSpace.ContinuousFunctions",
+    "Mathlib.MeasureTheory.Integral.Bochner.Basic",
+    "Mathlib.MeasureTheory.Integral.DominatedConvergence",
+    "Mathlib.MeasureTheory.Measure.Haar.NormedSpace",
+    "Mathlib.NumberTheory.ArithmeticFunction.Misc",
+    "Mathlib.NumberTheory.ArithmeticFunction.Moebius",
+    "Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt",
+    "Mathlib.NumberTheory.ArithmeticFunction.Zeta",
+    "Mathlib.NumberTheory.Chebyshev",
+    "Mathlib.NumberTheory.DiophantineApproximation.Basic",
+    "Mathlib.NumberTheory.DirichletCharacter.Bounds",
+    "Mathlib.NumberTheory.DirichletCharacter.Orthogonality",
+    "Mathlib.NumberTheory.EulerProduct.Basic",
+    "Mathlib.NumberTheory.EulerProduct.DirichletLSeries",
+    "Mathlib.NumberTheory.Harmonic.Bounds",
+    "Mathlib.NumberTheory.LSeries.Convolution",
+    "Mathlib.NumberTheory.LSeries.Dirichlet",
+    "Mathlib.NumberTheory.LSeries.Nonvanishing",
+    "Mathlib.NumberTheory.LegendreSymbol.AddCharacter",
+    "Mathlib.NumberTheory.LegendreSymbol.QuadraticChar.Basic",
+    "Mathlib.NumberTheory.LegendreSymbol.ZModChar",
+    "Mathlib.NumberTheory.MulChar.Lemmas",
+    "Mathlib.NumberTheory.ZetaValues",
+    "Mathlib.Order.Interval.Finset.Nat",
+    "Mathlib.RingTheory.Nilpotent.Basic",
+    "Mathlib.RingTheory.Radical.NatInt",
+    "Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed",
+    "Mathlib.Tactic",
+    "Mathlib.Tactic.NormNum.LegendreSymbol",
+    "Mathlib.Topology.Algebra.InfiniteSum.Order",
+    "Mathlib.Topology.Algebra.Module.FiniteDimension"
+  ],
+  "custom_sources": [
+    {
+      "module": "GoldbachAnalyticOddFrequencyBoundV1871",
+      "sha256": "65419750fcb003f80ef0269eae5ef427b935553cce881787015551d3352c501d"
+    },
+    {
+      "module": "GoldbachAnalyticOddFrequencySharpBoundV1872",
+      "sha256": "aadc32fc4786623cd09c008649fef21f21ad0776aaba6985b8abaaba8b48a56b"
+    },
+    {
+      "module": "GoldbachAnalyticOddFrequencySupportV187",
+      "sha256": "8db7b11c7770e70ff22cef95e36748da51b16b5032ca6f4a410be44940f98e84"
+    },
+    {
+      "module": "GoldbachCircleMethodActiveActivePairwisePeriodV18317",
+      "sha256": "81bf7bfd919aa8e2f48790129982bd09bc61c637880d77d49fe80f375f5221fb"
+    },
+    {
+      "module": "GoldbachCircleMethodActiveCharacterRadicalErrorV18158",
+      "sha256": "b238bc8a5a674991227e053f8257c8421b37867f717b6394622dc079ed406734"
+    },
+    {
+      "module": "GoldbachCircleMethodActiveConductorCommonPeriodMismatchV18289",
+      "sha256": "0bf18d1ae8ba26616d4cca05c6493044f7250e394bd198acfce1213edc64db16"
+    },
+    {
+      "module": "GoldbachCircleMethodActiveConductorDivisorLocalizationV18290",
+      "sha256": "b83279a9ffa5718bf6be5ab6dffe6b591a78e010856b2d40daf8277de4cb8d6d"
+    },
+    {
+      "module": "GoldbachCircleMethodActiveExceptionalCenteringV18129",
+      "sha256": "1e5d69afed20cd0d367b02b998db67173697e0bc37f4d31915bccea3105995f5"
+    },
+    {
+      "module": "GoldbachCircleMethodActivePrincipalPairwisePeriodV18320",
+      "sha256": "6685b09426c963d8027f3cac85cabd6e55aa6b0aab45d63afc175c15210d998c"
+    },
+    {
+      "module": "GoldbachCircleMethodActiveResidualExactDecompositionV18251",
+      "sha256": "7bb82762e4727b54ac6324dbc039de9f9980859c7a5225c2ddbd1498a23f7cfa"
+    },
+    {
+      "module": "GoldbachCircleMethodActualBlockAuxiliaryMinorV18136",
+      "sha256": "75caafab9984ad52ae28024d86a5c6f4282121bbea346aa857298778d4b25831"
+    },
+    {
+      "module": "GoldbachCircleMethodActualBlockInteriorPairReserveV18231",
+      "sha256": "5bba95766486f67202ddd67a744151f76414d1ff5f64ee54d2fe533b79313f29"
+    },
+    {
+      "module": "GoldbachCircleMethodActualCenteredQ3MassRecombinationV18731",
+      "sha256": "776af83952602f99c9fc5fb5a614d965258e3faea2e74e1cf4dfbd9531609d7c"
+    },
+    {
+      "module": "GoldbachCircleMethodActualCenteredQ3ResidueObstructionV18730",
+      "sha256": "e6b27823da2889389ad2febd11cb42c86e6c7e533ef35f999443255790f7c8b4"
+    },
+    {
+      "module": "GoldbachCircleMethodActualCenteredRamanujanPrefixAbelV18728",
+      "sha256": "1cfaea8dfec9c204508865683fa56a06920e02adf8c87ad6c593a050cc608455"
+    },
+    {
+      "module": "GoldbachCircleMethodActualCenteredResidualAssemblyV18127",
+      "sha256": "aa7330b5f8c47f2f819d4209c657b3e3591a47dd4cb62674b590522cb937cd5c"
+    },
+    {
+      "module": "GoldbachCircleMethodActualCenteredSourcePrefixComplementBudgetV18736",
+      "sha256": "dd6fb638d10813ef232e7b8daab672dc7e2c17de77a5f0c63bc8bf660d4152c6"
+    },
+    {
+      "module": "GoldbachCircleMethodActualChannelProjectBudgetV18638",
+      "sha256": "f9a0d43232e00a727fe3fd82e87b4a52fd1da9bc6e732edc5a6d66d5674c2e68"
+    },
+    {
+      "module": "GoldbachCircleMethodActualCharacterFamilyInclusionV18186",
+      "sha256": "43d56c9e94cc12af582ef466fcef2a0c260a63eef49df09dba6dbf6363220e93"
+    },
+    {
+      "module": "GoldbachCircleMethodActualCharacterRadicalErrorV18157",
+      "sha256": "f48b4b2b2c747d624870f39e09d8ac62fc64895991ab5f516405b696de2fe40a"
+    },
+    {
+      "module": "GoldbachCircleMethodActualCompanionCompleteDiagonalV18204",
+      "sha256": "f2146b36133da93792c83a875c4569ad8f9016f470a83ba295e2cec6537a030e"
+    },
+    {
+      "module": "GoldbachCircleMethodActualCompanionIntervalTransferV18205",
+      "sha256": "a858adf4dd76fc10f89e7646f07cbcf28b97724c110697bb41ebd8152f624333"
+    },
+    {
+      "module": "GoldbachCircleMethodActualCompanionPeriodicLiftV18202",
+      "sha256": "77f2c801a6cd3bba31a861ae9086e5a89999adcc55694fcc907526aa530f7b14"
+    },
+    {
+      "module": "GoldbachCircleMethodActualCompanionRadicalIntegralV18154",
+      "sha256": "e316d4391e44fbdf09339c8df8b5d3068990ff0b029f3e8705fcbbd30d42e357"
+    },
+    {
+      "module": "GoldbachCircleMethodActualCoupledCutoffAdapterV18199",
+      "sha256": "337d2804baeedb21ad3137aa2f89bba19323a146ef8ee55b6bf40abd1fea271c"
+    },
+    {
+      "module": "GoldbachCircleMethodActualCoupledDiagonalRealReadbackV18218",
+      "sha256": "c5459d5ed4621671682b0c0859752a00d61df1b8b5b1dc68d095573e3fe5a314"
+    },
+    {
+      "module": "GoldbachCircleMethodActualCrossLiteralBlockExpansionV18546",
+      "sha256": "5fb448d9fcc97af52e8d7363c38fba88b296e12e09db12f09a9f4eadaf11d7a9"
+    },
+    {
+      "module": "GoldbachCircleMethodActualDemodulatedOneFiberRelativeConvolutionV18710",
+      "sha256": "e9741bd1c3e2cf3dbfc52be8f98433b371af8da0c6c8b57b2ff31d1951547823"
+    },
+    {
+      "module": "GoldbachCircleMethodActualDiscrepancyScaleAbsorptionV18125",
+      "sha256": "6c95539e787f32272043524e3eabeeec18902e5846724666c1e04bdd92c64633"
+    },
+    {
+      "module": "GoldbachCircleMethodActualFrozenModelCompleteDiagonalV18213",
+      "sha256": "9775f7ca1ad7fd19dcfc8e7a79ca6fb21a546f72e25fad136a94303aefd3f4d3"
+    },
+    {
+      "module": "GoldbachCircleMethodActualHalfScaleCorrelationV18177",
+      "sha256": "594bd835aa951c70fe897aecdcd19c3d48854f6b3592dbaa4e00300db0162e50"
+    },
+    {
+      "module": "GoldbachCircleMethodActualInputModelResidualV18138",
+      "sha256": "739bfce1bc44863407e68aed7b2a4888f48d6cafc11a399b240e8898c2a31434"
+    },
+    {
+      "module": "GoldbachCircleMethodActualJointModeCounterModulationV18709",
+      "sha256": "81a85b6849f73afbe8dcabf03a5f144f45538a33654f0c25a76167796aedf532"
+    },
+    {
+      "module": "GoldbachCircleMethodActualLambdaPairSourceMeanChebyshevBoundV18719",
+      "sha256": "c76fb3cf64d5e6f01448c192e38e4d3239427187ff9cfaf4f023fd2136ce176c"
+    },
+    {
+      "module": "GoldbachCircleMethodActualLambdaPairSourceMeanV710AdapterV18717",
+      "sha256": "8d6ef31dccea27ed446a09feec9d539671863ccfb46e0bb7c80cc37f0ade79d4"
+    },
+    {
+      "module": "GoldbachCircleMethodActualLogWeightSquareBindingV18219",
+      "sha256": "d3aa64dba47b980546c30fb57556dd618fd9b0859e8051eb7dbbb2a088fee4e8"
+    },
+    {
+      "module": "GoldbachCircleMethodActualMajorOvershootIdentityV18630",
+      "sha256": "7a1aa879e63c1ddf507beb880e2a89c44f5954f5d87e327bbe6f43c045026c2b"
+    },
+    {
+      "module": "GoldbachCircleMethodActualMajorReserveV1862",
+      "sha256": "5dc0e89b1712d5865f41f593cc1a0620256da9c17f929eccbd5e9a425f059110"
+    },
+    {
+      "module": "GoldbachCircleMethodActualMaskReflectionV1886",
+      "sha256": "44d0865e4e2f8a356f97be51e752abd6fe1ea573031e1247d1dc54dbd8261531"
+    },
+    {
+      "module": "GoldbachCircleMethodActualMeanSplitFourChannelAggregationV18720",
+      "sha256": "e124cb09090a634b294940358dfe7339e4a606780ec6ee30b10754e833ec0016"
+    },
+    {
+      "module": "GoldbachCircleMethodActualMinorFullEnergyTransferV18637",
+      "sha256": "1462dabb50262fe62777e2f8808f86297b2d3db01c58f3fbf0243b09811c79a4"
+    },
+    {
+      "module": "GoldbachCircleMethodActualMixedChannelRamanujanFactorizationV18727",
+      "sha256": "947ab5ec414b6f82275d0d8a1fe823c830a34626598002bd750b5efaee4342cf"
+    },
+    {
+      "module": "GoldbachCircleMethodActualMultiplierScaleV18135",
+      "sha256": "84b4837e7b55a1874fe1994fa1948f62dea205e24ba67819eac7ebe6460e7f0c"
+    },
+    {
+      "module": "GoldbachCircleMethodActualOddLambdaQ3ResidueDiscrepancyV18752",
+      "sha256": "7d468fcea90e7e773749336f644fada504ee0e9d9ee7a1b97d02e174ddfe4dc7"
+    },
+    {
+      "module": "GoldbachCircleMethodActualOneFiberDFTRawPhaseSumV18705",
+      "sha256": "ccfc2e51396b17f57d50b74aa30ded8f30aaef391ed34446506ebf8d6fa4e6be"
+    },
+    {
+      "module": "GoldbachCircleMethodActualOneFiberKernelCrossSpectralIdentityV18704",
+      "sha256": "a58c74d4e5d467d42c0dfb8f635013b5f9da44dae4b9bc03a3f239fc55470241"
+    },
+    {
+      "module": "GoldbachCircleMethodActualOneFiberKernelWeightedLagExpansionV18703",
+      "sha256": "cd150994e05243cdce031abd76599227d52d10c1ef4935a4c27fa13e50ee2c23"
+    },
+    {
+      "module": "GoldbachCircleMethodActualOneSidedKernelLeakageV18648",
+      "sha256": "77ea86e9528a422b5dc885606ee942127f87b0cdd60d910688d877b2ff7832df"
+    },
+    {
+      "module": "GoldbachCircleMethodActualOperatorErrorTransferV1861",
+      "sha256": "f4e04078621c0a250d6653a5bb571e38376c4e470bda08f3eae1c854d2b2367e"
+    },
+    {
+      "module": "GoldbachCircleMethodActualOutputTailBoundV18132",
+      "sha256": "eb203b137d1b802e84c2957f21c4b4b2365e5d8db4d7aea920111604f635fb18"
+    },
+    {
+      "module": "GoldbachCircleMethodActualOvershootTwoChannelV18631",
+      "sha256": "6923fe64d8540df9f41818e94b2d0f1e385dff952a63f2aa699cd234aa1ee110"
+    },
+    {
+      "module": "GoldbachCircleMethodActualPrimitiveSourceEnergyV18473",
+      "sha256": "d0af6ef5c5055a768bcfc8b5ffce7020413b0a44bb0e21e7f14237867eea8214"
+    },
+    {
+      "module": "GoldbachCircleMethodActualPrimitiveSourceNormalizationV18470",
+      "sha256": "27803e0163e64b7e5cdf9e4ee75516cfb95f8f72c66e9af328a30be65008d739"
+    },
+    {
+      "module": "GoldbachCircleMethodActualPrincipalTwistCrossDiagonalV18210",
+      "sha256": "86f06a975f647708796dd06671570a24d60f6deea2c5a2d053505ddad361ff5f"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3AbelProgressionSubstitutionV18734",
+      "sha256": "c3953ffac4c96e2150f954f9ed45bc76c43aaf0087d63fb7f0b065977aceeb3c"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3DirichletCharacterBindingV18760",
+      "sha256": "1b623f81189f7a12a67a260780d543bafca4b08dedd9ba6cba33b832dd5d814b"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3EndpointSpectralBudgetV18745",
+      "sha256": "8727b91882d12e6e2e0b6f03ae2595b66876776ae5d79231c25c9e345d802d8b"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3ExplicitPrefixSqrtEnvelopeV18762",
+      "sha256": "5d031f8b9d2e57df794631d39158ba323a7dcde0c84ca64130104f11cf91e7bd"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3ExplicitPsiSourceMatchV18761",
+      "sha256": "b1b502ff747610d016069a7771d15087c76feff90d91f68f8571363a73dfbe8a"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3FullCharacterEvenCorrectionV18758",
+      "sha256": "edc8820357ecfd97ef95f38d4d0996f991be74bd162e52b77101117137f5113f"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3FullCharacterPartialSumNormalizationV18759",
+      "sha256": "9cade7fa79e763554710ca6d2adfe8dc3d6142a40c9ce3bded37e7fc4373fbd8"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3FullConditionalClosureV18767",
+      "sha256": "a6073dd119618b7f09d3233c9feb44d87304ef641e5a3f8db85988dce662fd1a"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3LocalDensitySignedReserveV18739",
+      "sha256": "6a82779812127831a7e24468cdf5e03f772b240ef1c9a4bcfbe1b3494027eeda"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3PairFourierFactorizationV18743",
+      "sha256": "ad60d074525deaa5f7d309d1bbd12198627d9dd232cb7fdefcab4f84135f431e"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3PairResidueSignedTriangularGateV18748",
+      "sha256": "9ecff91723a5102b973e53596e899a7ed9b1bccd903b4769d6429b4b98ff74ba"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3PrefixLocalDensityExtractionV18753",
+      "sha256": "d2f439522ec9ac1455f85deaeb3b3f6aed610aaec586d18a2c5ea4904f982e60"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3PrefixLocalDensitySignedReserveV18755",
+      "sha256": "b49b3a8a95e5cf8b448d2d1cb83de4bbb113b8716d908f3c4fafa8b36abe28a7"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3ProgressionDefectV18732",
+      "sha256": "7a2e49d9bfcecd8c405c48d69fca032b87428ae2145d5882d51ff7d40d18b70f"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3ProjectDebitAbsorptionOrNegativeWitnessV18741",
+      "sha256": "5fb7345782a08fe949cbd64dc33e6c81dec8abeb4a6221f163f1eea74f1af365"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3RefinedProjectDebitV18746",
+      "sha256": "9b376cab536778b76dc0c061cb30d9930f79d592ddd8d0b4a29475c7e65e7cc3"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3ScaleCombinedPrefixEnvelopeV18765",
+      "sha256": "40e5425a5f8d71650c5cacdc69ed4136741c429c244656f0ace060b32e1337e3"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3ScaleEstimateBridgeV18764",
+      "sha256": "7445f9d2e4cbef0bfae4ae93f2cee1958d6c3c5946245b1ab5f7b3b11ec93d2d"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3ScaleProjectAbsorptionV18766",
+      "sha256": "14f1f844d52bdc7d1a6acb884c15fdae6078851ed5618cbb418c8a68d9d26185"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3SignPrefixFluctuationProjectReserveV18740",
+      "sha256": "718af6b1129491e15f7a326474b639db43ebc1cce699f38264705a3ee8be01d0"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3SmallPrefixProjectAbsorptionV18763",
+      "sha256": "c49f29d36ec64b8a25610e5d44db0024b18313dfbfd7c9179cc13f6be4a54ab7"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3SourceBoundDefectEnvelopeV18737",
+      "sha256": "54218cdb3f9baa82dfa5e60f421c7465a85ff2bc5f797d5e08892c7b92af382e"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3SourceBudgetScaleAuditV18738",
+      "sha256": "816a01981445b8e613a870187bd67a4f038545f44181536bef1b85bf8521826e"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3SplitPrefixBudgetV18735",
+      "sha256": "89468dabfd002d911da238e86ca9c2070ecb049f3e88cf741f7fe02eae86994f"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3TriangularOneDimensionalModeReductionV18751",
+      "sha256": "0446715c622cd0a84724cab05412e52dbb813fa975a8d5f7e1dde4449a45968c"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3TriangularPairCarrierPullbackV18750",
+      "sha256": "153c53865afbf368bd488050505e2729a50e0ff30496ef281c6bfbd843cdcf1d"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3UnitClassDifferenceV18754",
+      "sha256": "ce8269ea7650e9edfd0a644355cec9aaebcb768051a12f66e35a5d07c9449940"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3UnitDifferenceCharacterAdapterV18757",
+      "sha256": "47edb6562d08369e6cbfa02d6cb3c6907aa0f1270d334221262333ed35c363ee"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3UnitDifferenceScaleEnvelopeV18756",
+      "sha256": "295dff0980bf21039dd856f5c5b72a2fa7845bb2f1be410907a9560b3e88c50d"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3UnitModeSquareBudgetV18744",
+      "sha256": "8026fca6553ae958a55d310116fc4b1207a87578ea80469bf214b89db8a2967a"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3WeightedFiberPullbackV18742",
+      "sha256": "93cd1f3a770a3742737b6bbbe98ab251ee3a6c6f0fdcd0f52b0bb3f6fdab0cfd"
+    },
+    {
+      "module": "GoldbachCircleMethodActualRadicalCompanionBoundV18156",
+      "sha256": "58022c278a847e442b7576dd4cfaa92deed9b19004dbc663b172458d75c72d06"
+    },
+    {
+      "module": "GoldbachCircleMethodActualResidualExactDecompositionV18225",
+      "sha256": "f976f3bddbe20a4e78c636009e205cd870b42fd1dbce795b21804572f0891ac5"
+    },
+    {
+      "module": "GoldbachCircleMethodActualResidualLargeValueTransferV18224",
+      "sha256": "4d5677b79d4bb2a0547971cf7c88567b7bb024c3a684a40131eb5e086f8ad2c6"
+    },
+    {
+      "module": "GoldbachCircleMethodActualResidualMomentCompositionV18193",
+      "sha256": "8b9f68b9050d45046f162d038fb356c826876102b4686bd7d26d2e78c4607a19"
+    },
+    {
+      "module": "GoldbachCircleMethodActualSelectedPairJointRawModeIdentityV18707",
+      "sha256": "ace353aea9fcf26ddcdc05839218112cc4bfb8c43d0783d8e949ec9b3e463005"
+    },
+    {
+      "module": "GoldbachCircleMethodActualSignedTargetResidueFiberCenteredEnergyV18696",
+      "sha256": "39eb00bd132222c0c68e1254a995d153b02abdd809cec8c21bc04f8ca505f50e"
+    },
+    {
+      "module": "GoldbachCircleMethodActualSignedTargetResidueVarianceCollisionIdentityV18697",
+      "sha256": "048b8a0004086e8052eb93bad5870291a24a8dc568e86b33b9becad8292e3425"
+    },
+    {
+      "module": "GoldbachCircleMethodActualTwistSelfConvolutionV18211",
+      "sha256": "049a7d45501e73d5ab8bb0b2b52cdee688b3775d04c801f1c14d9da9c2b7245a"
+    },
+    {
+      "module": "GoldbachCircleMethodActualTwistedCompleteProjectionV18209",
+      "sha256": "70b2eb2d3b06be5b508b157b11ce2faf7b7b7dcd23bfd65f3c0ff172f0d05b16"
+    },
+    {
+      "module": "GoldbachCircleMethodActualUnitPairArithmeticV18194",
+      "sha256": "5a9b0f572207f678f132792eb70f291b256a9bc624684e425669ea8176b7e03e"
+    },
+    {
+      "module": "GoldbachCircleMethodActualUnitPairPrimePowerV18197",
+      "sha256": "aa909348658124e52ce39ac0173685761452b11829c9daccd6e7df8616321084"
+    },
+    {
+      "module": "GoldbachCircleMethodActualUnitPairSignedResidualV18214",
+      "sha256": "54abec08ead58512093ac0a852cd510be7cca5e73f9c84aa1fd678dfe9117fe1"
+    },
+    {
+      "module": "GoldbachCircleMethodActualUnitPairWeightedReserveV18195",
+      "sha256": "4c6f7a9b424c0b7b998db8b1813b1a146326df5042a763cef22600ea0bfb1d69"
+    },
+    {
+      "module": "GoldbachCircleMethodActualWindowCCDiagonalV18212",
+      "sha256": "f20fdfc90f9d987d6c0a59bef06ab10e1c507dc3c35f87f89af05ee586d0f139"
+    },
+    {
+      "module": "GoldbachCircleMethodActualWindowCharacterEnergySharpV18477",
+      "sha256": "056941b756c583320909d8ffb8eef5e291396f604d73d93cf0be41423b141073"
+    },
+    {
+      "module": "GoldbachCircleMethodActualWindowInputEnergyV18469",
+      "sha256": "ea002c3c6de841b13e7e69bad3d9200b5d7dd580ab691cad1ac24252e3fa83ae"
+    },
+    {
+      "module": "GoldbachCircleMethodActualWindowSourceNormalizationV18185",
+      "sha256": "5ae508ec367896a6dac1b320be1b5f3007b8c9fb561ad0657986a2d7bdb256bb"
+    },
+    {
+      "module": "GoldbachCircleMethodAdjustedCenteredCorrectionLiteralAdapterV18252",
+      "sha256": "46facaa2e092d64176c3d8687afdd9d6a4368229d32d43105fae64664e3060b3"
+    },
+    {
+      "module": "GoldbachCircleMethodAdjustedCenteredCorrectionNumericAbsorptionV18254",
+      "sha256": "42ac1060e620bcd9b05a6923770a772e0d942a14e712f098486d9cd030adab5d"
+    },
+    {
+      "module": "GoldbachCircleMethodAdjustedCenteredCorrectionV182CompositionV18253",
+      "sha256": "177c7fbb64bd3557e02658f1cfccc35a8b22e9dd733dc518a5a67a4cbbb18872"
+    },
+    {
+      "module": "GoldbachCircleMethodAdjustedCharacterSlotL2AdapterV18449",
+      "sha256": "77dcebc903ef24ac377d7a89e897f7260c7c976f942e5223bd4394175a61df73"
+    },
+    {
+      "module": "GoldbachCircleMethodAdjustedCorrectionL2CompositionV18451",
+      "sha256": "b2cd8691a37964951bfb1e8305c3089871885e1ee7b98fa314663593f316be60"
+    },
+    {
+      "module": "GoldbachCircleMethodAdjustedModelFourChannelPartitionV18292",
+      "sha256": "042a3e237661124abfc9b80aa319a82de292450760a43536e5d9df50a7e9c771"
+    },
+    {
+      "module": "GoldbachCircleMethodAdjustedModelPeriodicFrozenBindingV18288",
+      "sha256": "fde78924c66e5a21c188211ead597d3ccdeb530d6ef37e7cc8c6f4db5c84b976"
+    },
+    {
+      "module": "GoldbachCircleMethodAdjustedModelReserveInterfaceV18256",
+      "sha256": "3a14dc13c5adf9227113c51bded262b982b1251e30bea554a0887e8535d53da5"
+    },
+    {
+      "module": "GoldbachCircleMethodAdjustedModelReserveInterfaceV18286",
+      "sha256": "44dcb93dd136c2ac44b35c86faf5053ae6dc15188be7f9303efe2e350401e9e0"
+    },
+    {
+      "module": "GoldbachCircleMethodAdjustedModelSecondaryTermExpansionV18255",
+      "sha256": "27452db50ad51ae57be0240adb8d623a4ee5a6d48000e77aca73749de8575e79"
+    },
+    {
+      "module": "GoldbachCircleMethodAdjustedSourceSpanEnvelopeV18481",
+      "sha256": "789a4d10f0ad092815996e5aeaa262840263b771ee9d081f9126dc46de365d7a"
+    },
+    {
+      "module": "GoldbachCircleMethodAdjustedSourceThreeTermDecompositionV18479",
+      "sha256": "78fe16451e205ec437d43c1c68a6bf61ba04807720e43d908146cbc554fd7d03"
+    },
+    {
+      "module": "GoldbachCircleMethodAdmissibleExceptionalFiniteIdentitiesV18267",
+      "sha256": "8b698cc45d6ed136891a32d8c6e675336d15acd0c18224237ac44c5f58cf1ea8"
+    },
+    {
+      "module": "GoldbachCircleMethodAdmissibleSlotAdjustedReserveV18259",
+      "sha256": "a48ceb8a35ae2586bd4622573f089670d81a63234349cd3c1e7b0f9dca78804d"
+    },
+    {
+      "module": "GoldbachCircleMethodAdmittedCanonicalAbelAbsorptionV18333",
+      "sha256": "0624bd6f6de184e5db13cf922a0ea4f16ba2f74c6274f44309641e552dd62f64"
+    },
+    {
+      "module": "GoldbachCircleMethodAdmittedDefectTwoErrorForcingV18238",
+      "sha256": "e307efbd121f11714e6442e1c9686f34a7db3b34a1818cee6190c3dc5e091e98"
+    },
+    {
+      "module": "GoldbachCircleMethodAdmittedRhoPrincipalBudgetV18235",
+      "sha256": "00dbcdf13d45c86e24b9edaf9a635ab38574ce763e7037eb47dc412489bb058c"
+    },
+    {
+      "module": "GoldbachCircleMethodAdmittedSourceVariableCorrectionBudgetV18397",
+      "sha256": "30d4d7c01896a6c3ac759bd1899b572cd72c0bf379827a7a4de9308bbd548ef4"
+    },
+    {
+      "module": "GoldbachCircleMethodArbitraryActiveSlotNegativeWitnessV18257",
+      "sha256": "86b09c632aad7ef8fcbc88d71fd9371042805baf315d7d50784d4d9dea9935a2"
+    },
+    {
+      "module": "GoldbachCircleMethodArbitraryCutoffExceptionBoundV1878",
+      "sha256": "633f9d17d5ab72e21b852ff96c66ea1573fb741924cfef95358f814c4d47c719"
+    },
+    {
+      "module": "GoldbachCircleMethodArithmeticDivisorReindexV18430",
+      "sha256": "625553ea21788a730df7a0f34a697ea294c5d98557d05d90c4db3772df2650cd"
+    },
+    {
+      "module": "GoldbachCircleMethodArithmeticDivisorWeightNormalFormV18434",
+      "sha256": "85b49bbcd0e10cda06f9c9672cb0520e16fd141554ae56797d7b494b2cbd5b25"
+    },
+    {
+      "module": "GoldbachCircleMethodArithmeticEulerKernelBoundV18439",
+      "sha256": "85532f093dd81367c7d92d1ca29819bd4cbfff2e83c7c5a2ef901aec594000c8"
+    },
+    {
+      "module": "GoldbachCircleMethodArithmeticFactorDivisorBoundV18416",
+      "sha256": "7a3b0ed120bcfbb165d3da5cb45dfa464027ee40275f44e6cec49cdce0ea5427"
+    },
+    {
+      "module": "GoldbachCircleMethodArithmeticFactorPositiveConvolutionV18428",
+      "sha256": "f105ed88d621f280c80232394d4584315bff09eddfea1e438ac80c9c63beab5f"
+    },
+    {
+      "module": "GoldbachCircleMethodArithmeticHalfShiftV1883",
+      "sha256": "aa94b8083162b5154d5c3f3363df45dfa16d9cd4c0ee12ceabc846c991054610"
+    },
+    {
+      "module": "GoldbachCircleMethodArithmeticIncidenceTransposeV18431",
+      "sha256": "82945579fb78937a7e6db9c672749e98d28f9c22da10282afefe67e3a954cc54"
+    },
+    {
+      "module": "GoldbachCircleMethodArithmeticMultipleCountV18432",
+      "sha256": "752a963c3878734c222cb50f220bf009d76daa2b06646df9d2c1e030ec7a7b6d"
+    },
+    {
+      "module": "GoldbachCircleMethodArithmeticPrefixDivisorBudgetV18433",
+      "sha256": "dd8089d1a2c90e6a5b31e8ba700d8225073cb272f9179a15e6bb6d54c6e988b5"
+    },
+    {
+      "module": "GoldbachCircleMethodArithmeticPrefixKernelReductionV18435",
+      "sha256": "58f996d9a4bedc6a84a7e44c45acb03f093168ab9215cf70bd8674918607a74c"
+    },
+    {
+      "module": "GoldbachCircleMethodArithmeticPrefixMeanClosedV18440",
+      "sha256": "760df71d4ab176154af7b55268698f8ebad97cb3ee4b76c3a9db74cdf303543c"
+    },
+    {
+      "module": "GoldbachCircleMethodArithmeticProgressionInputMatchV1871",
+      "sha256": "c6735efa51c60b2b889faf7b1219164aaf4e24c321d26f39de2f0112ab5408c2"
+    },
+    {
+      "module": "GoldbachCircleMethodArithmeticSubsetDivisorEmbeddingV18429",
+      "sha256": "b33a87961630034c5131ce5e10c1d07255762c5e21b0e144f5d4448929997abb"
+    },
+    {
+      "module": "GoldbachCircleMethodArithmeticSupportedKernelNormalFormV18437",
+      "sha256": "aeed12a5e9cc9bd8b5141f2d82e1126192a34adbb31319c1fc9b725fd58a4da8"
+    },
+    {
+      "module": "GoldbachCircleMethodArithmeticSupportedKernelV18436",
+      "sha256": "91d90b0cb6e9296e7e0f8ca97283002f2c0f7f4fb68c7fb47874c67910194a91"
+    },
+    {
+      "module": "GoldbachCircleMethodArithmeticSupportedPowersetV18438",
+      "sha256": "0404d431b5586f9f61008d6982fc7f7316d2a5feee062f3518558b7d53b1b74c"
+    },
+    {
+      "module": "GoldbachCircleMethodAttestedAdjustedDeficitAbsorptionV18343",
+      "sha256": "f5b73f6f51edeca23d3d0189baac89642fbcc59bc7690bf1263bf06b6f4407a0"
+    },
+    {
+      "module": "GoldbachCircleMethodAttestedUnitPairZeroGapReserveV18271",
+      "sha256": "0ec418e61afdfe944d100ffe490d8cb3ee04d9d6ef28abc15ad63c4074e6aae2"
+    },
+    {
+      "module": "GoldbachCircleMethodAttestedVariableWeightIntervalReserveV18274",
+      "sha256": "ea81de27677403560850adbef120553ed446ee4f22a8da82728fd8e97f3d8311"
+    },
+    {
+      "module": "GoldbachCircleMethodAuxiliaryMinorGlobalErrorV18137",
+      "sha256": "c99e3cd5d2448f7c4e616ea7df177fef18e3a17ae9027b5d8596cae3596b1092"
+    },
+    {
+      "module": "GoldbachCircleMethodBadPrimeActualWeightV18164",
+      "sha256": "928533f3e020cce058a0b523321b2013adf8cb91477674574c3916826d17a16a"
+    },
+    {
+      "module": "GoldbachCircleMethodBadPrimeProductComparisonV18165",
+      "sha256": "f0b68475b45eed36a55bff8949ac8647d9749bd7c5c63ae5fb53c1312b89cd13"
+    },
+    {
+      "module": "GoldbachCircleMethodBadPrimeResidueCountV18163",
+      "sha256": "3dd4f7fdf373d943a2d67ecf15f9d2abeba1f026a3c0270b2c5d11eeee096e0e"
+    },
+    {
+      "module": "GoldbachCircleMethodBadPrimeUniformFrequencyV18169",
+      "sha256": "e11834585275c778985cc9df169cff09b6d2753fed82fca0c39a862ecca8760b"
+    },
+    {
+      "module": "GoldbachCircleMethodBlockPairCarrierV18227",
+      "sha256": "cf5065f6802ef17454a7e0bd13763b7f308fc8a7b7a616898075e862182815fc"
+    },
+    {
+      "module": "GoldbachCircleMethodBoundedConductorReindexV18117",
+      "sha256": "dd626ab398994df0d892a95f6fdcced7d404762559137df809029466615a8e0f"
+    },
+    {
+      "module": "GoldbachCircleMethodBoundedConductorVariableIntervalPositivityV18277",
+      "sha256": "04202bb3f876a8760228b015e191ee69daf0fecff11188ad2060eceec59f2fa3"
+    },
+    {
+      "module": "GoldbachCircleMethodBoundedUnitResidueInterfaceV18468",
+      "sha256": "b8f6fbfce6003dff5ab80acaede32aed5cb8b17f0c99089f9641d34a15e61e8a"
+    },
+    {
+      "module": "GoldbachCircleMethodBumpDecayRadicalEnvelopeV18155",
+      "sha256": "75b7639316ffdcb82e54928f5287a9b2e372e549108a59ee210856007e19c6ff"
+    },
+    {
+      "module": "GoldbachCircleMethodBumpFourierRepresentationV18143",
+      "sha256": "b9231a24a4c80384c4a1f0b25d959ed58c37ee117bad793c290e08aa94ceb830"
+    },
+    {
+      "module": "GoldbachCircleMethodCCChannelUnitAggregationV18723",
+      "sha256": "84afb49fb258f41dd990df8a4d6890e5c76abf099c1dea645ad05a030dacfdbf"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalAbelPairwiseBoundV18332",
+      "sha256": "fc4c665faca5c9852bdffc824d202e3980d9e8044ed6acf1f8fa77be4bf7e23d"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalActiveResidualAggregateV18402",
+      "sha256": "14988069be531ed8faa6015d29a80e554f480501481a7a753be2300e0476a03a"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalActualSourcePositiveV18400",
+      "sha256": "c02759d86b35261cbab8b7b6c35e322d27f6bae1d58b599128c52105bb8f1d2f"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalAdjustedDeficitAbsorptionV18341",
+      "sha256": "6b91da4d2aad1a7a8acb0f5d399603ef903a3ab50ff2758bd2526830562f2702"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalAdjustedFourChannelBindingV18293",
+      "sha256": "db1f5914380d162826a51c5dab448b0f2cebcd53292606a973eb7d888147550d"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalAdjustedModelExplicitReserveV18312",
+      "sha256": "c1de2057d121ab434dd9eaf1db6a755f9fbb87b3132a0e0ae3b52d0e8dfa09f7"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalAdjustedModelL2ReserveV18315",
+      "sha256": "17f3e038c5be27425c7dad6ea0ca9ad2a6155228b615439f740e5c3ea463e875"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalBumpPrincipalFloorV18220",
+      "sha256": "3d3f3e4e2d4581591aeb82916e4a67b5c30017d208e594e35035f5fe73571797"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalBumpResidualMomentsV18222",
+      "sha256": "ef8623c025aef25fdc001dee1f92e8d77ea35ff7fdd4eec322c6a4d3c3218bbc"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCentralActiveEventualV18409",
+      "sha256": "736b980e2578f2592d98156fe622c709d87eca59de963cf07cf861bf4731e03e"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCentralActiveResidualV18406",
+      "sha256": "3064855efb997aa21557d01ff3b2a00dca94171b9ad5089192f1373eefb92f6b"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCentralActiveScaleAbsorptionV18408",
+      "sha256": "b80375d5eedffc21d103fb6e367b6b4d403e9e33ecd2ccd786a71fca28cbe2d7"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCentralAdjustedPositiveV18403",
+      "sha256": "7cb8f7e97d2cc31cbd794bd5c2361eab2a26e742b9d2735fcf88f8b2610ff1da"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCentralCenteredErrorAggregateV18405",
+      "sha256": "6626255203e61f854de24f0a6638aa5f92820e23badee853fc8a70eac962e094"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCentralSingleObstructionV18410",
+      "sha256": "850c9aee34fea8e792b63760eb3d9be458cf3ac8f90949c4135de8f2d86a0859"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCentralSourceRecombinationV18407",
+      "sha256": "7d22e6520ebd5ed5a57b26fa91d65bb4d26690be1a3c2395cd6dae22011f4c93"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCentralSourceTransferV18404",
+      "sha256": "c294755979b8ca94ca750482828043b77d46698b545f782d2e582991fed310d9"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalChiFourAdequacyCorrectionV18364",
+      "sha256": "93d0dcda87038b7f048f86a54ffb8927fdc5779a2239f3b8e8b9f733c0d90f31"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCoupledFirstMarginalAbelV18376",
+      "sha256": "ba88b76fa4f50d55adc0713a5aca408c5cbcded6c8186c63627b71b53f701533"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCoupledFirstMarginalActualBindingV18381",
+      "sha256": "5cde8cd5e378946b96f5491690560d325a0000c313442684b425f2d771ffea89"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCoupledFirstMarginalAggregationV18378",
+      "sha256": "f86a9fd91ee45618f871ed23ad5eaf904cf9cd562425cb3478aac8bf22599b0f"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCoupledFirstMarginalParityCompleteV18379",
+      "sha256": "ead3458fd42cedac9b6b9202a42907b18dd1af7d85c9aa2cf647ed8e96504638"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCoupledFirstMarginalSourceBindingV18380",
+      "sha256": "abac41053bffe538ed424d2b9a9469fe62099a10b9b07ab4f23e646af4e25822"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCoupledFirstMarginalTwoBranchV18377",
+      "sha256": "936a70932bbc3b3594ac4665a4b88cda3ff6b592b63afd1baeb5403fd4c1b060"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCoupledSecondMarginalAbelV18388",
+      "sha256": "6d52a1cdc5f98f7b6dfdf76618b92a92e5b7cd161623af30b629e33359928d0a"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCoupledSecondMarginalAggregationV18390",
+      "sha256": "80ecc1668b535dc458c77e335d5ce4188997708d6941864e7a4c30efa2c995e5"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCoupledSecondMarginalSourceBindingV18391",
+      "sha256": "08bcb4d506141df67302f773f706e3e22f86e3a5c78c8eee11e2bfc87ad6729c"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCoupledSecondMarginalTwoBranchV18389",
+      "sha256": "f464f9be16cb44761495404df7dd7432dc0c9c7bf2d4de04e61e66dd3d5f1c48"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalCutoffVariableIntervalPositivityV18278",
+      "sha256": "732934c9cebbae60f08cf9b97d305b19c70b8c68c2c44b041508e810faa0b2fb"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalFirstMarginalAbelBoundV18371",
+      "sha256": "4b8ad68b86f7889286f795210261095bec2bcd5a81481e6532247f042e1ef3fd"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalFirstMarginalTwoBranchBoundV18372",
+      "sha256": "15e5e5366cd4e67bf52c3ba3b320ea4f8c6789067c1546f5b4c2118acb816ba5"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalFullFirstMarginalQuarticV18382",
+      "sha256": "52c6f0f529f8bcdcde4c9d3748f050372cb4938e4fa69526b2cf163a469448fe"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalFullSecondOffDivisorQuarticV18393",
+      "sha256": "0f77f51efdc5a9875176b4aaa83e56a7adafad8e477dd1354737c9de2b356a39"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalLocalizedIntervalFactorizationV18310",
+      "sha256": "be29873417bb98b9ff61daf902fdc5ccf0246c4643482c25a43e8d7a33d31009"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalLocalizedIntervalReserveV18311",
+      "sha256": "a74fc9c82da278442c8262a610d1b26178f5f79fa6bdb1349ec360be9d5d9815"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalPairwiseBlockBindingV18326",
+      "sha256": "5b9a55335b09eeb37aa263ea1d79c419c446318eff83d6db8e3f76949544310c"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalQuadraticBranchVariationV18387",
+      "sha256": "2d217cef7f258e574bcfff54d083e3db7537b70d575d110cfbcd303f382ab172"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalQuadraticEvenStepV18386",
+      "sha256": "792a2a09c7ce65e145d90da5a49ed1a635d054c9c41afb6e65bd28a9dc7d1775"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalSourceAggregateTransferV18401",
+      "sha256": "aa34107042d0417d86d20f9b5c0ede0b756bfc304084e0099efd57c3462c1b62"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalSourceMeanPositiveV18399",
+      "sha256": "05c7548c8a78de0639bcf780d82038171e2bbd82fb9e0bbc8e0a4b85ee5e485b"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalTargetLinearWeightBindingV18367",
+      "sha256": "c38d0840f94ab8617eaaa05fc3fae680c3a094f386b878c9eccec521a567e0d5"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalTargetQuadraticWeightBindingV18385",
+      "sha256": "d7e8ea91395f157cdf011d67d79fe1ce3d1aa3a87244f2c0b761d52b9e936046"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalTargetWeightBranchVariationV18370",
+      "sha256": "f65e9c2256a740ef05ec8d66666196ac73ca78d17721d4dd5712bf3b85cc4eaf"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalTargetWeightEvenStepV18369",
+      "sha256": "519ddbe2c9ad5397ce198af61a642e336675f4baa025996a4a1bc4835c65cce8"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalTargetWeightPiecewiseGeometryV18368",
+      "sha256": "d1d0cfbb9c44a868ad77ca9c0024f6c9452677be1ae10c27ee81375a7435a2b2"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalUniformSharpSourceCapV18532",
+      "sha256": "57c33dcee8bd36caddee8306ee47370b4b06136d00c7cde8f668e7bae8b7f765"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalVariableMeanReserveV18338",
+      "sha256": "df4f95d18732267b11bfaa798bbe1b7ba2456d85f25a2ccdd7c9207f911c6c19"
+    },
+    {
+      "module": "GoldbachCircleMethodCanonicalWeightLocalizedRadicalDichotomyV18301",
+      "sha256": "1d53b8b437baf7f8bb6a7ca0f7bc55470ae2d0258c15af7a22c7d68a521750bd"
+    },
+    {
+      "module": "GoldbachCircleMethodCaseSelectedExactSourceDecompositionV18261",
+      "sha256": "42b0b21fe37c4580dd24a0b12113ecf1e46381d9b596eb0c2aa0991bb9b738fd"
+    },
+    {
+      "module": "GoldbachCircleMethodCaseSelectedPointwiseGoldbachTransferV18262",
+      "sha256": "237ee27009a11c176589fae86caf9cb6ac58d0596d2d7f947de9e9ca6ecd95fd"
+    },
+    {
+      "module": "GoldbachCircleMethodCeilScaleEnvelopesV1864",
+      "sha256": "97e48b474536055b72b5cb0d902b274d5391ee9300c33540f75b0e87b573966e"
+    },
+    {
+      "module": "GoldbachCircleMethodCenteredCorrectionLiteralNormAdapterV18243",
+      "sha256": "88e1c8227c49deea7014058d3bacb3b946a20599216125df308661cdfec4fd94"
+    },
+    {
+      "module": "GoldbachCircleMethodCenteredCorrectionNumericAbsorptionV18250",
+      "sha256": "30a5a8d93555235efd9d48372ee840434811fe70cf76a8a7d1996fcf139a9249"
+    },
+    {
+      "module": "GoldbachCircleMethodCenteredCorrectionSourceBudgetInterfaceV18248",
+      "sha256": "9aef7ea53fb9f6834c18cc4db190bbcefbddbb168a3a6fd6edd8e978a7dd40d2"
+    },
+    {
+      "module": "GoldbachCircleMethodCenteredCorrectionV184CompositionV18244",
+      "sha256": "fc8462eb69de33d3c0af4d1c0ef55e709401b2a0d27412c772f495c41bd067ca"
+    },
+    {
+      "module": "GoldbachCircleMethodCenteredDimensionlessBudgetV18411",
+      "sha256": "4b4d3ca3a31574c9935159d7764e92d69d6410e4a7a42236c4ce303437bf82e4"
+    },
+    {
+      "module": "GoldbachCircleMethodCenteredPrincipalDecayInterfaceV18503",
+      "sha256": "ad37cf7e2796b564562330827c0c27c16ddaa95bf1b03a1648aceb928e4c3ad3"
+    },
+    {
+      "module": "GoldbachCircleMethodCenteredPrincipalNetExponentV18504",
+      "sha256": "a82884d196f88ec78c2ff2aee220549ef0e7b944ed232a2338b8effeef9e371b"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralAdjustedCorrectionL2MomentV18452",
+      "sha256": "39200d3ce4f004b90c718606eec91dfdd7ce50bcb2f62c6da87c7725a97fecb1"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralArithmeticMeanBudgetV18424",
+      "sha256": "2ee5f3fa6a471a3a94f5b46264274dcb6cc8904545ba4e73e4223261a09ff29f"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralArithmeticPrefixReductionV18426",
+      "sha256": "80266ac491e115c79488e1543e3ec6c83d5c9343e7ff3fc2ca24402701e5e91b"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralBandCorrelationV178",
+      "sha256": "b13396953d44367ee9580e3d1d1b376413248844830509b2fde06c0b4e7b0b49"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralCenteredDimensionlessInterfaceV18412",
+      "sha256": "8d23184d5ee174cecad611e8e791e9e800263dc5f2f7a7e904c16cd6126c0f8e"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralConditionalSourceBridgeV18413",
+      "sha256": "d1a357f3ad6b6057427fadfb4c63a092a6ed82b2bc93af96632f79533e64f4d2"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralCorrectionMeanMajorantV18425",
+      "sha256": "d5e5289b17a93c88c1542dd14f0b3f510304027b4d24d53409cb11f8a6c5d66d"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralDivisorEnvelopeSourceBridgeV18418",
+      "sha256": "35850e62ee53ed15e98e8a52d83123e5a36f7461fe8f4d1e36574b225d8a2d68"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralDivisorEnvelopeV18417",
+      "sha256": "1568fa9503e6b07fc8b950519783ca6c2ef2e7caf2c68c27b47548fb461ad349"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralDivisorSubpowerClosedV18419",
+      "sha256": "a83029f348d7c78c9ad62eb22fb5c6fc425bfaf6ad43bd767355947b7721eaeb"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralEulerMeanAbsorptionV18441",
+      "sha256": "8c3a58f557dad5c4f90e93796eb72e549bd5d5b096c07f71ed1fba28d942108f"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralEulerPolynomialSourceV18442",
+      "sha256": "2487d524e40753fdb52da9a974a17ee5cb1333c530fdccc6557c27980f8ae472"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralL2CorrectionWitnessTransferV18453",
+      "sha256": "dfc14e146a572699cbf1d69cc410651facd420b9e1056e77fb6178c1d1575228"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralL2SubcriticalAbsorptionV18454",
+      "sha256": "46588c1ab1d130a5f995921f82a2e4a217c1418a1dea2ebdd4b6b943944ddf3a"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralL2SubcriticalWitnessV18455",
+      "sha256": "1308ea6e6fc9a3945aee01207d2809c4e056b7c6b124bc2b72c1c27646cf7bf5"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralLiteralSourceInterfaceV18414",
+      "sha256": "dae9a60d31a56ed3f98d03cc391b54a7c037ef4e60af89cc63990a05321b31e6"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralLiteralSourceScaleClosedV18415",
+      "sha256": "fcad725500090d3f6b82140d9725ec85e19c315e54385755f74cca302a2699e8"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralPartnerActualAmplitudeV18457",
+      "sha256": "930ec2e30d1b07402d2569228a16a7b4db9fc01bc69b2b7667e5069ae08cc263"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralPartnerPolynomialEnvelopeV18458",
+      "sha256": "d229e3e2b8f641b570ebc278f461bdd849031c955b50a36f8be18eee62ca8724"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralPartnerUniformEnergyV18456",
+      "sha256": "3b77a6ba1f5afc65aec103f392ba01d0c97f83f2058f68bb62935e3deb1e198c"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralPrefixMeanAbsorptionV18427",
+      "sha256": "4495b89c9d5e590ac7c44896f1a3d1259fe90ce505de6f892c2861c4adb7c95c"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralPrimePowerDefectAbsorptionV18444",
+      "sha256": "05b0daf6f498a08abeba30196b1121749f604c5ad0ea63fe168d67339ce0a35c"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralPurePrimeWitnessTransferV18445",
+      "sha256": "d75f7d98a8f269e9de14153f5aea6cb6636f6a06f0734a3e1b1b2ed8afb6ec1f"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralQuantitativeSourceReserveV18443",
+      "sha256": "1315f16a803fffbaae6310aeacb4bc6b525b9e463af12c9eb6667d646c3f9505"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralSingleSourceEnergyGateV18459",
+      "sha256": "5d9d2c8049586964c9623fdcfba05b53820b3bebec216adbe5d039054de152d1"
+    },
+    {
+      "module": "GoldbachCircleMethodCentralSourceExponentAbsorptionV18420",
+      "sha256": "576c152464b0d4cc91ff53a73deebc01e31ae89b1d86bee2f41fa9a541726dc0"
+    },
+    {
+      "module": "GoldbachCircleMethodCharacterAverageSignObstructionV18365",
+      "sha256": "56facd5524f78d3f6abbd8d5f75a82d30fc18b4b811467536a7f529eab795289"
+    },
+    {
+      "module": "GoldbachCircleMethodCharacterEnergyPullbackV18472",
+      "sha256": "ed80be48cbd1eada4d34677362661855141d5c86f3d95774cf0d57e9c0aae2dc"
+    },
+    {
+      "module": "GoldbachCircleMethodChebyshevEnergyBudgetV1889",
+      "sha256": "c11110cd18073990b36afcdca955baeda91a1efff8818029a4a9c0aec9efd961"
+    },
+    {
+      "module": "GoldbachCircleMethodClosedArcCoordinatesV1857",
+      "sha256": "86cbd3e359dac6239dfe864deab53c7dbc404267205c0caa85b7b09ae434e686"
+    },
+    {
+      "module": "GoldbachCircleMethodCollisionCommonDenominatorTotientRatioV18557",
+      "sha256": "9c74907ece8c1e5a3fc58ccb37d1ff5fbcd7fba0d69d2259b91008ff1a71c269"
+    },
+    {
+      "module": "GoldbachCircleMethodCollisionCommonDenominatorTransferV18558",
+      "sha256": "f5e6a1aa1de3eecd4b604f407026ace39477a0986ded17677d30c2d8e62b7069"
+    },
+    {
+      "module": "GoldbachCircleMethodCollisionExplicitPolynomialBoundV18574",
+      "sha256": "4a50b5729927d7b47e32009751b38f50e7dacdfed664b1cc2b16b04dfc101a01"
+    },
+    {
+      "module": "GoldbachCircleMethodCollisionFiberSparsityV18548",
+      "sha256": "000019d3329ceac49d856fc3b3ba098407c3508ca2991a4167954e80a666832c"
+    },
+    {
+      "module": "GoldbachCircleMethodCollisionLinearMomentTransferV18572",
+      "sha256": "2421f63d7cac5704653bf5b5a5559bccba54a4e67ed21ebc983bb1bb9178c9b3"
+    },
+    {
+      "module": "GoldbachCircleMethodCollisionLiteralAtomEnvelopeV18554",
+      "sha256": "1fe8d47a50131c97efb6f0ba3997e5c75ed6fc8ff36acf31fd91f1902b9eb845"
+    },
+    {
+      "module": "GoldbachCircleMethodCollisionLiteralBlockEnergyV18552",
+      "sha256": "d33b31628ce99d64e25cb85d715abd14d104114d76cace839040b430b9bb5846"
+    },
+    {
+      "module": "GoldbachCircleMethodCollisionLiteralCutoffEnvelopeV18553",
+      "sha256": "55164e11e6a47eeefbbbdea5f02ff1987d307c7e491276a1fbaa68725b78842b"
+    },
+    {
+      "module": "GoldbachCircleMethodCollisionLiteralSliceEnergyV18551",
+      "sha256": "d214ffaa8edba2bbe6d159b5577a341c4de48f5d2837aed9dae5d50b3138b8fb"
+    },
+    {
+      "module": "GoldbachCircleMethodCollisionLiteralWeightFactorizationV18555",
+      "sha256": "77baa6e7bb4154aa9b4a6999cfa751c00cea0354174173a210aa0656e484d049"
+    },
+    {
+      "module": "GoldbachCircleMethodCollisionOneDimensionalDenominatorEnergyV18559",
+      "sha256": "bd28bbbfc8c4a5b10f8b37b1d490998f37e3725f39b6a18eaeda3a5f7e0c40f3"
+    },
+    {
+      "module": "GoldbachCircleMethodCollisionPairCountV18549",
+      "sha256": "da38fe13aea60e9263fea35a33dd2e8c4d993cde9999e0880866762260e46589"
+    },
+    {
+      "module": "GoldbachCircleMethodCollisionPairL2SparsityV18550",
+      "sha256": "eb16470ee1d409aba088ccce3a58222d57dd3e11edc49ec22732291b548153d8"
+    },
+    {
+      "module": "GoldbachCircleMethodCollisionPolylogSourceBoundV18573",
+      "sha256": "9065bcd11c41cedec5da128888e16b2e9e5ca8c52cf5674c73c1e62882e6d803"
+    },
+    {
+      "module": "GoldbachCircleMethodCollisionTotientFourthMomentTransferV18560",
+      "sha256": "d9570ac9a5275cb1a7e6d86b164371500f4d74fffe853a08f3f0715a3584fafa"
+    },
+    {
+      "module": "GoldbachCircleMethodCollisionTotientRatioEnvelopeV18556",
+      "sha256": "294b06e41cee141effbafdf1cc7e49e37df6760176708a5930c7852a1412d61c"
+    },
+    {
+      "module": "GoldbachCircleMethodCommonReflectionPointV18494",
+      "sha256": "6f008413c0ad3c929034db197608ebe89c87be5893cae27f4ba50cb8f881e63c"
+    },
+    {
+      "module": "GoldbachCircleMethodCompanionAbsoluteConvergenceV18141",
+      "sha256": "99015f7a21412621b70cd01bc0d5eeedf3adc7474695f8f68cadb575d6ffc10c"
+    },
+    {
+      "module": "GoldbachCircleMethodCompanionDivisorReindexV18140",
+      "sha256": "fa3b7a668a9bd54f73cee5a1105d71e20815976adc72f36d0aa708cf3b844a93"
+    },
+    {
+      "module": "GoldbachCircleMethodCompanionIntegralInterchangeV18142",
+      "sha256": "59c1147b431473b733b2ded8f72d3969a1b71bfa11b8e96e62f8c03bb42c3f7b"
+    },
+    {
+      "module": "GoldbachCircleMethodCompanionIntervalEnergyBoundV18496",
+      "sha256": "453e20c905aa41ee1e3eed0ec17bac2e7988aed644085cf43b29eba66cf49f53"
+    },
+    {
+      "module": "GoldbachCircleMethodCompanionIntervalEnergyDeviationV18495",
+      "sha256": "1032da3cee942118d8c99f81aed2308ed83cbeb94c43154b8b4341c67eaab044"
+    },
+    {
+      "module": "GoldbachCircleMethodCompanionSquarefreeGcdBindingV18139",
+      "sha256": "5296c63933291d7d48ef2b5efe192019cb1c8272644ec6122905f96ad21ad6e2"
+    },
+    {
+      "module": "GoldbachCircleMethodComplementaryEulerProductV18145",
+      "sha256": "308219e3d0e2320a5d455913abee931aedc1649783f54b185abbb63f537db8f9"
+    },
+    {
+      "module": "GoldbachCircleMethodCompleteCompanionEnergyRealV18493",
+      "sha256": "24c56f17ff146fcf9e346cb31890dbd9d4df849170e3135e5737a45f7e19d4ee"
+    },
+    {
+      "module": "GoldbachCircleMethodCompleteCompanionEnergyV18492",
+      "sha256": "da96dbb72e45380fa0d2eb07ad04b833d90fa05fe19d63a6172b8a2e80e5cba1"
+    },
+    {
+      "module": "GoldbachCircleMethodCompleteDecisionReductionV18627",
+      "sha256": "7de63c28eadeb01accc7ead9f75200be06a73ad0a99aca78323f8713760c6576"
+    },
+    {
+      "module": "GoldbachCircleMethodComplexArcModelBindingV1856",
+      "sha256": "494a2d934e10d76af2f9e97209dfe680a339752beb97b1e6759b8b9097632288"
+    },
+    {
+      "module": "GoldbachCircleMethodConcreteUnitIndexEnergyV18471",
+      "sha256": "260b8de50201deab1ca53c46aadbfaf8f4146637b9a96f768b2c12f9656b8bf5"
+    },
+    {
+      "module": "GoldbachCircleMethodConditionalGlobalExceptionDecayV1879",
+      "sha256": "7afd6abb6c49177faa543209939fb4d8e5e27f1f40d67dcb1b842fe79437fb0f"
+    },
+    {
+      "module": "GoldbachCircleMethodConditionalSieveCorrelationCompositionV18175",
+      "sha256": "d8d64e8d545a94f08f04f9db9ba7a6c6b3f0b8efb9f697a001037b7d353b5a4a"
+    },
+    {
+      "module": "GoldbachCircleMethodConditionalThreeScaleExceptionBoundV18249",
+      "sha256": "8a03bfc9a19f73e7bfeca347265618428e88d38f127ec32de3f97660a46af6d2"
+    },
+    {
+      "module": "GoldbachCircleMethodConditionalWeightedBindingPreflightV18217",
+      "sha256": "e934dbdc111608e700b95025d548fc5beedd5de40ce07f5c0e1302bfe50cfcec"
+    },
+    {
+      "module": "GoldbachCircleMethodConductorFilteredFinitePrefixFloorV18216",
+      "sha256": "a9ccfc93c93f80c24b239a39817594550d1616d67e103a6ad4abcaf5b7a92d25"
+    },
+    {
+      "module": "GoldbachCircleMethodConductorProductCompensationV18152",
+      "sha256": "bc70c88a2d54b2170a7009c86f06848651b8c1e4dc1119a6e87c35090e1c9d38"
+    },
+    {
+      "module": "GoldbachCircleMethodConjugateCharacterEnergyV18466",
+      "sha256": "a1ba649c7a159eaf6ecefe6e48340a4f3d261dbd43a8b07ff3515323d321ff21"
+    },
+    {
+      "module": "GoldbachCircleMethodConstantChannelSourceVariationV18718",
+      "sha256": "694d8cea578aba391b74161103e845f8e915ea621e6946acae0725714c20377b"
+    },
+    {
+      "module": "GoldbachCircleMethodCoprimeFourierFloorV1845",
+      "sha256": "534ed7777d33ffd890a441bfcad7c8e66d880e1eb3a8ce2487775be155403494"
+    },
+    {
+      "module": "GoldbachCircleMethodCoprimeInducedGaussV18112",
+      "sha256": "c7d8ad76a3c80f4d6d53ccbd02227844a56403f82c01932b6e5c1de9dcb2b771"
+    },
+    {
+      "module": "GoldbachCircleMethodCorrectedLocalFactorBindingV18172",
+      "sha256": "1f26ab63e5618cfd9366bf16b37cd1723ead18b36d65c9346b47d65c03ba350b"
+    },
+    {
+      "module": "GoldbachCircleMethodCoupledCompanionRemainderBoundV18207",
+      "sha256": "c899e6cf92d32a5441a2dcd38373ad22eb9b080ab8dac2ada293c707b8642bc9"
+    },
+    {
+      "module": "GoldbachCircleMethodCoupledConductorEndpointSplitV18534",
+      "sha256": "7e722e0d16fb67917810d8f12c9af8e5dfbf39ab94f50efe0a71d48cd97b8119"
+    },
+    {
+      "module": "GoldbachCircleMethodCoupledFirstMarginalPairwisePeriodV18373",
+      "sha256": "090044d92f4a78456fa6b4845797dcf1a98d2efed2e2c99afbc4d24869a32de1"
+    },
+    {
+      "module": "GoldbachCircleMethodCoupledFirstMarginalPairwiseRemainderV18375",
+      "sha256": "07a102a393d521545497cd6edcb4581d8f9785698c5cfbb8a1ef808aac99dca0"
+    },
+    {
+      "module": "GoldbachCircleMethodCoupledFirstMarginalParityDichotomyV18374",
+      "sha256": "2b796d9f90d8ad66015a5dca4647520d265e09b81acd3af869c4c324e2fa955a"
+    },
+    {
+      "module": "GoldbachCircleMethodCoupledSecondLowFrequencyClassificationV18392",
+      "sha256": "d9840f55034dd72e87fe856fc49cf613c2ee49b6380a40753e62d48ae484fe42"
+    },
+    {
+      "module": "GoldbachCircleMethodCoupledSecondMarginalPairwisePeriodV18383",
+      "sha256": "d4715844969cad04c3c50c6aa303a051c3f9c2d93c4d9713a566ba5340de35ab"
+    },
+    {
+      "module": "GoldbachCircleMethodCoupledSecondMarginalPairwiseRemainderV18384",
+      "sha256": "1338fad5d423a9b4f8a1c97596006637fd24e5651f6b71cc9c6036f2ef81235c"
+    },
+    {
+      "module": "GoldbachCircleMethodCrossConductorBlockPairReindexV18541",
+      "sha256": "e0cfae50b3495436035e69e43020ab132d13d6e43d6a4ce0a5063ad40a6bdd71"
+    },
+    {
+      "module": "GoldbachCircleMethodCrossConductorPairExpansionV18540",
+      "sha256": "17d6fef1c2203337a007e775903e0132fcb380129a3f3e22d5514bc98df6c6f2"
+    },
+    {
+      "module": "GoldbachCircleMethodCrossDenominatorCollisionPartitionV18547",
+      "sha256": "1c621c5495d0ba90171d2513edd23329da6151b9e08b546d7b6348d7cae661f9"
+    },
+    {
+      "module": "GoldbachCircleMethodCrossResidualSharpSplitV18539",
+      "sha256": "1e7a76299b886696ae8226171553f681cd8a88b13bc99c2b0ab36b8455cf4fd2"
+    },
+    {
+      "module": "GoldbachCircleMethodCubicChebyshevDecayV18643",
+      "sha256": "be8aed78e68dae7699dedb3f8dea2755c8c97901e67c96bd821ebcb803622b9f"
+    },
+    {
+      "module": "GoldbachCircleMethodCubicScalePrefixInhabitationV18641",
+      "sha256": "0e6f25ededdf3c85b6e93d4d02e751113857020b8dc8fc35c2e667d29799c2bf"
+    },
+    {
+      "module": "GoldbachCircleMethodDecayingExceptionalChannelSplitV18526",
+      "sha256": "f2f512f6ca6b3e02f3c18066f0f8e8309f68898da5c9a6453ceb770d613ac1b8"
+    },
+    {
+      "module": "GoldbachCircleMethodDiagonalCompensatedEvenSubchannelsV18667",
+      "sha256": "bfbdcf09b577f1f870ddedb1ecec2d1eb9fa69b1def3bdd5d4f26033f8b4560c"
+    },
+    {
+      "module": "GoldbachCircleMethodDirectEulerMellinOperatorV18148",
+      "sha256": "0d4bafde1ee79be0d172052ed8d973b24ee181abe5256fe6b83e8e22eab31090"
+    },
+    {
+      "module": "GoldbachCircleMethodDirectHalfScaleLambdaCompositionV18179",
+      "sha256": "54c374567f64473825297df20094aa054444a6d7a7310c1a2ce25eedd3e95bc8"
+    },
+    {
+      "module": "GoldbachCircleMethodDirectLambdaRadicalDominationV18178",
+      "sha256": "36847597d998eb7af8f615bab82b6862433c24bf7299bd296a62a1546092492f"
+    },
+    {
+      "module": "GoldbachCircleMethodDiscreteArcModelReserveV1855",
+      "sha256": "13cfa0592a80cc365fdf691410c2b6adf27ecdaca5e046786b1e4d2308871f84"
+    },
+    {
+      "module": "GoldbachCircleMethodDiscreteArcTailV1854",
+      "sha256": "7688d5fbe099705ad1bc3a88448fec13ba88c0c2dc0e33c7ff6ead7bc84f95e5"
+    },
+    {
+      "module": "GoldbachCircleMethodDiscreteGeometricBoundV1853",
+      "sha256": "1e305b2e5f7e4c11d6bb8a76407c2346dd635127d6e8d1703d77ae8567c2d030"
+    },
+    {
+      "module": "GoldbachCircleMethodDiscreteMainKernelV1852",
+      "sha256": "30bb532f7fdd784a2db5a8ac9279c299a2a32a03db0abd6dae8c149cde450370"
+    },
+    {
+      "module": "GoldbachCircleMethodDiscreteModelExceptionCountTransferV18635",
+      "sha256": "2cec933ea29dd44e90b9fc6626236d53ec84968c36a2d41d8c896a1127e8ce04"
+    },
+    {
+      "module": "GoldbachCircleMethodDiscreteModelExceptionDetectorV18632",
+      "sha256": "aed801eb268a2e2e0520882b1653cb2f1a6f40542ec329528db73ec945c9a768"
+    },
+    {
+      "module": "GoldbachCircleMethodDiscreteModelToActualMinorV18636",
+      "sha256": "8588e25ad299e8f2cc1352f783ef77fd9563659ec6c1e15e3dd444462bd2f1a6"
+    },
+    {
+      "module": "GoldbachCircleMethodDisjointPrimeFactorCompositionV18171",
+      "sha256": "1099525584d157b5403c7e2a8cc7244f86bef476b1452d422671115d59948c61"
+    },
+    {
+      "module": "GoldbachCircleMethodDivisorIncidenceTranspositionV18565",
+      "sha256": "46453b4fa60ea0cf0fc8324664b05b503529a9d0166bad33be2844fb4107e950"
+    },
+    {
+      "module": "GoldbachCircleMethodDivisorLocalizedActivePeriodicityV18291",
+      "sha256": "6170c49fe49f29de5dbcdacf58da04b8f0edd6c5126eb111d44295a432ff49f1"
+    },
+    {
+      "module": "GoldbachCircleMethodDivisorSubpowerExistenceV18191",
+      "sha256": "8eeba848f8a0d3313638fb7ca701c879e0be3cd32b62006df2c600ddd6d56728"
+    },
+    {
+      "module": "GoldbachCircleMethodDyadicCompletePeriodAnchorExistenceV18280",
+      "sha256": "f4ebcff0b7c2d3ceaa9d984f5ce58509c4885ac7a48d2adda74bb4acf369f718"
+    },
+    {
+      "module": "GoldbachCircleMethodDyadicCompletePeriodCarrierPlacementV18279",
+      "sha256": "cde15379b750315ad7d467283a3addba2241b9ea444d288b5f206e8ee9cb03ff"
+    },
+    {
+      "module": "GoldbachCircleMethodDyadicLogarithmicSumTransferV1877",
+      "sha256": "d9e5e045ff5c8781e3c98f06ae6ccfd568fca086503204576e6d491403a17a16"
+    },
+    {
+      "module": "GoldbachCircleMethodDyadicMultiPeriodPositivityV18284",
+      "sha256": "3aa440d383d9679be847bdedadbddc94811acbb71b54d30a119755809b321974"
+    },
+    {
+      "module": "GoldbachCircleMethodDyadicScaleMismatchNegativeWitnessV18230",
+      "sha256": "09c22ec4ee52e0b2eb0238e4efd66f2f61ee94af01005e721c625ffcd232ccc3"
+    },
+    {
+      "module": "GoldbachCircleMethodEvenConductorCoprimeBranchObstructionV18298",
+      "sha256": "d31afebcc36bd5e733eb24dd2a523910f4d3ea9c65f644d0a34f254dca2b08d7"
+    },
+    {
+      "module": "GoldbachCircleMethodEvenEvenChannelCompositionV18661",
+      "sha256": "af95e68f43b320393f4221542ba3178d63f7fff3c1db43ea12cf6421ce225512"
+    },
+    {
+      "module": "GoldbachCircleMethodEvenEvenEventualAbsorptionV18662",
+      "sha256": "56c395d605d4fec91cd65b93292f0633ec714187752cc35e924745ec73ea9333"
+    },
+    {
+      "module": "GoldbachCircleMethodEvenStepDenominatorAliasNegativeWitnessV18677",
+      "sha256": "827debb0b0f4d574bfe0715b709cd7e0e492dfa748e15f6e77aad7bf751f8d01"
+    },
+    {
+      "module": "GoldbachCircleMethodEvenSubchannelSplitV18660",
+      "sha256": "e6dc74dafb91203563af76c572471bfa690c7611d89ab413735d9ef56b307650"
+    },
+    {
+      "module": "GoldbachCircleMethodEvenTargetWeightedCharacterAverageV18366",
+      "sha256": "ec79fe809c76837bda6fc509b82a2b012cfb8a4c74b4987e92b69316119dee4e"
+    },
+    {
+      "module": "GoldbachCircleMethodEventualAnalyticInputReductionV18642",
+      "sha256": "0736a87a69978230f78a1338990ca70d07cf1e152d45f420efef7ab090446cd7"
+    },
+    {
+      "module": "GoldbachCircleMethodEventualScaleActualErrorLambdaV18181",
+      "sha256": "1158567f28f11e84aa6010c63cafa09dac0c6f188bb283ec99d3a9a2bb6605c7"
+    },
+    {
+      "module": "GoldbachCircleMethodExactCrossConductorResidualV18538",
+      "sha256": "068312c982e2262c43b909b1aca2426c675f5ef6ddae9735344e7e2465461fef"
+    },
+    {
+      "module": "GoldbachCircleMethodExactHenriotCarrierBridgesV18176",
+      "sha256": "3f610d28a268ebcf1101f52b587494a49261d5e7528cf3ca27553ea9bca43308"
+    },
+    {
+      "module": "GoldbachCircleMethodExactKernelJordanBalanceV18650",
+      "sha256": "8cabb67825884a493f8ca1c416707709e6d0d22aeb239b46e5c7b04baa86bd42"
+    },
+    {
+      "module": "GoldbachCircleMethodExactLambdaPairSourceMeanSplitV18716",
+      "sha256": "e5875fd97e85c40cc5d78b5f4e189628a384006690f0d9321346e970eb853c70"
+    },
+    {
+      "module": "GoldbachCircleMethodExactPrincipalBoundaryCostV18126",
+      "sha256": "59e6e09d5c1fc47f97d171c8f3130ce133502d61222158dc93f9e35599e48399"
+    },
+    {
+      "module": "GoldbachCircleMethodExactSignedResidueFiberAggregationBeforeGlobalTriangleV18695",
+      "sha256": "064b7f446a21a90c6e1c4ffda1f2987c9ff7e256dcb029c1119c4a0fd2b73827"
+    },
+    {
+      "module": "GoldbachCircleMethodExceptionalCorrelationBlockDecayV18524",
+      "sha256": "feb05c02c3f714a6b5c92a434510c75a65b4b16661be66cc1fda3210aa4314c5"
+    },
+    {
+      "module": "GoldbachCircleMethodExceptionalModelDiagonalV18107",
+      "sha256": "537030b010e13bef545ef78029506a21ca9f8f679170f0074750bb49976c5492"
+    },
+    {
+      "module": "GoldbachCircleMethodExceptionalPredicateAdequacyGapWitnessV18361",
+      "sha256": "28b116c2b1c2bf293caf2cdea38c5ea7688cb64a7fb03e36f629d8643a4fc7d7"
+    },
+    {
+      "module": "GoldbachCircleMethodExceptionalSourceBlockDecayV18523",
+      "sha256": "e99b60573a01fd5e933f095524a22573e9c3094fef9ce26ce76b1252720ee964"
+    },
+    {
+      "module": "GoldbachCircleMethodExceptionalTransferV1823",
+      "sha256": "54aa57585814c2141d7b6b4fd3558db6a5ee05f5b4d454359558b3b1ee0a4601"
+    },
+    {
+      "module": "GoldbachCircleMethodExceptionalWeightBoundaryV18128",
+      "sha256": "8a41413b7310d3703359f29a71f7855e3acde6c4954791a6ca66fc5301bad93f"
+    },
+    {
+      "module": "GoldbachCircleMethodExceptionalZeroAttestationContractV18260",
+      "sha256": "b05238a2f4dd571793485dbab22bbabf05882b3d7d4bdc39d42079b01da515c7"
+    },
+    {
+      "module": "GoldbachCircleMethodExceptionalZeroGapAttestationRepairV18263",
+      "sha256": "1686f868ad35070365c49f4dc32e011adc1473f61c5b3c20e6ad716de12dcfcf"
+    },
+    {
+      "module": "GoldbachCircleMethodExplicitJordanDeficitV18651",
+      "sha256": "e8504ea79984b07b24b4c147e9e1028c957651ef68b77b7277885242edaf65b0"
+    },
+    {
+      "module": "GoldbachCircleMethodExplicitJordanParitySplitV18652",
+      "sha256": "774f89a219cdb8e8618a565ed2788e676b8ef167499f846c4283fd9abbf3470d"
+    },
+    {
+      "module": "GoldbachCircleMethodExplicitMaskFourierKernelV1887",
+      "sha256": "92142c1480743f4090a529f53cac37495e9d770d08f4d8bfa4a617a53f6c082c"
+    },
+    {
+      "module": "GoldbachCircleMethodExplicitOffDiagonalKernelLeakageV18649",
+      "sha256": "d4d4a989da13600ebd0c8fd1ab7b0f97dc4160346f7729bdb8a615cf80541118"
+    },
+    {
+      "module": "GoldbachCircleMethodFactorizedSameResidueCollisionExactLagDecompositionV18699",
+      "sha256": "09e8a0d508068a93a1657d526f9b4e68060b136a0953c801f101740c6a8d786c"
+    },
+    {
+      "module": "GoldbachCircleMethodFiniteAbelAdapterV1863",
+      "sha256": "6620b37a88168f7684daa322889e5d666ddbc232135b68475188d077f87ae042"
+    },
+    {
+      "module": "GoldbachCircleMethodFiniteCarrierStarCharacterEnergyV18467",
+      "sha256": "b921b9b69c6ef895fdf10e85335af95dc6587a2ea34437d8abf6b7f1b1c777ca"
+    },
+    {
+      "module": "GoldbachCircleMethodFiniteCompanionBindingV18118",
+      "sha256": "1203fbaa21eabcb910f8bbed9ef82037f61cda377f015d88d5e4b867a3005cbf"
+    },
+    {
+      "module": "GoldbachCircleMethodFiniteDyadicExceptionCarrierV1876",
+      "sha256": "f197bd3660287a7c1901b3dfd32f4fb62aa839c384b3170f9ddf6eb39e09515c"
+    },
+    {
+      "module": "GoldbachCircleMethodFiniteFourierL2MinorMomentV1872",
+      "sha256": "65ca1193c1d3afbb7fda5232734898f3bc1ff49cffd5010108ec573459259160"
+    },
+    {
+      "module": "GoldbachCircleMethodFiniteIntervalRemainderReserveV18229",
+      "sha256": "dfb1f94622ff05dca5de5a944ec2d84f678a2b99f41a588ffdfb902c96bbc6b8"
+    },
+    {
+      "module": "GoldbachCircleMethodFinitePrimeProductFloorV1838",
+      "sha256": "86de69f55d24d281149b773cc40349178543dca277899f9cd3c4fc06318dbd75"
+    },
+    {
+      "module": "GoldbachCircleMethodFiniteRamanujanEnergyV18131",
+      "sha256": "621a25e6255bfdc7c741d5b2653af8ffcfadc634aec9b1b592d6d699334e3a3f"
+    },
+    {
+      "module": "GoldbachCircleMethodFiniteRangeResidueMultiplicityV18465",
+      "sha256": "9d54d29faa97e839223df2784bce4243bfcba4079de26cd7d473945a5a1b103d"
+    },
+    {
+      "module": "GoldbachCircleMethodFiniteRemainderBudgetV1851",
+      "sha256": "cce3b040c248f66860072901c2b65e5852790ce942badd7d5078a14301944ab7"
+    },
+    {
+      "module": "GoldbachCircleMethodFiniteResiduePrefixV1866",
+      "sha256": "f0a32f8308327f71df50ecf8d1e09df6cfaec14e17b421ada551ff89c8610171"
+    },
+    {
+      "module": "GoldbachCircleMethodFiniteUnitResidueEnergyV18462",
+      "sha256": "e791ffee5d2c2d6712e46fd3e36271c85bb76eb8160821b399b564eba641ead3"
+    },
+    {
+      "module": "GoldbachCircleMethodFiniteWindowConvolutionV18119",
+      "sha256": "0ac56e6d7df1ffe78489a3efa35fa74df180b360de3d1eb04aab022fc2d2c050"
+    },
+    {
+      "module": "GoldbachCircleMethodFixedRhoPolynomialLossV18180",
+      "sha256": "6abfed03570381bd28451feb92e4f0cd1baaac833836ad889f0f7701ac81b029"
+    },
+    {
+      "module": "GoldbachCircleMethodFixedScaleClassIICompositionV1825",
+      "sha256": "e70c6379f7f9cbbe0c1c5e416db9db77e245d1ce6835e3604aec82064a709d42"
+    },
+    {
+      "module": "GoldbachCircleMethodFixedScaleTransferV1824",
+      "sha256": "12c2a4df6f4ba98f38154fbbb7618c34b25db3733862e96eef1ea3d0752e8dae"
+    },
+    {
+      "module": "GoldbachCircleMethodFourChannelAbelTransportV18328",
+      "sha256": "ce71cef10e9c075cf0a427d73686f029153c4aa62e08087f04f4c2c7a6cd979f"
+    },
+    {
+      "module": "GoldbachCircleMethodFourChannelExceptionDecompositionV18239",
+      "sha256": "76da53e8b7db3b9281cd45cb945540e6619918d5635735b1e3ea415239576bdd"
+    },
+    {
+      "module": "GoldbachCircleMethodFourierIdentityV171",
+      "sha256": "8db733b34584ee19db3deda11a5093773f8fc3b4e613fdc0acedef00ad6af782"
+    },
+    {
+      "module": "GoldbachCircleMethodFrozenUnitPairPeriodDecompositionV18273",
+      "sha256": "4a730f225b8af96c9754f428192d97cf57dd9875ba83dd79575dbad53e7a87a7"
+    },
+    {
+      "module": "GoldbachCircleMethodFullChannelPartitionedGramV18689",
+      "sha256": "c0ebaa39a855c2db2fdb831515d582e5f976b54b63415e973500bc4461802d7f"
+    },
+    {
+      "module": "GoldbachCircleMethodFullCharacterUnitEnergyV18461",
+      "sha256": "9b0156bd00d08fc46bb4c049ba22cd5043446ba6bc8de7f8c525fc706033a02e"
+    },
+    {
+      "module": "GoldbachCircleMethodFullCharacterUnitParsevalV18460",
+      "sha256": "23c85660d320f8f60eadf201d22dc2d717baafc0c4e9d30edf32410e38f2c108"
+    },
+    {
+      "module": "GoldbachCircleMethodFullDenominatorFourClassPartitionV18688",
+      "sha256": "aa6fa992380b7afb5799a74a44df3d24fd5b2d237820888e901b98b92b6f6154"
+    },
+    {
+      "module": "GoldbachCircleMethodFullEulerRadicalAssemblyV18153",
+      "sha256": "ce561676a09585595f1adbc825621882279fd916339dd7a2ee14b1d321f95255"
+    },
+    {
+      "module": "GoldbachCircleMethodFullFrozenPairwiseIntervalV18323",
+      "sha256": "c5301d80ceaf621419246fe64fc471620236b8baf48d0136814798ef3adcca81"
+    },
+    {
+      "module": "GoldbachCircleMethodFullPrefixPositiveFloorV1849",
+      "sha256": "132221b180994ded927e390fe507e4edb6376cd832a8718fe6ec1bd0b610a50a"
+    },
+    {
+      "module": "GoldbachCircleMethodFullPrimitiveExpansionV18115",
+      "sha256": "56824425becda41c76e646fe9fb32516e00e5b0f1bc98c5f2e44ea24c6390b04"
+    },
+    {
+      "module": "GoldbachCircleMethodFullRamanujanDirichletV18147",
+      "sha256": "c54f8c93522f71b79a352a75fe906928a4ad2d00e22f96c1a101b2848354ea0a"
+    },
+    {
+      "module": "GoldbachCircleMethodFullSquarefreeCarrierV1846",
+      "sha256": "850424e1942e27cd19377bcefd3df304a7b456bfd8337106d80155f6de9a37b9"
+    },
+    {
+      "module": "GoldbachCircleMethodFullSquarefreeCoefficientV1847",
+      "sha256": "7307a6af4294c56d7fa83beadb96826feba1cc898634edd922ee7536fa3f1bfb"
+    },
+    {
+      "module": "GoldbachCircleMethodFullSquarefreePrefixFloorV1848",
+      "sha256": "b71bb07d97c7ffd159ab2d634475bfaa4f549280fc9bcd09224b94c3234a1b12"
+    },
+    {
+      "module": "GoldbachCircleMethodGatedSharpConductorEnvelopeV18536",
+      "sha256": "e3f8267efd3cc9c5db07fba71131a6ffe61dcce4dd983611b720b0164e66ae5a"
+    },
+    {
+      "module": "GoldbachCircleMethodGatedSharpEndpointSplitV18537",
+      "sha256": "99b015f94534b8b58e8aab82ec4b8f32e1800af412003de355a68a9a4cc8cd1f"
+    },
+    {
+      "module": "GoldbachCircleMethodGeneralCoprimeCharacterV1868",
+      "sha256": "50385e6bcf3dfdbc6e0c6e1d1120d14a2394ac63a40c10eb91d1f46ac0e18b16"
+    },
+    {
+      "module": "GoldbachCircleMethodGlobalCollisionAbsoluteBoundV18576",
+      "sha256": "7e48ad1ddb5b98a51d4868800a4e5173aa7144a80bdbc76cd09bd2e5a945b728"
+    },
+    {
+      "module": "GoldbachCircleMethodGlobalCollisionAbsoluteRouteObstructionV18577",
+      "sha256": "a4d4488b3d7134a876cd3ccd5109eddd6ad5978a764fc18835faa4b04495a614"
+    },
+    {
+      "module": "GoldbachCircleMethodGlobalCollisionResidualSplitV18575",
+      "sha256": "923314573b74534979257c31ea4f4813834dd99fd03dbdef414da4b1936a6b29"
+    },
+    {
+      "module": "GoldbachCircleMethodGlobalSieveFiniteFactorV18173",
+      "sha256": "edf880550bb257bd2a400ce442298b3d8619418750114e484b687cf27e0582e3"
+    },
+    {
+      "module": "GoldbachCircleMethodHenriotArithmeticGrowthClassV18170",
+      "sha256": "80e19b0234de570beffa37092b4168f8285deac045bd0ef247db804532b2e49a"
+    },
+    {
+      "module": "GoldbachCircleMethodHighMinorBudgetV1822",
+      "sha256": "154581d1d2a5976bf1710a99ccd879a8f98693fcc1689fe773c798893e1dee98"
+    },
+    {
+      "module": "GoldbachCircleMethodHybridAugmentedConductorTargetV18517",
+      "sha256": "e558ddc46fc4bc5a92675066e16bebda70ba678bccd8a95b9919d3c7ad42c5db"
+    },
+    {
+      "module": "GoldbachCircleMethodHybridAugmentedNonprincipalChannelV18514",
+      "sha256": "8312f87f1a61e02d859fc101e1e1a4a4278b5d1b43d6314ebda2c19ae49e36a7"
+    },
+    {
+      "module": "GoldbachCircleMethodHybridCenteredCentralMomentV18505",
+      "sha256": "3e7f207ffc4c2e6161c39dc858438e2bd56832e83b4c959e314d989974c5f49f"
+    },
+    {
+      "module": "GoldbachCircleMethodHybridCenteredChannelBudgetSplitV18510",
+      "sha256": "befc5e0614638e46c59687eb840114c415f24545075ca536ae3b4e43dcaac8aa"
+    },
+    {
+      "module": "GoldbachCircleMethodHybridCenteredCorrelationEnergyV18501",
+      "sha256": "8b20b9b9e4994b743f4ba00cb896a2605e459c416901bbad02abefaaf9f449a9"
+    },
+    {
+      "module": "GoldbachCircleMethodHybridCenteredDecayingSourceBudgetV18525",
+      "sha256": "1ffe202ed9e019a2ed2867fcae8580a199d2ebf7df2bb387c9c4d9a680f3e65b"
+    },
+    {
+      "module": "GoldbachCircleMethodHybridCenteredSingleSourceGateV18509",
+      "sha256": "d70e801183f6f47d9810cfa0d151bb1b95d531b04090a164dffbba450aeb35d4"
+    },
+    {
+      "module": "GoldbachCircleMethodHybridCenteredSourceSplitV18500",
+      "sha256": "a2043fc42b138bc76c149d5566dcae84c277d096de0b31d729caee463dba65b3"
+    },
+    {
+      "module": "GoldbachCircleMethodHybridCenteredSubcriticalWitnessV18508",
+      "sha256": "159d1b1cb77be11c721889228515d603e6da0ee1dde7bdc04405a57604462989"
+    },
+    {
+      "module": "GoldbachCircleMethodHybridCenteredWitnessTransferV18506",
+      "sha256": "39b0917631cc63a082aaa6be7d13756a0fbaa138d19df70e74aef3c689fa5f58"
+    },
+    {
+      "module": "GoldbachCircleMethodHybridChannelEndToEndReductionV18513",
+      "sha256": "88b200ffe8d73e53f27cea329af0754fde0f4ee6db737ffa081bd2b4a4cccd01"
+    },
+    {
+      "module": "GoldbachCircleMethodHybridPrincipalAtomsV18502",
+      "sha256": "38232b535855c0a9eecb889875269f4dd8981bbc82ae81c7c59d898c8c4990c7"
+    },
+    {
+      "module": "GoldbachCircleMethodHybridPrincipalBlockExponentV18511",
+      "sha256": "086a90078f7d600e2bd8f7659e31dc18517d9e9021f51292c3e774886ad2df95"
+    },
+    {
+      "module": "GoldbachCircleMethodHybridRemainingChannelInterfacesV18512",
+      "sha256": "a179af8204c3a1d304d4be53a353c65b90bf8f4e0bb92368a8b73c59cf36a44e"
+    },
+    {
+      "module": "GoldbachCircleMethodHybridTwoChannelEndToEndReductionV18515",
+      "sha256": "c15e617101349fb8fc7c29efc9d1a0c02f5dbcb0852a9218505197aefd6e0e1f"
+    },
+    {
+      "module": "GoldbachCircleMethodHybridTwoChannelNecessaryMarginV18516",
+      "sha256": "1524b713f94ce0dd9c93fc9f61830cca7d7ec75879817c33ab6573d017944ab5"
+    },
+    {
+      "module": "GoldbachCircleMethodInteriorReserveCompletePeriodPositivityV18281",
+      "sha256": "09286db4384191cbb333a493eb8cf5ba24729b562e70bdabb0a5b24e59f650a8"
+    },
+    {
+      "module": "GoldbachCircleMethodLiteralCoefficientDiagonalMajorantV18533",
+      "sha256": "a8ba909b10ec41bcffd42171363370134a5ceca6546d83019daf635ccb715ffb"
+    },
+    {
+      "module": "GoldbachCircleMethodLiteralCrossWeightFactorizationV18545",
+      "sha256": "fbf284668fd39af03587a4ce6fdefd95eae24520b9d69677286d82b7b135fbd8"
+    },
+    {
+      "module": "GoldbachCircleMethodLiteralExpansionWithoutCommonPeriodV18321",
+      "sha256": "4c8a417568a1cee9038183a758b0e24c5219e816b17c85566831b5b2eefa6359"
+    },
+    {
+      "module": "GoldbachCircleMethodLiteralSourceFamilyDispatchV18187",
+      "sha256": "80d3116555a6f54fc718ac5d7e7272dcaddc4bae4b8ccf932a0c5922ab8a2d95"
+    },
+    {
+      "module": "GoldbachCircleMethodLocalEulerRadicalBoundsV18149",
+      "sha256": "bee30c8341532b8878737f6df5382fb21129216ec59cf660dcd4f9c8d383d5d9"
+    },
+    {
+      "module": "GoldbachCircleMethodLocalizedActiveCompanionCollapseV18294",
+      "sha256": "18ee1535a4826116d7ac96343473759ed894dc665a8ed52418272bd0836defa9"
+    },
+    {
+      "module": "GoldbachCircleMethodLocalizedAdjustedExactDichotomyV18307",
+      "sha256": "9fcd647b46a3597d7d0041fdf1d78208b85d3d3a1bf45e5f4a5d73344cc1fb2d"
+    },
+    {
+      "module": "GoldbachCircleMethodLocalizedAdjustedExplicitCorrectionReserveV18297",
+      "sha256": "438e2eef2f78894617a797518e02abfa9304eed0f5a9af94517bf86cf1ec7c9d"
+    },
+    {
+      "module": "GoldbachCircleMethodLocalizedPrincipalArithmeticNormalFormV18295",
+      "sha256": "823cb90b5fb0085bcb90f966e246c0e7eefb0ee0e6e6c8daf4db8636048a02d5"
+    },
+    {
+      "module": "GoldbachCircleMethodLocalizedPrincipalRealNonnegativeReserveV18296",
+      "sha256": "be6cf1470002f1a1292fc69d57b54d6c6404e56b46f3efb0b074d08c74cb3c83"
+    },
+    {
+      "module": "GoldbachCircleMethodLocalizedRadicalCoefficientReadbackV18300",
+      "sha256": "a49bd6c431d793146330f9bf17e3da089bd713a354c27d8ceb7a0b901d6081e8"
+    },
+    {
+      "module": "GoldbachCircleMethodLocalizedReducedPairExactFactorizationV18308",
+      "sha256": "8fb3a268dc602dfb8a60f67771e2cc7523e9a5aac6e5034eca86762c19f8d909"
+    },
+    {
+      "module": "GoldbachCircleMethodLocalizedReducedPairSupportV18306",
+      "sha256": "2b0a260bb958f326319dbfd59892c119fa95b3e2ae940df469fb9ab8636d7320"
+    },
+    {
+      "module": "GoldbachCircleMethodLocalizedShapeIntervalAdapterV18309",
+      "sha256": "65cf35d75f7bb579ed9bf8261c9d1631c855a3302c110232811a63afc7d774c3"
+    },
+    {
+      "module": "GoldbachCircleMethodLocalizedSquarefreeDivisorBindingV18299",
+      "sha256": "0cad2af908899f5d9666ef7f1cadfdb5f7466a7076a38c2c4353f6b54480d5f7"
+    },
+    {
+      "module": "GoldbachCircleMethodLogCutoffPresieveBindingV18120",
+      "sha256": "f3fead5dc14d98521efc0c20682d42b58a9db8edcd0de069cd2b779c893d0504"
+    },
+    {
+      "module": "GoldbachCircleMethodLogDecayNondecisionWitnessV18623",
+      "sha256": "f633b26de26a053c63e23bb461280762a1ba3ccc0dad444c5e8cc78a9602ec73"
+    },
+    {
+      "module": "GoldbachCircleMethodLogWeightMellinBindingV18144",
+      "sha256": "244c844dd056ddff4f2ddc3b72a35dd6eab6cadeaa0be61616e0c05d9b9bdb86"
+    },
+    {
+      "module": "GoldbachCircleMethodLogarithmicBlockDecayV1875",
+      "sha256": "e94901e81b41deb419f2a2fcddeb8f526c8c691e2edd9a5cd377c6e36af47c87"
+    },
+    {
+      "module": "GoldbachCircleMethodMajorMinorDominanceV173",
+      "sha256": "e9932bdfe83e68e531c4b711fae4dc3bae3b889cd054d35a592f7956ff259be1"
+    },
+    {
+      "module": "GoldbachCircleMethodMajorMinorPartitionV172",
+      "sha256": "0aa5339ff1e846ffd66417bbbb50eea14a8835133dbd184ebc2a211f6eb0b17b"
+    },
+    {
+      "module": "GoldbachCircleMethodMajorMinorRealPartV174",
+      "sha256": "d3c0cd7412dabc7f6aaf38317cf0fa227b7e65bfc7f6cc48c8f79cc5a41b8761"
+    },
+    {
+      "module": "GoldbachCircleMethodMajorOperatorErrorBesselV18633",
+      "sha256": "d98d3fafc3df423e247a557d36c49e5f64f2cd28aebfecbb32443077483d2ce2"
+    },
+    {
+      "module": "GoldbachCircleMethodMajorOperatorErrorEnergyV18634",
+      "sha256": "1d2f664ff53e77258906e58dcf8d072ad2887c373c6e5bb90fd8122968db60fd"
+    },
+    {
+      "module": "GoldbachCircleMethodMajorOperatorErrorSupportMassV18640",
+      "sha256": "e180a9f45ca1d2b623cca32ae638f0dda75c07fcde1d1c148ccca57fcb637b3f"
+    },
+    {
+      "module": "GoldbachCircleMethodMajorantSubunitObstructionV1880",
+      "sha256": "e3747375a58e192b3b599351e752d1fc53769ba411bcdc0c13c5cea49d036786"
+    },
+    {
+      "module": "GoldbachCircleMethodMaskedFrequencyCountermodelV1881",
+      "sha256": "fe0eccf2c99e9acf8ccd4ec0f1ab6649e6090d73093d66306847800c3eba0c44"
+    },
+    {
+      "module": "GoldbachCircleMethodMertensProductFromHarmonicV18174",
+      "sha256": "92022c6f7b240cf78062e8c7713d2eb111a547a6dd42b9adcf2be6658eeef34c"
+    },
+    {
+      "module": "GoldbachCircleMethodMertensUniformConstantsV18168",
+      "sha256": "bb28c8daec69aace06a924af303575c82ede5867d23932ffc7df6f3611b8ac25"
+    },
+    {
+      "module": "GoldbachCircleMethodMinorLocalizationSharpV177",
+      "sha256": "cce9f5c13c4aecee69e4768b1fc7d94433e183d3e044ea95e6664b768cba63f7"
+    },
+    {
+      "module": "GoldbachCircleMethodMinorLocalizationV176",
+      "sha256": "3a5f7f407e34a2f85264f3f341d52943ea6b14d38a1b703b3df9bee882628f45"
+    },
+    {
+      "module": "GoldbachCircleMethodMixedRamanujanOrthogonalityV18203",
+      "sha256": "d7c532ea7a38ae25ffb4e35c1f9a243979971faa10a592251802119c61bce99a"
+    },
+    {
+      "module": "GoldbachCircleMethodMixedUnitSupportedHermitianOrthogonalityV18542",
+      "sha256": "e71d75e7b11ce2cd6c2eb1df83955cfcd268dc2fdd6588fbd0103fd1ba17bf72"
+    },
+    {
+      "module": "GoldbachCircleMethodNegativePartSubunitGateV18626",
+      "sha256": "34cc47ab0faa0f65c94955d5df0271f6cdb56fd9791aa267a50c4d86418d3201"
+    },
+    {
+      "module": "GoldbachCircleMethodNonGoldbachBlockSourceDefectBridgeV18237",
+      "sha256": "41b13e70d7740809713887a6223c8dbea21976e9a1574730800700ae96487e43"
+    },
+    {
+      "module": "GoldbachCircleMethodNoncoprimeInducedGaussV18113",
+      "sha256": "3be9b2f74c861cf86a2c952ffc08f727e899bbc37cf50091eafdee3a4816a46f"
+    },
+    {
+      "module": "GoldbachCircleMethodNoncoprimeLocalizedAdjustedVanishingV18305",
+      "sha256": "ebc47bcbc8536e4597c9e0faf65e2be4c745c6d00d0eb1023e85865cf91133ec"
+    },
+    {
+      "module": "GoldbachCircleMethodNonprincipalAlignedBlockEnergyV18528",
+      "sha256": "f8864deb247dce6d32c3b63afd05593b2509701ba6a84e643279c6c658ec0a58"
+    },
+    {
+      "module": "GoldbachCircleMethodNonprincipalConductorAlignedCorrelationV18527",
+      "sha256": "f832357f6cda5e9e9b00e884c4f60a6dd0a978af6a035f7fa9b59018bb9d875d"
+    },
+    {
+      "module": "GoldbachCircleMethodNonprincipalConductorIntervalEnergyV18520",
+      "sha256": "98c43819874dffb271174e7e32bde0d56ab10b33620d93f5e16e467890891444"
+    },
+    {
+      "module": "GoldbachCircleMethodNonprincipalConductorOneGateV18535",
+      "sha256": "c64d8a95e006797419f45728c4bbbb53c286a8ba374d7f2d433499d979eedaac"
+    },
+    {
+      "module": "GoldbachCircleMethodNonprincipalConductorSumEnvelopeV18521",
+      "sha256": "c0f25ef5956f4f1630428ae0939a5ee8f9cfefc14a1b5f8400116e03ac22b3f6"
+    },
+    {
+      "module": "GoldbachCircleMethodNonprincipalPrimitiveConductorDecompositionV18507",
+      "sha256": "be8a8ae47bd4648f6bacbf249e4937a09e8746445c6e3f592bdfee1781b75433"
+    },
+    {
+      "module": "GoldbachCircleMethodNonreducedMassEnvelopeV1867",
+      "sha256": "8d51f340806ef2a3827d181c8b15caeb608732d4d6c86d49f4c2842fce4d0d26"
+    },
+    {
+      "module": "GoldbachCircleMethodNonsquarefreeMaskRegressionV1888",
+      "sha256": "880abf34eceedbcd4560b04fb97885b51654faef9f2ed2fdee6dc5608ee1070d"
+    },
+    {
+      "module": "GoldbachCircleMethodNonunitCharacterEnergyV18464",
+      "sha256": "503bd8cbecd212f628111d7996e01ef5a7521a295d53b6cbbfe243829393c6dd"
+    },
+    {
+      "module": "GoldbachCircleMethodNormalizedToAmplitudeTransferObstructionV18287",
+      "sha256": "671bec427cbafd31ef0131fc270ffe37eecf44d2445d9432e812772f639aaaf7"
+    },
+    {
+      "module": "GoldbachCircleMethodOddChannelCompositionV18656",
+      "sha256": "655b9bb95746482be48822c9c548eb582076dcb06b7ea35808fd2d1fd1dff15d"
+    },
+    {
+      "module": "GoldbachCircleMethodOddChannelEventualAbsorptionV18658",
+      "sha256": "f705647ad503e7aa5db89fa51ec4deb44ec2841d552d1ecdba21ca0dda06e793"
+    },
+    {
+      "module": "GoldbachCircleMethodOddChannelMomentV18657",
+      "sha256": "060cda4933291700a5d47c11d21a6b85252e26e7074ae99dc6edb21b2abd419a"
+    },
+    {
+      "module": "GoldbachCircleMethodOddDoubleHybridBoundV18681",
+      "sha256": "edefe491cf708ccd64d8ee246e1442a81b368c00dd359bfc4ecd2701053a6e47"
+    },
+    {
+      "module": "GoldbachCircleMethodOddDoublePairAmplitudeV18679",
+      "sha256": "802defc3871d930a7d4a0ef9f6a3b4a718ac142bfcebca6af4928ea6ba8aeda3"
+    },
+    {
+      "module": "GoldbachCircleMethodOddDoubleResidueCenteringV18680",
+      "sha256": "c4d94896b2b1111a2549917b1e7b991fddb1bf97896ed3f655b6b93bfb7210af"
+    },
+    {
+      "module": "GoldbachCircleMethodOddDoubleSignedRealBridgeV18682",
+      "sha256": "0b7da03a04c7203135a1714d2c783f7e61758642ac27683957dd0bb96d57fcb2"
+    },
+    {
+      "module": "GoldbachCircleMethodOddDoubleSincPairV18678",
+      "sha256": "50b4adc9445cc7db5335debbe4e443534239715162b02d04dad2d44913323faf"
+    },
+    {
+      "module": "GoldbachCircleMethodOddKernelL1V18655",
+      "sha256": "554f250e876ff547fc58d05f1cb10fa748391d2767ec98d850aefcd1764b0fbe"
+    },
+    {
+      "module": "GoldbachCircleMethodOddOddEvenSmallKernelFormulaV18673",
+      "sha256": "34c30b40c79bc1ac704e0c7bd4203b0ed408e5fc33758119eaef714ccec01459"
+    },
+    {
+      "module": "GoldbachCircleMethodOddOddExactSignedBudgetV18669",
+      "sha256": "43545fc31846d9037f42338efa503a99c2a441a1f08a839fdab51837ec45b257"
+    },
+    {
+      "module": "GoldbachCircleMethodOddOddFourierBesselBridgeV18668",
+      "sha256": "69353b28dee49c5dfe1bc1182c08ecd54e47a44e60a02e413a9f75fc7c1a47a8"
+    },
+    {
+      "module": "GoldbachCircleMethodOddOddFullDenominatorNormalFormV18676",
+      "sha256": "3a5d08886c73ee7c79e56db15fe812715f41a6f8c83f0a8b221a2b541512fb08"
+    },
+    {
+      "module": "GoldbachCircleMethodOddOddLargeDenominatorEnergyReductionV18671",
+      "sha256": "8a984e50c77f0dfbc6811f318257da2635f70e63514fb1217a4c9678d181fe1f"
+    },
+    {
+      "module": "GoldbachCircleMethodOddOddSignedFiberAdapterV18665",
+      "sha256": "bd47ce56184ebed7f8382e2d12aeb6b1fb21468f6c1fa6e4da6c994beb45550a"
+    },
+    {
+      "module": "GoldbachCircleMethodOddOddSignedGapContractV18664",
+      "sha256": "7837757453719104e80a21820b1a44b57764dc69485c1ccfa4000c35f5e0f035"
+    },
+    {
+      "module": "GoldbachCircleMethodOddOddSmallCoreEnergyCeilingV18672",
+      "sha256": "6e02ae36c878738e19c05a842cfb03de9c7c35edf019ceda5eb5e0600a63ca87"
+    },
+    {
+      "module": "GoldbachCircleMethodOddOddSmallCoreLargePerturbationV18670",
+      "sha256": "83ab48526d14cb9cd3f926877ba53438efdeac9f02d53db239ad0a86234f4f54"
+    },
+    {
+      "module": "GoldbachCircleMethodOddOddSmallDenominatorNegativeWitnessV18666",
+      "sha256": "f662385f91120af996110d0917fa6d6aa97cb05d2310c0a0d397f9686b378631"
+    },
+    {
+      "module": "GoldbachCircleMethodOddOddSoleGateV18663",
+      "sha256": "9c85696dbf83e6669092755c834cff993946406fc23c81e7f47ba3b3edf640ee"
+    },
+    {
+      "module": "GoldbachCircleMethodOddPairFiberAdapterV18653",
+      "sha256": "637b69eb1e6b07c12c597a4f4f4efa83058d223cfc44b8cb9f6a2993061d01b5"
+    },
+    {
+      "module": "GoldbachCircleMethodOffDivisorPairL2AdapterV18314",
+      "sha256": "aeae5f74a208979005cb57ed47f9022ff3912c2ab3938f4fc4ecadd70128367b"
+    },
+    {
+      "module": "GoldbachCircleMethodOffDivisorPairNormEnvelopeV18313",
+      "sha256": "0a77582173b89d85a7b84291dafda3b47136cc2531e6db39b666cf10f05b06a7"
+    },
+    {
+      "module": "GoldbachCircleMethodOneDimensionalAutocorrelationContractionV18700",
+      "sha256": "0f18cfd054e9004681ce83fc36e5bf1ab2dd20468fedcb94898de70770fc69e0"
+    },
+    {
+      "module": "GoldbachCircleMethodOriginalMaskCountermodelBindingV1882",
+      "sha256": "f1391856dd288c6989e10814e7b661d9e2e520f993add32aaec0a568917be8b5"
+    },
+    {
+      "module": "GoldbachCircleMethodOriginalMaskDisjointnessV1860",
+      "sha256": "1595bb5d24339442133ac4aa7d84489a762e27318cfc6b7f919951ef96044ce1"
+    },
+    {
+      "module": "GoldbachCircleMethodOriginalMaskModelBindingV1859",
+      "sha256": "196f05b123a1cfdbcaf38831e175082404bc63b4707c241a68cb06d7a540517a"
+    },
+    {
+      "module": "GoldbachCircleMethodOuterDivisorIntegralV18146",
+      "sha256": "80c44b9cc918075e1df47e2bb750e45b8ff81d1bc856d92057863e916804f72a"
+    },
+    {
+      "module": "GoldbachCircleMethodPairwiseAbelVariationV18327",
+      "sha256": "2e00267c89cbfbcef751aafdc0070560d67291259dfe3c64b360031de48aed24"
+    },
+    {
+      "module": "GoldbachCircleMethodPairwiseActiveAggregateErrorV18319",
+      "sha256": "763d2231469f10257eb8e5d82abede3085450e3a65b89302d8564852cb64a2d0"
+    },
+    {
+      "module": "GoldbachCircleMethodPairwiseActiveCostAggregationV18318",
+      "sha256": "e35a7bbb6cb29ee91e3ea0e9e7e758d78c6b217939673bf9986023aef35f396e"
+    },
+    {
+      "module": "GoldbachCircleMethodPairwiseCenteredPrefixV18329",
+      "sha256": "29a62c20462d78eb14a0f6a73d8db0f1f45ad86209103c159281501945c7d386"
+    },
+    {
+      "module": "GoldbachCircleMethodPairwiseChannelBindingV18322",
+      "sha256": "dda521f7e3c3bb011e4cd1d27be32ba6631e14c895f25a5d691a32fa94ac95b0"
+    },
+    {
+      "module": "GoldbachCircleMethodPairwiseMeanDiagonalCompatibilityV18324",
+      "sha256": "a0eb6058e0560c66cfaa35d0dfcacdc17b060c74a5b69fd5800b07f7b2d2c242"
+    },
+    {
+      "module": "GoldbachCircleMethodPairwisePeriodRemainderBoundV18206",
+      "sha256": "2c7611ef434591b5fc2ff65bc763341e1e563f99e2ce796a103b8247d2208e01"
+    },
+    {
+      "module": "GoldbachCircleMethodPositiveEulerBudgetV18150",
+      "sha256": "f2e40fbfb4870eea251d75cf8825b6310d46ff92e838c8eef9e5be7b0e3f6d3c"
+    },
+    {
+      "module": "GoldbachCircleMethodPositiveEulerLogBoundV18151",
+      "sha256": "414172e9e36d6d739b64a76f210dfb2ace517dc3cf850682a4fb0935d58b7727"
+    },
+    {
+      "module": "GoldbachCircleMethodPositivePrincipalDiagonalV18221",
+      "sha256": "2b42fddde70f8e735a5c85b8198bc950ca93e2f21ba207b8bce228e2ca6b5320"
+    },
+    {
+      "module": "GoldbachCircleMethodPowerWeightAbelIntervalV18331",
+      "sha256": "380da26ce302950ab87b81f576c7f331419f5d440bb7dbe1485af6d855249e79"
+    },
+    {
+      "module": "GoldbachCircleMethodPowerWeightMeanSignThresholdV18362",
+      "sha256": "1b1c884194e7d8e44f079fc06e45ab11f7b7fc071fe2e6ebecc0cd1e2cec937e"
+    },
+    {
+      "module": "GoldbachCircleMethodPrefixBudgetAbsorptionV1870",
+      "sha256": "b93bfca2b879d86fa1564e4336b16e9dddbcedfef461c21ef84e55c804df81d3"
+    },
+    {
+      "module": "GoldbachCircleMethodPrimitiveBasePolynomialEnvelopeV18475",
+      "sha256": "3e9d4757653a153f31fb7376fa707c4d852ce4a63cc588501fc4013e5a8d51fe"
+    },
+    {
+      "module": "GoldbachCircleMethodPrimitiveBaseSlotEnergyV18474",
+      "sha256": "ad09a887d282635fa28dbedc5a928ecba473841981b1391d76cf1116854d9ee6"
+    },
+    {
+      "module": "GoldbachCircleMethodPrimitiveBaseSpanEnvelopeV18478",
+      "sha256": "300ec383de6a74194786dbe1d1f002156ed4b71a5aebcdcf09489242d664bf83"
+    },
+    {
+      "module": "GoldbachCircleMethodPrimitiveChiFourFullMeanNegativeWitnessV18360",
+      "sha256": "e05c4a39f3d326070184f7315f6e9d5d6419a67a7daf957aab25bf4420b3ec76"
+    },
+    {
+      "module": "GoldbachCircleMethodPrimitiveConductorRegroupingV18111",
+      "sha256": "2fa47035ecee605b6d56298974567571a3ec0c91e955e134052389f72dcf7580"
+    },
+    {
+      "module": "GoldbachCircleMethodPrimitiveGaussCoefficientV18114",
+      "sha256": "b81018d81c0ab6162538f2791a127cf3808138ba765672c63a5035eb9706a917"
+    },
+    {
+      "module": "GoldbachCircleMethodPrimitiveLiftSeparationV18578",
+      "sha256": "05074c7e7e5ec3cdc4318b579999e154448aafee5155a14105fe9546ae17d0f3"
+    },
+    {
+      "module": "GoldbachCircleMethodPrimitiveRamanujanProjectionV18103",
+      "sha256": "1d1905bddd96d9cf0aac6a413572e70a3839153fe0814885e2b8602e7cd8581c"
+    },
+    {
+      "module": "GoldbachCircleMethodPrimitiveTwistedRamanujanSupportV18208",
+      "sha256": "44483dcf798b0192549cf77e8f5656ef244b5b77cb066c35bd4a34983c678024"
+    },
+    {
+      "module": "GoldbachCircleMethodPrincipalActivePairwisePeriodV18316",
+      "sha256": "633296fcc098a30ee4edf47ca5bbb13fc6f17f9addebb8118a7fc9db0156880e"
+    },
+    {
+      "module": "GoldbachCircleMethodPrincipalBlockCoefficientBoundV18497",
+      "sha256": "794297393c4d126ae899ae87ecef28d26e58964ecf526ab21d11551ed3bbf037"
+    },
+    {
+      "module": "GoldbachCircleMethodPrincipalBlockExplicitBoundV18499",
+      "sha256": "7eadf143b312fcb3f8d75b9a370a16cba748c1b322892c90c78b49687e7add65"
+    },
+    {
+      "module": "GoldbachCircleMethodPrincipalCoefficientAtomV18487",
+      "sha256": "c1b3f9f1f564a4eac433d1364a595673f7c29dc3a79b5b45c9be4e8b3aed76b2"
+    },
+    {
+      "module": "GoldbachCircleMethodPrincipalDiagonalCoefficientBoundV18498",
+      "sha256": "9d87103f69c2df7eeb39ccf6682b315a8466d5353102d63b7697c996d369fca5"
+    },
+    {
+      "module": "GoldbachCircleMethodPrincipalExceptionalSourceEnergyV18480",
+      "sha256": "5b328838a2f03f6d668165afa4fcba860f9e4fef38379cfd90ba0cee32d98ec8"
+    },
+    {
+      "module": "GoldbachCircleMethodPrincipalRemainderExponentAbsorptionV18234",
+      "sha256": "8c6323ff2899d3df1c8141214aa8c19ed13be04eba0462ac23b06a3a1a60c831"
+    },
+    {
+      "module": "GoldbachCircleMethodPrincipalSupportEnergySplitV18483",
+      "sha256": "4e13a7e7896a4b27391edc988985a703856e22bc0cf5a0a1590bdb5276d33f79"
+    },
+    {
+      "module": "GoldbachCircleMethodPrincipalWindowBoundaryV18121",
+      "sha256": "33f643c737095fc00706784f3574decd29bbf3e680f6b2da8c03a346e3f49723"
+    },
+    {
+      "module": "GoldbachCircleMethodQ3SpectralSmallnessNegativeWitnessV18747",
+      "sha256": "440e2c26a6645fb2ed351e1bef17976ff13b644ca2b1e2e4dfa51b00cfbd0561"
+    },
+    {
+      "module": "GoldbachCircleMethodQ3TriangularPrefixNegativeWitnessV18749",
+      "sha256": "5104bbba5f8c66864427a0bfd6f4be88b5f078ce6f260912828003c9c31093d2"
+    },
+    {
+      "module": "GoldbachCircleMethodQStarBooleanGeometryV185",
+      "sha256": "f530bc2d2e617f837b25077d3a6f6a994d9ad50100bfb120dd01a36627c0f133"
+    },
+    {
+      "module": "GoldbachCircleMethodQuantitativeAdmittedPrincipalReserveV18236",
+      "sha256": "bc6f691c13a88dd9621ac562f43f5bd605f39c04bd2f2f50235f3a76ffbb9116"
+    },
+    {
+      "module": "GoldbachCircleMethodQuantitativeMinorEvenBlockV1874",
+      "sha256": "b75c08b873b586f65efa22c61842fcd85212c70086ff27323134e86cec6bd096"
+    },
+    {
+      "module": "GoldbachCircleMethodRadicalArithmeticClassV18159",
+      "sha256": "67a89843b9824e03e6844a10d8752843cbf12ed511a2344dc51f738c241d9664"
+    },
+    {
+      "module": "GoldbachCircleMethodRadicalConvolutionIntegralV18160",
+      "sha256": "b773840fddb682b4b94effad679f011505137b64dfe75c74e6447eeee06ff1d5"
+    },
+    {
+      "module": "GoldbachCircleMethodRadicalCorrelationTransferV18161",
+      "sha256": "5ebb5c8ad7e2c5840588953006abc254499009be99e7e15d1a08b2e23a69fa08"
+    },
+    {
+      "module": "GoldbachCircleMethodRadicalLocalCoefficientV18201",
+      "sha256": "9ecd401e84138c0f17b86d355b8120b530f4222147dff44c1a2301930bd4978d"
+    },
+    {
+      "module": "GoldbachCircleMethodRadicalMertensPrefixBindingV18167",
+      "sha256": "1839dceb81cb2e135056ca498b18c326531d383b9823fa8f4441ef9dbad812b5"
+    },
+    {
+      "module": "GoldbachCircleMethodRadicalProductLogSplitV18166",
+      "sha256": "780da5d425136083ae63a68343193c292bf364555008a721e5844f597cc5acc1"
+    },
+    {
+      "module": "GoldbachCircleMethodRamanujanCRTMultiplicativityV1842",
+      "sha256": "4b989e81826866e6ccc786e0ccfd4ecb368832120bfcfee227eba320a6622572"
+    },
+    {
+      "module": "GoldbachCircleMethodRamanujanCharacterProductV1843",
+      "sha256": "bfeba198088ef0fc7f0f2748ab35ee82e8c7aeb33809105db70a8e012cd7f051"
+    },
+    {
+      "module": "GoldbachCircleMethodRamanujanCoprimeBindingV1840",
+      "sha256": "f6a3059e1405fbb4581eb38934e6eac909e5394b1a830f49e149ec4cbd6ebff0"
+    },
+    {
+      "module": "GoldbachCircleMethodRamanujanMultiplicativityV1841",
+      "sha256": "6525e7cfc514effc56df20c94dbcdeec158de66340e40de3b68d25a1acf35e4d"
+    },
+    {
+      "module": "GoldbachCircleMethodRealApproximationMinorAdapterV1873",
+      "sha256": "ede726932e72c82e8200757d379fd8e89966f95255854f17def41f0d68baa402"
+    },
+    {
+      "module": "GoldbachCircleMethodRealWeightCompanionReflectionV18491",
+      "sha256": "784275c48e90319508cda177207cda71c4c2111ebca27e49785f7815e2cb1d29"
+    },
+    {
+      "module": "GoldbachCircleMethodRemovedCharacterWindowNormV18124",
+      "sha256": "c80864791ef5584913072851536ab902929dd0184c5440580dd5507ecf2c5d97"
+    },
+    {
+      "module": "GoldbachCircleMethodRemovedConvolutionNormV18123",
+      "sha256": "fa6b7bce737f42ca463daab5e2108fa673ac6525f5d2ebb9e8aa915054dce112"
+    },
+    {
+      "module": "GoldbachCircleMethodRemovedPrimePowerMassV18122",
+      "sha256": "ec0d867287c8d47397e7f88bbb5e6d5dc8588f6146fc34e2cdd85ccd01a10484"
+    },
+    {
+      "module": "GoldbachCircleMethodResidualScaleAdmissionV18196",
+      "sha256": "da7a764b71ad140722bee8b19014758f7e846166bf19592cc454de72a45f7d57"
+    },
+    {
+      "module": "GoldbachCircleMethodResidueCollisionEnergyV18463",
+      "sha256": "1dd990c6bb3ebd50414a72a70cee9c2f2aa764ec39544241d36b734ab6d0b390"
+    },
+    {
+      "module": "GoldbachCircleMethodRestrictedFilteredCarrierReindexV18215",
+      "sha256": "9301e5dea03228d461940d0e835c5aea1d94ae5831727977facbeff27e88c1fe"
+    },
+    {
+      "module": "GoldbachCircleMethodSameDenominatorHermitianPlancherelV18579",
+      "sha256": "643866f7ca874594d1672bc30ed799420048d6e67ec77ce9b1b77d00cc1e7852"
+    },
+    {
+      "module": "GoldbachCircleMethodSelectedExceptionalIntervalEnergyV18522",
+      "sha256": "27686d1a463db62c4c13af56efbbb63537f9326a24bcffbaac0c57af1487d633"
+    },
+    {
+      "module": "GoldbachCircleMethodSelectedPairCrossCorrelationExpansionV18690",
+      "sha256": "23f2e91a961a7c6f951b65fd7f2500812aee3f95b7fc2e3fc7056f332843e238"
+    },
+    {
+      "module": "GoldbachCircleMethodSelectedPairEvenTargetReindexV18692",
+      "sha256": "47481a3316c2d2122f59424e613c8c83f04fc9cab88e8fc40161d8f89f8853dd"
+    },
+    {
+      "module": "GoldbachCircleMethodSelectedPairLiteralWeightVariationAdapterV18693",
+      "sha256": "65f84d58a0cd8f6488130a2e5ead2cccbe35bb8dc6d9391b163233ff451a0073"
+    },
+    {
+      "module": "GoldbachCircleMethodSelectedPairLocalPeriodAbelAdapterV18691",
+      "sha256": "b0f093afc58acf848df61342637e7ea4678ccf1e4c052d03ab0f5a64a50e86d7"
+    },
+    {
+      "module": "GoldbachCircleMethodSelectedPairSignedResidueWeightExactOneDimensionalFactorizationV18698",
+      "sha256": "82d20af0fd8b0f65a987ed8dc629228275d8b409f1b915cbb9c2ac5b838006b8"
+    },
+    {
+      "module": "GoldbachCircleMethodSeparatedFrequencyMultiplierV18134",
+      "sha256": "703319e7f29e371da756d562c0e2e516ca6ebe3ea0df07439d502b8b698cab5c"
+    },
+    {
+      "module": "GoldbachCircleMethodSharpNonprincipalBlockEnvelopeV18530",
+      "sha256": "557bcd3155aac4e26c4977906e55ab1418bef57ad2bce6298bfcf6253e93b1ff"
+    },
+    {
+      "module": "GoldbachCircleMethodSharpSourceSincVariationV18721",
+      "sha256": "32364e8f453a6693e9d30147a77acf1659689aa05ffc9f27a5f10efc20fa166a"
+    },
+    {
+      "module": "GoldbachCircleMethodShiftedClosedArcModelV1858",
+      "sha256": "0f0f7dbdc99deef8283b0aba86727f4215f618a373badaf6dd17ba7ca22211db"
+    },
+    {
+      "module": "GoldbachCircleMethodSignedDiagonalResidualCounterexampleV18339",
+      "sha256": "c71efd73dad573ee658dd281639faeef4643e1274c612ce929dcbfd400673d47"
+    },
+    {
+      "module": "GoldbachCircleMethodSignedDirichletMultiplierV18133",
+      "sha256": "07ed1ef02629cca8a68ac96e48b3d2f4f8181449e17921c606ca0eca43f9edfe"
+    },
+    {
+      "module": "GoldbachCircleMethodSignedFullPrefixV1850",
+      "sha256": "8c31ec6827bb470e9e8bd49415165b872be5572d0448f4e11bf54c134ecaac11"
+    },
+    {
+      "module": "GoldbachCircleMethodSignedGapBroadClassObstructionV18629",
+      "sha256": "13123482588775f9806f0332469936a84d3b75d78258046c9e6cc38a07c229c2"
+    },
+    {
+      "module": "GoldbachCircleMethodSignedMagnitudeIdentityV18628",
+      "sha256": "8eb3799f9fa2735a6acb72940717e01fceae9bbe611d6a29ad68d2aaa9f714d2"
+    },
+    {
+      "module": "GoldbachCircleMethodSignedMaskKernelConvolutionV1884",
+      "sha256": "0eb0b672f0b82f835db7397accefd6756c4f598732ea6abd5ef57248b3f7733a"
+    },
+    {
+      "module": "GoldbachCircleMethodSignedTwoErrorSplitV18226",
+      "sha256": "030dde080499c34f6593bee8f689a93773365b4c9c6f3640115cea4eb730e7b0"
+    },
+    {
+      "module": "GoldbachCircleMethodSignedWindowFourierAdapterV18130",
+      "sha256": "26a32554875a1000bf6bc89ea752a14a4f12a12f1a74589710349a407d7f3804"
+    },
+    {
+      "module": "GoldbachCircleMethodSinglePeriodVariableWeightPositivityV18275",
+      "sha256": "7c55873b319e40c0964f56bbf78dd6be0543ec23df111ad082fb92591b2100d7"
+    },
+    {
+      "module": "GoldbachCircleMethodSixChannelExceptionDecompositionV18246",
+      "sha256": "56d7485e44d14f4ad20de6723dc76caabe7b62602c30b6f6c4138ecc044f58ca"
+    },
+    {
+      "module": "GoldbachCircleMethodSmallConductorPairReserveV18108",
+      "sha256": "883b3be1afd96fec93c52f85c82ccb193d25e6766a2e1d14ea1f9ad53e5ff627"
+    },
+    {
+      "module": "GoldbachCircleMethodSourceBoundVariableCoupledCorrectionV18396",
+      "sha256": "2d5cdc6d2822b51ced4090d6bbac2467e7df1a8c9b50895a8f08a85388d93d62"
+    },
+    {
+      "module": "GoldbachCircleMethodSourceMatchedExceptionalZeroGateV18363",
+      "sha256": "afab4dc78e246cbbf67ff2b1291aea8407058cf677aa2094e8b70219a0ae8843"
+    },
+    {
+      "module": "GoldbachCircleMethodSourceRealCorrectionBindingV18398",
+      "sha256": "a69452126e20e1275c274e5fd7f150868697024cdae0add1a3ea527c733affd3"
+    },
+    {
+      "module": "GoldbachCircleMethodSparseCorrectionCorrelationSplitV18482",
+      "sha256": "719c7ea209c5d5295a5ff22d6825d40199e3fd28798547f3f56d25950564731b"
+    },
+    {
+      "module": "GoldbachCircleMethodSquarefreeCoefficientBindingV1839",
+      "sha256": "2dbcf4b0b2e69e6e0d47f9fa0ff4793889652538ea4aae5bcd77f327eb923a22"
+    },
+    {
+      "module": "GoldbachCircleMethodSquarefreeFourierBindingV1844",
+      "sha256": "56727ee759f85f71a89108d288cc0f9d15e307594604ef07033e6fe1d857de8a"
+    },
+    {
+      "module": "GoldbachCircleMethodStructurallyAdmissibleActiveSlotV18258",
+      "sha256": "7b14f40ac7d40b37d8860ada61c6eaa1c8a9224450471225ea70f7e68559ec51"
+    },
+    {
+      "module": "GoldbachCircleMethodStructurallyAdmissibleFullCoupledCorrectionV18395",
+      "sha256": "8f267f35490d28350762717dc6dccec644b3c837647b4176733b72b5c2cfb99d"
+    },
+    {
+      "module": "GoldbachCircleMethodStructurallyAdmissibleFullSecondMarginalV18394",
+      "sha256": "90a0995f8968930f06cdfc21499262e627940d0ff34e41c2d959433e8033c4ea"
+    },
+    {
+      "module": "GoldbachCircleMethodSubunitDecisionGateV18624",
+      "sha256": "c0ec21784d678f709b2ddfa916ebda609aac35762d693b155bf87b6494cb1f90"
+    },
+    {
+      "module": "GoldbachCircleMethodSubunitFourthMomentGateV18625",
+      "sha256": "bff31c968218da586a334cd9dbcbb42a91b89b4e20c64e48c6cfbcef4ce12b86"
+    },
+    {
+      "module": "GoldbachCircleMethodSupportSeparatedCentralMomentV18485",
+      "sha256": "4424ee3f03508eced3495fcff4aa3063370adcd0a5dc52fd2260ec766d48f7fa"
+    },
+    {
+      "module": "GoldbachCircleMethodSupportSeparatedCoefficientMomentsV18490",
+      "sha256": "582167d2b9dfa2575a41934a51db03696784b1b5cc314f30c98bf74e1a5b6bde"
+    },
+    {
+      "module": "GoldbachCircleMethodSupportSeparatedSingleSourceGateV18489",
+      "sha256": "3ffd685f9bd4f588c762835ec1bea6167c001d553f1e4b1da1cdc8bd22a64dca"
+    },
+    {
+      "module": "GoldbachCircleMethodSupportSeparatedSourceBudgetV18484",
+      "sha256": "49c04c6d18c1490349657f8bde578e27153621922187e965304d2e22b8237df9"
+    },
+    {
+      "module": "GoldbachCircleMethodSupportSeparatedSubcriticalWitnessV18488",
+      "sha256": "7958454e851d6b8e3e7822db0dc3bcbeaf1b0f5d63d137c8f8ee5edff5dbd1c2"
+    },
+    {
+      "module": "GoldbachCircleMethodSupportSeparatedWitnessTransferV18486",
+      "sha256": "422b3167c492121f7bca049eaa0487cfa89df2214edde861f56bb852362cfd3d"
+    },
+    {
+      "module": "GoldbachCircleMethodSupportedAdjustedModelBindingAuditV18285",
+      "sha256": "8938ef326effd61f85244cc409e305d24f079a0ae3dcf14ab49459f6c6f4127f"
+    },
+    {
+      "module": "GoldbachCircleMethodSupportedCompanionEnergyV18192",
+      "sha256": "4d206c12ea72e948910b94ff8c128cb5497b3d8bfbf19c1f6fb1ef8664d504ed"
+    },
+    {
+      "module": "GoldbachCircleMethodSupportedModelErrorConvolutionV18182",
+      "sha256": "2e27f1177ae768af0151b9e9b0d809b99b65f80bcc26b3ba4f24deaff45396eb"
+    },
+    {
+      "module": "GoldbachCircleMethodSupportedModelIntervalDiagonalV18228",
+      "sha256": "1adb7d2f368ffadf7c969f5c8d19660ad7a3259fcc17a1af8392c20df71edd5b"
+    },
+    {
+      "module": "GoldbachCircleMethodSupportedResidualParsevalV18190",
+      "sha256": "158f108109ba67325ad0941b5733e82a0840905f2ffd0768c81ac3f503ab73c3"
+    },
+    {
+      "module": "GoldbachCircleMethodSymmetryV175",
+      "sha256": "9570644d927baeb7edc62e61cdfd0d2dc224942b78a4d4e19616ff4879bae7e0"
+    },
+    {
+      "module": "GoldbachCircleMethodTargetV17",
+      "sha256": "113ad97b11f8f7acd9a092294f4cad2386e121bc2184170aed8ff1f635c9b2da"
+    },
+    {
+      "module": "GoldbachCircleMethodThreeScaleCenteredContractCoverV18242",
+      "sha256": "bde2c94b01488cebac8836d9f594149c2ab67654b72147240f0ad86877a918ea"
+    },
+    {
+      "module": "GoldbachCircleMethodThreeScalePrincipalChannelBoundsV18247",
+      "sha256": "4694b1a0c965a60d5870e77e2a2d05bcd868f8316512beede2763df631e45c5c"
+    },
+    {
+      "module": "GoldbachCircleMethodThreeScaleTwoErrorForcingV18245",
+      "sha256": "8f01fa579f96c02926e75dbd1fa7e71befb711aaf201278e110b06d686bbc00b"
+    },
+    {
+      "module": "GoldbachCircleMethodTotalJordanEvenGateV18659",
+      "sha256": "4d03c42cecbbbb801692e55b1ef492971ebc61d62bf80c768ad68f92d4a050f3"
+    },
+    {
+      "module": "GoldbachCircleMethodTotientConjugateMatchV18116",
+      "sha256": "283c50d156dcb9380eb007b3d70ab540d4106c0de1784c5104dd781ca373473e"
+    },
+    {
+      "module": "GoldbachCircleMethodTotientFourthDivisorReindexV18564",
+      "sha256": "58d5c2dfbb868480626ccb10722ca88e4f098e83bd732b9effc787ade593b689"
+    },
+    {
+      "module": "GoldbachCircleMethodTotientFourthEulerExponentBoundV18570",
+      "sha256": "eeba665c7e8ca66d5aae95de2e7b3684ab18f0515391d390f62ab3884f9fffa1"
+    },
+    {
+      "module": "GoldbachCircleMethodTotientFourthEulerExponentialV18569",
+      "sha256": "c8ea397b47ba8c8477488db3842462bd7e50a85805b3185e52e2dcfc3b8b2636"
+    },
+    {
+      "module": "GoldbachCircleMethodTotientFourthFiniteEulerProductV18568",
+      "sha256": "d4db68b4532a2fa6f9886eee52d072f8ec606cc26a193c5eaf6259727fc82536"
+    },
+    {
+      "module": "GoldbachCircleMethodTotientFourthLinearPrefixBoundV18571",
+      "sha256": "a0464c02beb3a63034cd0a53ee019582002fce8ab9e2041a92acf6d8773efe6b"
+    },
+    {
+      "module": "GoldbachCircleMethodTotientFourthPositiveConvolutionV18563",
+      "sha256": "77f84676b87ee692a848750a824dd0d160554b958d4fb4540a8157e849870ea4"
+    },
+    {
+      "module": "GoldbachCircleMethodTotientFourthPrefixKernelReductionV18566",
+      "sha256": "c67d71eb938b0c11c75b304f6df459e30fd391950ff8daa7e599fb59dcae4f14"
+    },
+    {
+      "module": "GoldbachCircleMethodTotientFourthSquarefreeKernelV18567",
+      "sha256": "17dc63e1dbe63c755ea53055a60c4d60dbfa12f399b1f27fe96c9378a2ba35e4"
+    },
+    {
+      "module": "GoldbachCircleMethodTotientRatioLocalPrimeMajorantV18562",
+      "sha256": "414aaabf1c5d6435a19d027a3d93d88e85a367d981d3374c2a52b610e92af2e6"
+    },
+    {
+      "module": "GoldbachCircleMethodTotientRatioPrimeFactorizationV18561",
+      "sha256": "74fc8ed10df5ad8fe2698d9c5231f808d2b9415777a3821f8d76bf0975dc78fb"
+    },
+    {
+      "module": "GoldbachCircleMethodTwoScaleBesselBridgeV1834",
+      "sha256": "1b176772bf839de5c285588f67b73cffc3bdaf7e2a59e20e59e7c43881ad0acb"
+    },
+    {
+      "module": "GoldbachCircleMethodTwoScaleCenteredContractMismatchV18241",
+      "sha256": "253e11822ea833112b3188f50cfad7ed7288e53e122b39784d28283ad3a8fedb"
+    },
+    {
+      "module": "GoldbachCircleMethodTwoScaleDefectTransferV1832",
+      "sha256": "062b34afeb90aea6b29eec21dfaea7293c3f233027f999a22d6443c9da636a16"
+    },
+    {
+      "module": "GoldbachCircleMethodTwoScaleDirichletBindingV1830",
+      "sha256": "99ca356084f2653fd31bdc7a1c7c44a1a819474adc50a02aa63a16af5322ff51"
+    },
+    {
+      "module": "GoldbachCircleMethodTwoScaleElementaryKernelV1828",
+      "sha256": "87ee6840a53fa440f35170cc66e03b039057052a8ef693a3aa3eefe86f226947"
+    },
+    {
+      "module": "GoldbachCircleMethodTwoScaleEvenBlockDefectReserveV1833",
+      "sha256": "30cb5796e103a3e36f7da4e6c75c63cbf551fe6570e4aa1c3c0f325a0497ab63"
+    },
+    {
+      "module": "GoldbachCircleMethodTwoScaleIntegralPartitionV1831",
+      "sha256": "722528382282ccb6d187cf5d7f4e272a56bd2c60d99d9c89ca688010366547e2"
+    },
+    {
+      "module": "GoldbachCircleMethodTwoScaleMaskAdapterV1829",
+      "sha256": "14e7b0fb9b9a70f5d409cbb63c5256c7724cd70c023ad64d8271cce6024351da"
+    },
+    {
+      "module": "GoldbachCircleMethodTwoScalePrincipalChannelBoundsV18240",
+      "sha256": "5415353f79bf7d6b6488ee85362a0a1760ba958a5274d90488506cfa2d486e91"
+    },
+    {
+      "module": "GoldbachCircleMethodTwoSourceScaleActivePeriodCoverV18282",
+      "sha256": "ea936906d575706535918b817285e5f7e9fe60f1904b99e272d30369a71c5705"
+    },
+    {
+      "module": "GoldbachCircleMethodTwoSourceScaleCoverV18232",
+      "sha256": "4116ec3019d23a7e3a4b81117cfc3192d30325f3545ff9bfe533d5aaf5239e29"
+    },
+    {
+      "module": "GoldbachCircleMethodTwoSourceScalePrincipalReserveV18233",
+      "sha256": "9210e76bac1809cd9f66eaf3ea158ade757224bc565ad3316166ebb8ecfdcb3b"
+    },
+    {
+      "module": "GoldbachCircleMethodUnconditionalNonprincipalBlockEnvelopeV18529",
+      "sha256": "877d73b02af92ea612673c4344e6bdfd4083ed7c0a744d644874742a29d54825"
+    },
+    {
+      "module": "GoldbachCircleMethodUncorrectedSupportedErrorConvolutionV18184",
+      "sha256": "1d8ca9370dae443b67736a842bd1216b71ead7335e77f7c7e8c096771ac99482"
+    },
+    {
+      "module": "GoldbachCircleMethodUniformMajorPrefixReductionV1865",
+      "sha256": "2e9a9d3f59fcff3ebe3733c9a1c4114f09f902e205c543217725fc7c2f1e375c"
+    },
+    {
+      "module": "GoldbachCircleMethodUniformModelReserveCubicScaleV18639",
+      "sha256": "c6bbb3588063bd3f3866c856f7a531094ab960c4a94e659b04d3b8ff6ab1a523"
+    },
+    {
+      "module": "GoldbachCircleMethodUniformResidueInputBridgeV1869",
+      "sha256": "fbc892daee01c0e696e397be9d225cfc99f920dfe3152f35f275406c8ed84b34"
+    },
+    {
+      "module": "GoldbachCircleMethodUniformSharpSourceCapV18531",
+      "sha256": "9ebf8808bd3ebff9f42edcfd73f3986a6162fa13b3f95954906daafe90dabc3e"
+    },
+    {
+      "module": "GoldbachCircleMethodUnitCharacterExpansionAuditV18110",
+      "sha256": "668d6571bd7e2ba343b08e97485ef8e2f3b016075ef61f0ba6b6e973cde6ca30"
+    },
+    {
+      "module": "GoldbachCircleMethodUnstarredIntervalSourceBindingV18188",
+      "sha256": "789f2bddbfe93b52873313f64ee158d7edd86c545846e6ce6ab2d27615519101"
+    },
+    {
+      "module": "GoldbachCircleMethodVariableFourChannelAbelV18330",
+      "sha256": "820a032571850493c109429dbd900d5f2177dccb3fa3aca909e962100d5d022d"
+    },
+    {
+      "module": "GoldbachCircleMethodVariableMeanCombinedReserveV18340",
+      "sha256": "91972c3cb53afc217a9b43b0ef99d4d9c0ec2f98b09470cdd33f7828c16bce17"
+    },
+    {
+      "module": "GoldbachCircleMethodVariableMeanDiagonalNormalFormV18334",
+      "sha256": "29adac4bda69fd1670d1374fc99afef18c2c8cc9b2cd7eb044131adb65fe230c"
+    },
+    {
+      "module": "GoldbachCircleMethodVariableMeanScalarReserveGateV18337",
+      "sha256": "38c5d05862fa84ebdefa83f184a3db36bb42f1e21d35d35d1f220a0ccfdbe118"
+    },
+    {
+      "module": "GoldbachCircleMethodVariableMeanUnitPairNormalFormV18335",
+      "sha256": "db4587a7b58754c618a3332b986e669ed1c6886e34090e557feb2908503b9c00"
+    },
+    {
+      "module": "GoldbachCircleMethodVariablePowerPairwiseIntervalV18325",
+      "sha256": "f617b77cd54fbd19e4370ce71ebce642b6c080f1148dbd7b5afdff41767f1925"
+    },
+    {
+      "module": "GoldbachCircleMethodVariableUnitPairBracketReserveV18336",
+      "sha256": "3b4e5b69d69b3a7c67284a63dfa40e48421fcd92050cd124a301061ba50c6798"
+    },
+    {
+      "module": "GoldbachCircleMethodVariableUnitPairCorrectionFactorizationV18345",
+      "sha256": "2cef768dc5bd839378d93bfa9cf032dc127b8a57f9eb57fcff1330b30db5a95e"
+    },
+    {
+      "module": "GoldbachCircleMethodVariableUnitPairDeficitUpperV18342",
+      "sha256": "38fda463feef09c8b19f4a73a070b602b6f617a25800b4e8e55506387c3f8824"
+    },
+    {
+      "module": "GoldbachCircleMethodVariableUnitPairExactCorrectionV18344",
+      "sha256": "42f9b73031247754ed63a2544e246f066176f95aa5eefbd1148309a869887978"
+    },
+    {
+      "module": "GoldbachCircleMethodVariableWeightIntervalDiscrepancyV18272",
+      "sha256": "b8d98aa44a09df6df42275d0fae1a9cdeec5bcf2c237b176e5237b83b85b3eb2"
+    },
+    {
+      "module": "GoldbachCircleMethodVariableWeightPeriodTilingV18283",
+      "sha256": "a985d74ebd1092d3fa933f5d0b1979ab7cbd4e09978d7220a0c6956c399862a2"
+    },
+    {
+      "module": "GoldbachCircleMethodWeightedCrossDenominatorCenteringV18543",
+      "sha256": "909ec616fc370107a5824bcd60be487ac9c647183d5fb47aa540a77e06a9ec03"
+    },
+    {
+      "module": "GoldbachCircleMethodWeightedCrossDenominatorFluctuationEnergyV18544",
+      "sha256": "98142452fbac83874ed96fc424427d986caf77d514605c55d7c3cf776c4e4e4c"
+    },
+    {
+      "module": "GoldbachCircleMethodWindowSpanResidueMultiplicityV18476",
+      "sha256": "4dea8e1d96b3b9872b3a75d48125a94cebb42a996ef6184ad7bbee3d73347042"
+    },
+    {
+      "module": "GoldbachCircleMethodZeroGapCaseSelectedTransferV18264",
+      "sha256": "144cf2ba1ebaa75322f327b2f93a5820b66955b74d91b8c539fdeebbea2cee05"
+    },
+    {
+      "module": "GoldbachCircleMethodZeroGapNonGoldbachForcingV18265",
+      "sha256": "73f82df507dc075d9b4212b885f0a77cbfad6fb07ddb0ebb2fe080df469f77dd"
+    },
+    {
+      "module": "GoldbachCircleMethodZeroGapReserveScaleV18266",
+      "sha256": "8791c40725249844e5894e7e478a42c1746215e1e0e5646e8430a392cf83d5cf"
+    },
+    {
+      "module": "GoldbachCircleMethodZeroGapUniformScaleAbsorptionV18276",
+      "sha256": "a382768d2d818f0bbf3cb8f0402ea91e452f076c7f02e67ec7ccd38ec3ab98e0"
+    },
+    {
+      "module": "GoldbachMainTermDominanceBridgeV162",
+      "sha256": "c5bd4ea524913e009ce4bd3085e377996d46de9d4a8d23a03f65c748d99d9121"
+    },
+    {
+      "module": "GoldbachPrimePowerDefectBoundV161",
+      "sha256": "7fa711405e17de158830f237f98a24c9551fbd88470214ad83608579b8623efb"
+    },
+    {
+      "module": "GoldbachPurePrimeAdequacyV15",
+      "sha256": "1fb96fa4dd4ca8f848a3ee281f80e3a0911d87bc14e00ca73fadea3a34de6ba8"
+    },
+    {
+      "module": "GoldbachVonMangoldtDecompositionV16",
+      "sha256": "8f005a9646e35e47ad2de6ef70b3de8d03ffb26f784e5f4c3e4ada767f41bb7d"
+    }
+  ]
+}

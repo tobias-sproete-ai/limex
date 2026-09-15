@@ -26,14 +26,15 @@ If one required term is missing, stale, substituted or contradictory:
 
 ```text
 STATE           PRE-RELEASE
-PUBLIC SURFACE  ANNOUNCEMENT + COUNTDOWN UTILITY
-CODE            COUNTDOWN UTILITY PUBLIC; LIMEX CORE NOT RELEASED
-AUDIT           RELEASE GATES PENDING
+PUBLIC SURFACE  ANNOUNCEMENT + COUNTDOWN + GOLDBACH LEAN AUDIT CAPSULE
+CODE            COUNTDOWN + MATHEMATICAL LEAN SOURCES; LIMEX CORE NOT RELEASED
+AUDIT           GOLDBACH CAPSULE BUILT; LIMEX CORE RELEASE GATES PENDING
 AUTHORITY       NO RUNTIME OR DEPLOYMENT GRANT
 ```
 
 This repository currently establishes the public announcement boundary and
-publishes one narrowly scoped release-gate countdown utility.
+publishes a narrowly scoped release-gate countdown utility plus a reproducible
+mathematical Lean audit capsule.
 
 Specifications, formula collections and reference implementations will be released only after their respective security, disclosure, licensing and publication gates have passed.
 
@@ -48,6 +49,22 @@ Target: **2026-09-15 23:59:00 MESZ** (`2026-09-15T21:59:00Z`)
 The [zero-dependency countdown utility](components/release-countdown/) uses an
 initial server-time sample and a monotonic in-page clock. It is display-only:
 reaching zero never grants release, runtime or deployment authority.
+
+---
+
+## Goldbach Lean audit capsule
+
+The [Goldbach v1.8.767 audit capsule](science/goldbach/) contains the exact
+custom source closure, pinned Lean/Mathlib revisions, a public axiom-audit entry
+point and reproducible build instructions.
+
+Its final q=3 theorem is kernel-checked **conditionally**. Two substantive
+analytic inputs remain explicit hypotheses; other denominator channels and the
+minor arcs remain open. Therefore:
+
+```text
+GLOBAL_GOLDBACH_STATUS = NO_PROOF
+```
 
 ---
 
