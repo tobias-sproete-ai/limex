@@ -71,6 +71,11 @@ bank integration, production admission, safety certification or legal release
 opinion. The package preserves its fail-closed gate status and does not silently
 promote missing external attestations to `PASS`.
 
+The architectural intent behind LIMEX Settle is set out separately in the
+[joint preface by Marcus and Tobias](docs/LIMEX_SETTLE_PREFACE_MARCUS_AND_TOBIAS.md).
+The preface does not alter the verified package root or expand the candidate's
+implemented and attested scope.
+
 ---
 
 ## Goldbach Lean audit capsule
