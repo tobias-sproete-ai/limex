@@ -1,0 +1,23 @@
+{
+  "schema_version": "limex-strategic-authority-verification-receipt-v1.0.0",
+  "status": "PASS_CRYPTOGRAPHICALLY_VERIFIED_RECEIPT",
+  "verifier_class": "REMOVABLE_CARRIER_ADAPTER",
+  "signature_valid": true,
+  "user_presence": true,
+  "user_verification": true,
+  "intent_confirmed": true,
+  "challenge_match": true,
+  "manifest_match": true,
+  "correlation_match": true,
+  "public_key_match": true,
+  "credential_match": true,
+  "media_or_attestation_match": true,
+  "counter_status": "NOT_SUPPORTED_EXPORTABLE_MEDIA",
+  "signed_payload_projection_bound": true,
+  "receipt_sha256": "7dce3cb7f83e8cb60f09526d803ec50a64a00f59d3a90ab224234c1f6ae804a9",
+  "effectful_action_allowed": false,
+  "diagnostic_authority": "NONE",
+  "authorized_transition": null,
+  "runtime_adapter_required": true,
+  "one_shot_consumption_required": true
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "limex-strategic-authority-envelope-v1.1.0",
+  "decision": {
+    "class": "STRATEGIC",
+    "owner_role": "CEO",
+    "owner_id": "TOBIAS_SPROETE",
+    "operation": "LIMEX_SETTLE_OFFICIAL_GITHUB_RELEASE_V1_1_0",
+    "correlation_id": "corr_20260916_limex_settle_official_release_v1_1_0",
+    "manifest_sha256": "1e501eeab83d5699e603021b02a7e100cae07d6baf7d1c3969a8dc45e7f7f3a9",
+    "risk_class": "CRITICAL"
+  },
+  "provider": {
+    "provider_class": "REMOVABLE_ENCRYPTED_CEO_CARRIER",
+    "provider_id": "limex-ceo-tobias-removable-authority-v1",
+    "credential_id_sha256": "74ed7e5f000d24392bcc9f47d2afc2a2b3a74672a53f787461590a67abb9e370",
+    "public_key_spki_sha256": "7c26d961c89df5bf5a6ce6a5150a601048e8c2e84a3acc43bb8d9b9f732057dc",
+    "media_binding_sha256": "21e0c7047464beb1ae766452f18a194d7745f69435e957f4519a94d47c0d456c",
+    "private_key_exportability": "ENCRYPTED_EXPORTABLE",
+    "assurance_profile": "TRANSITIONAL_REMOVABLE"
+  },
+  "challenge": {
+    "nonce_sha256": "67763d96fdc615250c1de439eb666c577ee166afb093a6207d1622b9991a7bb3",
+    "digest_sha256": "64d60c503b02f9509f783a2edd489b14ebcfb848431831e64c4b0eb78328f9fe",
+    "manifest_sha256": "1e501eeab83d5699e603021b02a7e100cae07d6baf7d1c3969a8dc45e7f7f3a9",
+    "correlation_id": "corr_20260916_limex_settle_official_release_v1_1_0",
+    "operation": "LIMEX_SETTLE_OFFICIAL_GITHUB_RELEASE_V1_1_0",
+    "issued_at": "2026-09-16T03:47:02.651Z",
+    "expires_at": "2026-09-16T03:57:02.651Z"
+  },
+  "signed_payload": {
+    "schema_version": "limex-strategic-authority-signed-payload-v1.0.0",
+    "encoding": "BASE64",
+    "canonicalization": "LIMEX_STABLE_JSON_V1",
+    "field_projection": [
+      "namespace=limex-strategic-authority-v1",
+      "decision.class->decision_class",
+      "decision.owner_role->owner_role",
+      "decision.owner_id->owner_id",
+      "decision.operation->operation",
+      "decision.correlation_id->correlation_id",
+      "decision.manifest_sha256->manifest_sha256",
+      "challenge.nonce_sha256->nonce_sha256",
+      "challenge.issued_at->issued_at",
+      "challenge.expires_at->expires_at",
+      "provider.provider_id->provider_id",
+      "provider.credential_id_sha256->credential_id_sha256",
+      "provider.public_key_spki_sha256->public_key_spki_sha256"
+    ],
+    "bytes": 732,
+    "sha256": "64d60c503b02f9509f783a2edd489b14ebcfb848431831e64c4b0eb78328f9fe",
+    "base64": "eyJjb3JyZWxhdGlvbl9pZCI6ImNvcnJfMjAyNjA5MTZfbGltZXhfc2V0dGxlX29mZmljaWFsX3JlbGVhc2VfdjFfMV8wIiwiY3JlZGVudGlhbF9pZF9zaGEyNTYiOiI3NGVkN2U1ZjAwMGQyNDM5MmJjYzlmNDdkMmFmYzJhMmIzYTc0NjcyYTUzZjc4NzQ2MTU5MGE2N2FiYjllMzcwIiwiZGVjaXNpb25fY2xhc3MiOiJTVFJBVEVHSUMiLCJleHBpcmVzX2F0IjoiMjAyNi0wOS0xNlQwMzo1NzowMi42NTFaIiwiaXNzdWVkX2F0IjoiMjAyNi0wOS0xNlQwMzo0NzowMi42NTFaIiwibWFuaWZlc3Rfc2hhMjU2IjoiMWU1MDFlZWFiODNkNTY5OWU2MDMwMjFiMDJhN2UxMDBjYWUwN2Q2YmFmN2QxYzM5NjlhOGRjNDVlN2Y3ZjNhOSIsIm5hbWVzcGFjZSI6ImxpbWV4LXN0cmF0ZWdpYy1hdXRob3JpdHktdjEiLCJub25jZV9zaGEyNTYiOiI2Nzc2M2Q5NmZkYzYxNTI1MGMxZGU0MzllYjY2NmM1NzdlZTE2NmFmYjA5M2E2MjA3ZDE2MjJiOTk5MWE3YmIzIiwib3BlcmF0aW9uIjoiTElNRVhfU0VUVExFX09GRklDSUFMX0dJVEhVQl9SRUxFQVNFX1YxXzFfMCIsIm93bmVyX2lkIjoiVE9CSUFTX1NQUk9FVEUiLCJvd25lcl9yb2xlIjoiQ0VPIiwicHJvdmlkZXJfaWQiOiJsaW1leC1jZW8tdG9iaWFzLXJlbW92YWJsZS1hdXRob3JpdHktdjEiLCJwdWJsaWNfa2V5X3Nwa2lfc2hhMjU2IjoiN2MyNmQ5NjFjODlkZjViZjVhNmNlNmE1MTUwYTYwMTA0OGU4YzJlODRhM2FjYzQzYmI4ZDliOWY3MzIwNTdkYyJ9"
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "signed_payload_canonicalization": "LIMEX_STABLE_JSON_V1",
+    "signed_payload_sha256": "64d60c503b02f9509f783a2edd489b14ebcfb848431831e64c4b0eb78328f9fe",
+    "signature_base64": "wrR8kYmoUcHnMF+EMN/77MMRdewWeip8xNQYp6z4ijL7XlsI6jhD3wd4CkhRT7RzFQga8UFqAH9O/Q4QwP/YAA=="
+  },
+  "human_gate": {
+    "user_presence": true,
+    "user_verification": true,
+    "intent_confirmed": true,
+    "interaction": "CEO_CONFIRMATION_PLUS_SECRET_PASSPHRASE"
+  },
+  "consumption": {
+    "status": "UNCONSUMED",
+    "consumed": false,
+    "prior_use_count": 0
+  },
+  "claim_boundary": "SIGNATURE_CANDIDATE_WITH_EXACT_CANONICAL_PAYLOAD_AND_CLOSED_FIELD_PROJECTION_ONLY__RUNTIME_VERIFICATION_AND_ONE_SHOT_CONSUMPTION_REQUIRED"
+}
