@@ -1,0 +1,702 @@
+{
+  "schema_version": "limex-fuzzi-sfh-software-stress-v1.0.0",
+  "created_at_utc": "2026-09-12T18:51:09.481Z",
+  "status": "PASS_SOFTWARE_FUNCTIONAL_CORE_ONLY",
+  "evidence_class": "LOCAL_USERSPACE_DETERMINISTIC_PROJECTOR_STRESS",
+  "target": {
+    "module": "defect_event_projector_v4.mjs",
+    "module_sha256": "d2d34f5dc9867328af0ffcc327161f7349566efacb739f2203d451d45492f0cf",
+    "canonical_state_module": "canonical_state_v2.mjs",
+    "canonical_state_sha256": "521b6d1bbb2508ae69b4f80aa61c985bf60188badcb44941ae5cb30dab62f30c",
+    "node": "v24.13.1",
+    "platform": "darwin_arm64"
+  },
+  "execution_boundary": {
+    "declared_by_invoker": "UNDECLARED",
+    "deterministic_runtime_path": "/usr/local/bin/node",
+    "network_calls_in_harness_source": 0,
+    "boundary_is_external_to_process": true
+  },
+  "statistics": {
+    "vector_runs": 18,
+    "passed": 18,
+    "failed": 0,
+    "assertions": 81,
+    "maximum_logical_events_in_accepted_batch": 256,
+    "rejected_overlimit_batch_events": 257,
+    "logical_fragmentation_frames": 256,
+    "logical_fragment_drops": 0,
+    "latency_ms_min": 0.094,
+    "latency_ms_max": 904.571
+  },
+  "vectors": [
+    {
+      "vector_id": "DENSITY_1",
+      "profile": "LOGICAL_PACKET_DENSITY_SWEEP",
+      "status": "PASS",
+      "input_events": 1,
+      "accepted_events": 1,
+      "duration_ms": 0.553,
+      "adapter_actions": [
+        {
+          "branch_id": "branch-00",
+          "kind": "BLOCK_BRANCH"
+        }
+      ]
+    },
+    {
+      "vector_id": "DENSITY_2",
+      "profile": "LOGICAL_PACKET_DENSITY_SWEEP",
+      "status": "PASS",
+      "input_events": 2,
+      "accepted_events": 2,
+      "duration_ms": 0.817,
+      "adapter_actions": [
+        {
+          "branch_id": "branch-00",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-01",
+          "kind": "BLOCK_BRANCH"
+        }
+      ]
+    },
+    {
+      "vector_id": "DENSITY_4",
+      "profile": "LOGICAL_PACKET_DENSITY_SWEEP",
+      "status": "PASS",
+      "input_events": 4,
+      "accepted_events": 4,
+      "duration_ms": 1.015,
+      "adapter_actions": [
+        {
+          "branch_id": "branch-00",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-01",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-02",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-03",
+          "kind": "BLOCK_BRANCH"
+        }
+      ]
+    },
+    {
+      "vector_id": "DENSITY_8",
+      "profile": "LOGICAL_PACKET_DENSITY_SWEEP",
+      "status": "PASS",
+      "input_events": 8,
+      "accepted_events": 8,
+      "duration_ms": 1.996,
+      "adapter_actions": [
+        {
+          "branch_id": "branch-00",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-01",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-02",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-03",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-04",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-05",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-06",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-07",
+          "kind": "BLOCK_BRANCH"
+        }
+      ]
+    },
+    {
+      "vector_id": "DENSITY_16",
+      "profile": "LOGICAL_PACKET_DENSITY_SWEEP",
+      "status": "PASS",
+      "input_events": 16,
+      "accepted_events": 16,
+      "duration_ms": 6.054,
+      "adapter_actions": [
+        {
+          "branch_id": "branch-00",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-01",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-02",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-03",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-04",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-05",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-06",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-07",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-08",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-09",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-10",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-11",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-12",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-13",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-14",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-15",
+          "kind": "BLOCK_BRANCH"
+        }
+      ]
+    },
+    {
+      "vector_id": "DENSITY_32",
+      "profile": "LOGICAL_PACKET_DENSITY_SWEEP",
+      "status": "PASS",
+      "input_events": 32,
+      "accepted_events": 32,
+      "duration_ms": 17.366,
+      "adapter_actions": [
+        {
+          "branch_id": "branch-00",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-01",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-02",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-03",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-04",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-05",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-06",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-07",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-08",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-09",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-10",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-11",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-12",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-13",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-14",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-15",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-16",
+          "kind": "BLOCK_BRANCH"
+        }
+      ]
+    },
+    {
+      "vector_id": "DENSITY_64",
+      "profile": "LOGICAL_PACKET_DENSITY_SWEEP",
+      "status": "PASS",
+      "input_events": 64,
+      "accepted_events": 64,
+      "duration_ms": 61.352,
+      "adapter_actions": [
+        {
+          "branch_id": "branch-00",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-01",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-02",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-03",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-04",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-05",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-06",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-07",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-08",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-09",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-10",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-11",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-12",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-13",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-14",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-15",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-16",
+          "kind": "BLOCK_BRANCH"
+        }
+      ]
+    },
+    {
+      "vector_id": "DENSITY_128",
+      "profile": "LOGICAL_PACKET_DENSITY_SWEEP",
+      "status": "PASS",
+      "input_events": 128,
+      "accepted_events": 128,
+      "duration_ms": 230.488,
+      "adapter_actions": [
+        {
+          "branch_id": "branch-00",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-01",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-02",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-03",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-04",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-05",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-06",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-07",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-08",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-09",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-10",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-11",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-12",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-13",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-14",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-15",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-16",
+          "kind": "BLOCK_BRANCH"
+        }
+      ]
+    },
+    {
+      "vector_id": "DENSITY_255",
+      "profile": "LOGICAL_PACKET_DENSITY_SWEEP",
+      "status": "PASS",
+      "input_events": 255,
+      "accepted_events": 255,
+      "duration_ms": 890.902,
+      "adapter_actions": [
+        {
+          "branch_id": "branch-00",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-01",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-02",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-03",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-04",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-05",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-06",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-07",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-08",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-09",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-10",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-11",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-12",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-13",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-14",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-15",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-16",
+          "kind": "BLOCK_BRANCH"
+        }
+      ]
+    },
+    {
+      "vector_id": "DENSITY_256",
+      "profile": "LOGICAL_PACKET_DENSITY_SWEEP",
+      "status": "PASS",
+      "input_events": 256,
+      "accepted_events": 256,
+      "duration_ms": 904.571,
+      "adapter_actions": [
+        {
+          "branch_id": "branch-00",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-01",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-02",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-03",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-04",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-05",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-06",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-07",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-08",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-09",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-10",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-11",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-12",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-13",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-14",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-15",
+          "kind": "BLOCK_BRANCH"
+        },
+        {
+          "branch_id": "branch-16",
+          "kind": "BLOCK_BRANCH"
+        }
+      ]
+    },
+    {
+      "vector_id": "DENSITY_257_REJECT",
+      "profile": "BATCH_UPPER_BOUND",
+      "status": "PASS",
+      "input_events": 257,
+      "duration_ms": 2.897,
+      "denial_reason": "DEFECT_PROJECTION_EVENT_BATCH_INVALID"
+    },
+    {
+      "vector_id": "PHASE_ORDER_REVERSAL",
+      "profile": "DETERMINISTIC_PHASE_NOISE",
+      "status": "PASS",
+      "input_events_each": 128,
+      "forward_duration_ms": 227.782,
+      "reverse_duration_ms": 226.107
+    },
+    {
+      "vector_id": "FRAME_FRAGMENTATION",
+      "profile": "LOGICAL_BATCH_FRAGMENTATION",
+      "status": "PASS",
+      "logical_frames": 256,
+      "fragments": [
+        1,
+        7,
+        31,
+        89,
+        128
+      ],
+      "dropped_frames": 0,
+      "whole_duration_ms": 893.612,
+      "fragment_duration_ms": [
+        0.148,
+        1.349,
+        21.561,
+        203.323,
+        663.988
+      ]
+    },
+    {
+      "vector_id": "DROPOUT_UNKNOWN_REFERENCE",
+      "profile": "SIGNAL_DROPOUT",
+      "status": "PASS",
+      "duration_ms": 0.094,
+      "denial_reason": "DEFECT_REFERENCE_NOT_FOUND"
+    },
+    {
+      "vector_id": "HASH_CORRUPTION_ATOMIC",
+      "profile": "BOUNDARY_JITTER_AND_TAMPERING",
+      "status": "PASS",
+      "input_events": 64,
+      "tampered_index": 32,
+      "duration_ms": 18.353,
+      "denial_reason": "DEFECT_PROJECTION_EVENT_HASH_MISMATCH"
+    },
+    {
+      "vector_id": "CLOSURE_BYTES_65535",
+      "profile": "CLOSURE_ARTIFACT_BOUNDARY",
+      "status": "PASS",
+      "artifact_bytes_each": 65535,
+      "duration_ms": 17.664,
+      "terminal_actions": [
+        {
+          "kind": "NO_OP"
+        }
+      ]
+    },
+    {
+      "vector_id": "CLOSURE_BYTES_65536",
+      "profile": "CLOSURE_ARTIFACT_BOUNDARY",
+      "status": "PASS",
+      "artifact_bytes_each": 65536,
+      "duration_ms": 18.553,
+      "terminal_actions": [
+        {
+          "kind": "NO_OP"
+        }
+      ]
+    },
+    {
+      "vector_id": "CLOSURE_BYTES_65537_REJECT",
+      "profile": "CLOSURE_ARTIFACT_UPPER_BOUND",
+      "status": "PASS",
+      "artifact_bytes_each": 65537,
+      "duration_ms": 3.758,
+      "rejection_reason": "DEFECT_PROJECTION_EVENT_DRAFT_INVALID"
+    }
+  ],
+  "failures": [],
+  "physical_test_gate": {
+    "state": "NOT_ARMED_FAIL_CLOSED",
+    "reasons": [
+      "FUZZI_SFH_PHYSICAL_INTERFACE_AND_FREQUENCY_BAND_CONTRACT_NOT_BOUND",
+      "NO_PACKET_CAPTURE_OR_KERNEL_SYSCALL_TRACE",
+      "NO_BOUND_SENSOR_VOLTAGE_RATE_OR_PACKET_DENSITY_LIMITS",
+      "NO_TARGET_HARDWARE_ADAPTER_BOUND"
+    ]
+  },
+  "non_implications": [
+    "NO_PHYSICAL_SENSOR_OR_IO_HARDWARE_STRESS_EXECUTED",
+    "NO_HZ_VOLTAGE_THERMAL_OR_REAL_TIME_CERTIFICATION",
+    "NO_KERNEL_OR_DRIVER_MONITORING_EXECUTED",
+    "NO_PACKET_CAPTURE_OR_KERNEL_SYSCALL_TRACE",
+    "NO_PRODUCT_RUNTIME_BINDING_OR_ACTIVE_SKILL_MUTATION",
+    "NO_PRODUCTION_RELEASE_AUTHORITY"
+  ]
+}

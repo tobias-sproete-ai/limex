@@ -1,0 +1,18 @@
+{
+  "schema_version": "limex-repo-integration-contract-v1.0.0",
+  "observed_at_utc": "2026-09-16T03:59:50Z",
+  "target_repository": "https://github.com/tobias-sproete-ai/limex.git",
+  "target_ref": "refs/heads/main",
+  "target_component_path": "components/sfh-fuzzi",
+  "observed_local_checkout_head": "0a4f4c82311343838c2bbe3dad448dd11f10580e",
+  "observed_cached_origin_main": "0a4f4c82311343838c2bbe3dad448dd11f10580e",
+  "observed_divergence": {
+    "ahead": 0,
+    "behind": 0
+  },
+  "integration_status": "PUBLIC_RELEASE_AUTHORIZED__EXACT_TAG_AND_ASSET_READBACK_PENDING",
+  "network_refresh_performed_for_this_observation": true,
+  "merge_performed": false,
+  "push_performed": false,
+  "public_release_performed": false
+}

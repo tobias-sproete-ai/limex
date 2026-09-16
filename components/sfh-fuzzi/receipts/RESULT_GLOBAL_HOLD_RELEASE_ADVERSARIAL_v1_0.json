@@ -1,0 +1,358 @@
+{
+  "schema_version": "limex-global-hold-release-adapter-adversarial-report-v1.0.0",
+  "created_at_utc": "2026-09-12T18:51:04.968Z",
+  "status": "PASS",
+  "evidence_class": "SYNTHETIC_TEST_FIXTURE_ON_REAL_FILESYSTEM",
+  "execution_boundary": "CALLER_CONTROLLED__NOT_ATTESTED_BY_TEST_MODULE",
+  "runtime": {
+    "node_version": "v24.13.1",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "source_bindings": {
+    "adapter_sha256": "4b91b28fa4443a1a65bc80bf435170802dddb7b19172e9c864de1532d324546a",
+    "test_sha256": "8a2e1ded1bcee54bd4e41fcf21ac6b24424220dac1578bb5a0dc45ca8a60f183",
+    "projector_sha256": "d2d34f5dc9867328af0ffcc327161f7349566efacb739f2203d451d45492f0cf",
+    "canonical_state_sha256": "521b6d1bbb2508ae69b4f80aa61c985bf60188badcb44941ae5cb30dab62f30c",
+    "strict_json_sha256": "11620b4ecb4904fa29ba0b280f3ecc40846cb05b28765fb0a38c53af6c7711d1"
+  },
+  "tests_total": 31,
+  "tests_passed": 31,
+  "tests_failed": 0,
+  "assertions": 195,
+  "scenarios": [
+    {
+      "id": "HRA-001.initial-state-denies-protected-action",
+      "status": "PASS",
+      "duration_us": 39970,
+      "evidence": {
+        "status": "FAIL_CLOSED",
+        "reference_postcondition_satisfied": false,
+        "action_allowed": false,
+        "fail_closed": true,
+        "state_phase": "HELD",
+        "state_sha256": "97fa5df472fa6ef71d008e25f41eb56536fa4d64a27b413e8391ec000249c416",
+        "target_state_sha256": "9e715073672dd02b7c8c91944e9c4ccd1b07938db4cc656324b2c5ca4da90f75",
+        "epoch": 1,
+        "reason": "REFERENCE_RELEASE_POSTCONDITION_NOT_SATISFIED"
+      }
+    },
+    {
+      "id": "HRA-002.bound-release-needs-and-records-postcondition-ack",
+      "status": "PASS",
+      "duration_us": 92670,
+      "evidence": {
+        "schema_version": "limex-global-hold-release-postcondition-ack-v1.0.0",
+        "readback_kind": "REFERENCE_TARGET_FILE_REOPEN_POSTCONDITION",
+        "request_id": "release-001",
+        "request_sha256": "40a498bdad03eb70691acdecd52265a2f03980adf0158b74353fb97e71386505",
+        "epoch": 1,
+        "observed_effective_hold": false,
+        "target_state_sha256": "c82f5d1af0ddcad15d817aed7a611a898e7f080203ec83a85bba86534230a075"
+      }
+    },
+    {
+      "id": "HRA-003.exact-request-replay-is-idempotent",
+      "status": "PASS",
+      "duration_us": 66850,
+      "evidence": {
+        "status": "PASS",
+        "decision": "IDEMPOTENT_NO_OP",
+        "request_sha256": "567ae9744a28bd1e18cf74bb5524ffc4114331677c283eca017c3c223ff12b5f"
+      }
+    },
+    {
+      "id": "HRA-004.same-request-id-with-different-content-is-denied",
+      "status": "PASS",
+      "duration_us": 67308,
+      "evidence": {
+        "conflicting_replay_denied": true
+      }
+    },
+    {
+      "id": "HRA-005.commit-replay-after-ack-is-idempotent",
+      "status": "PASS",
+      "duration_us": 107853,
+      "evidence": {
+        "status": "PASS",
+        "decision": "IDEMPOTENT_ALREADY_RELEASED",
+        "ack": {
+          "schema_version": "limex-global-hold-release-postcondition-ack-v1.0.0",
+          "readback_kind": "REFERENCE_TARGET_FILE_REOPEN_POSTCONDITION",
+          "request_id": "release-001",
+          "request_sha256": "99eef803809b51842fbde88c955454824282d287ffc9a789451386dc3d8de033",
+          "epoch": 1,
+          "observed_effective_hold": false,
+          "target_state_sha256": "375931158844b05675d47eeca983adde29e789328dfd923e9006276cfcab5f79"
+        }
+      }
+    },
+    {
+      "id": "HRA-006.stale-epoch-request-is-denied",
+      "status": "PASS",
+      "duration_us": 50893,
+      "evidence": {
+        "stale_epoch_denied": true
+      }
+    },
+    {
+      "id": "HRA-007.expired-authority-window-is-denied",
+      "status": "PASS",
+      "duration_us": 51959,
+      "evidence": {
+        "expired_request_denied": true
+      }
+    },
+    {
+      "id": "HRA-008.invalid-authority-signature-is-denied",
+      "status": "PASS",
+      "duration_us": 51474,
+      "evidence": {
+        "invalid_signature_denied": true
+      }
+    },
+    {
+      "id": "HRA-008B.wrong-capability-preimage-is-denied",
+      "status": "PASS",
+      "duration_us": 72955,
+      "evidence": {
+        "wrong_capability_denied": true
+      }
+    },
+    {
+      "id": "HRA-009.crash-after-intent-recovers-held-on-restart",
+      "status": "PASS",
+      "duration_us": 155790,
+      "evidence": {
+        "status": "PASS",
+        "decision": "RECOVERED_TO_HELD",
+        "corruption_sha256": null,
+        "target_corruption_sha256": null,
+        "epoch": 2
+      }
+    },
+    {
+      "id": "HRA-009B.consumed-capability-cannot-authorize-a-new-request",
+      "status": "PASS",
+      "duration_us": 150839,
+      "evidence": {
+        "consumed_capability_reuse_denied": true
+      }
+    },
+    {
+      "id": "HRA-010.crash-after-target-release-never-enables-action-without-ack",
+      "status": "PASS",
+      "duration_us": 148057,
+      "evidence": {
+        "pre_ack_action_allowed": false,
+        "recovery": "HELD"
+      }
+    },
+    {
+      "id": "HRA-011.crash-after-durable-ack-retains-bound-release",
+      "status": "PASS",
+      "duration_us": 139915,
+      "evidence": {
+        "status": "PASS",
+        "decision": "ACKED_RELEASE_RETAINED",
+        "epoch": 1
+      }
+    },
+    {
+      "id": "HRA-012.concurrent-global-reopen-dominates-pending-release",
+      "status": "PASS",
+      "duration_us": 98012,
+      "evidence": {
+        "status": "PASS",
+        "decision": "GLOBAL_REOPEN_DOMINATES_RELEASE",
+        "epoch": 2
+      }
+    },
+    {
+      "id": "HRA-013.crash-during-reopen-remains-fail-closed-and-recovers",
+      "status": "PASS",
+      "duration_us": 183754,
+      "evidence": {
+        "status": "PASS",
+        "decision": "RECOVERED_TO_HELD",
+        "corruption_sha256": null,
+        "target_corruption_sha256": null,
+        "epoch": 3
+      }
+    },
+    {
+      "id": "HRA-014.authority-revocation-dominates-pending-release",
+      "status": "PASS",
+      "duration_us": 97285,
+      "evidence": {
+        "status": "PASS",
+        "decision": "AUTHORITY_REVOKED_AND_HELD",
+        "epoch": 2
+      }
+    },
+    {
+      "id": "HRA-015.commit-timeout-after-pending-request-is-denied",
+      "status": "PASS",
+      "duration_us": 166834,
+      "evidence": {
+        "timeout_denied_and_recovered": true
+      }
+    },
+    {
+      "id": "HRA-016.corrupt-state-is-quarantined-and-recovered-held",
+      "status": "PASS",
+      "duration_us": 69316,
+      "evidence": {
+        "status": "PASS",
+        "decision": "CORRUPT_STATE_QUARANTINED_AND_AUTHORITY_REVOKED_HELD",
+        "corruption_sha256": "98e8e66d98f45504a80923203572020d15c102340a21a5201c92c598a7e34b69",
+        "target_corruption_sha256": null,
+        "epoch": 2
+      }
+    },
+    {
+      "id": "HRA-017.post-ack-target-tamper-revokes-effective-release",
+      "status": "PASS",
+      "duration_us": 126119,
+      "evidence": {
+        "status": "PASS",
+        "decision": "RECOVERED_TO_HELD",
+        "corruption_sha256": null,
+        "target_corruption_sha256": null,
+        "epoch": 2
+      }
+    },
+    {
+      "id": "HRA-018.live-lock-owner-prevents-concurrent-transition",
+      "status": "PASS",
+      "duration_us": 44300,
+      "evidence": {
+        "concurrent_transition_denied": true
+      }
+    },
+    {
+      "id": "HRA-019.symlink-root-is-rejected",
+      "status": "PASS",
+      "duration_us": 587,
+      "evidence": {
+        "status": "FAIL_CLOSED",
+        "reference_postcondition_satisfied": false,
+        "action_allowed": false,
+        "fail_closed": true,
+        "state_phase": "UNREADABLE_OR_INVALID",
+        "reason": "ADAPTER_ROOT_SYMLINK_REJECTED"
+      }
+    },
+    {
+      "id": "HRA-020.real-cli-request-commit-and-probe-path",
+      "status": "PASS",
+      "duration_us": 221434,
+      "evidence": {
+        "cli_reference_release_observed": true,
+        "product_authorization": "DENIED",
+        "probe": {
+          "status": "REFERENCE_POSTCONDITION_OBSERVED",
+          "reference_postcondition_satisfied": true,
+          "action_allowed": false,
+          "fail_closed": true,
+          "state_phase": "RELEASED_ACKED",
+          "state_sha256": "4fccb4e535e442e151602178eacc0166c937d34e4f39527573aec9f980d0bfaa",
+          "target_state_sha256": "65aaa66540fd397a159babec59d1593f0a4d29617a0b24445d1971b06ddfd418",
+          "epoch": 1,
+          "reason": "PRODUCT_RUNTIME_BINDING_REQUIRED"
+        }
+      }
+    },
+    {
+      "id": "HRA-021.coherent-root-rewrite-never-grants-product-authority",
+      "status": "PASS",
+      "duration_us": 37272,
+      "evidence": {
+        "coherent_reference_rewrite_observed": true,
+        "product_authority_granted": false
+      }
+    },
+    {
+      "id": "HRA-022.commit-replay-revalidates-current-target-postcondition",
+      "status": "PASS",
+      "duration_us": 106609,
+      "evidence": {
+        "false_idempotent_pass_denied": true
+      }
+    },
+    {
+      "id": "HRA-023.authorization-probe-fails-nonzero-when-root-is-missing",
+      "status": "PASS",
+      "duration_us": 32225,
+      "evidence": {
+        "missing_root_probe_exit_code": 2,
+        "reason_code": "ADAPTER_POSTCONDITION_UNREADABLE_OR_INVALID"
+      }
+    },
+    {
+      "id": "HRA-024.consumed-request-replay-after-global-reopen-is-denied",
+      "status": "PASS",
+      "duration_us": 184764,
+      "evidence": {
+        "api_replay_denied": true,
+        "cli_replay_exit_code": 2
+      }
+    },
+    {
+      "id": "HRA-025.invalid-now-carrier-cannot-bypass-authority-expiry",
+      "status": "PASS",
+      "duration_us": 205613,
+      "evidence": {
+        "invalid_api_now_denied": true,
+        "invalid_cli_now_denied": true
+      }
+    },
+    {
+      "id": "HRA-026.backdated-safe-integer-time-cannot-bypass-authority-expiry",
+      "status": "PASS",
+      "duration_us": 321456,
+      "evidence": {
+        "expired_api_request_denied": true,
+        "expired_cli_request_denied": true,
+        "expired_api_commit_denied": true,
+        "expired_cli_commit_denied": true,
+        "incoherent_time_reference_denied": true
+      }
+    },
+    {
+      "id": "HRA-027.corrupt-state-recovery-cannot-resurrect-revoked-or-consumed-authority",
+      "status": "PASS",
+      "duration_us": 245027,
+      "evidence": {
+        "revoked_authority_not_resurrected": true,
+        "consumed_capability_path_not_resurrected": true
+      }
+    },
+    {
+      "id": "HRA-028.safe-integer-counter-exhaustion-is-atomic-and-fail-closed",
+      "status": "PASS",
+      "duration_us": 113264,
+      "evidence": {
+        "reopen_overflow_atomic": true,
+        "commit_overflow_atomic": true
+      }
+    },
+    {
+      "id": "HRA-029.corrupt-carrier-plus-counter-exhaustion-has-zero-partial-mutation",
+      "status": "PASS",
+      "duration_us": 91685,
+      "evidence": {
+        "corrupt_target_preflight_atomic": true,
+        "corrupt_state_preflight_atomic": true
+      }
+    }
+  ],
+  "non_implications": [
+    "NO_PRODUCT_RUNTIME_BINDING_ATTESTED",
+    "REFERENCE_POSTCONDITION_NEVER_GRANTS_PRODUCT_ACTION_AUTHORITY",
+    "NO_HARDWARE_OR_RTOS_ATTESTATION",
+    "NO_PRODUCTION_CEO_AUTHORITY_CONSUMED",
+    "NO_INDEPENDENT_AUDITOR_SEPARATION",
+    "NO_TSA_SECURE_MONOTONIC_OR_HARDWARE_CLOCK_ATTESTATION"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@sfh/limex-sfh-fuzzi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dependency-free LIMEX software stress and hold-release reference-adapter capsule",
+  "type": "module",
+  "license": "SEE LICENSE IN NOTICE.md",
+  "scripts": {
+    "test": "npm run test:software && npm run test:hold-release",
+    "test:software": "node tests/run_fuzzi_sfh_software_stress_v1.mjs",
+    "test:hold-release": "node tests/run_global_hold_release_adapter_v1_adversarial.mjs",
+    "verify:hashes": "shasum -a 256 -c SHA256SUMS"
+  },
+  "engines": {
+    "node": "24.13.1"
+  }
+}

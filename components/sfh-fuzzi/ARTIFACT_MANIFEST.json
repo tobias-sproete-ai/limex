@@ -1,0 +1,87 @@
+{
+  "schema_version": "limex-sfh-fuzzi-artifact-manifest-v1.0.0",
+  "created_at_utc": "2026-09-16T04:05:35Z",
+  "scope": "ALL_REGULAR_CAPSULE_FILES_EXCEPT_MANIFEST_AND_SHA256SUMS",
+  "algorithm": "SHA-256",
+  "entries": [
+    {
+      "path": "GOLDSTANDARD_SFH_FUZZI_v1_0.md",
+      "sha256": "b87e4fa8dd8aaaa4ba23bc092dbe9b16e8df76bb010de2006bcc88767fc5de8d"
+    },
+    {
+      "path": "MARCUS_AND_TOBIAS.md",
+      "sha256": "3bdcf1fc0e308bdbd1128164f79058d6d24e60af2ac4bd23eef5ce464f1151b0"
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "bcff664557ea1f524d6fc03ec11db694895c4b19d9926853e07ba371ee9c79c9"
+    },
+    {
+      "path": "README.en.md",
+      "sha256": "1b713f75ee23b1997de51418d193c27c381e20598f54cb9bb2f8e70d86532d0d"
+    },
+    {
+      "path": "README.md",
+      "sha256": "e0056f53108f309558ac02ade0097f9297f296e1ebd17f9c2886144d6960c92c"
+    },
+    {
+      "path": "RECEIPT_SFH_FUZZI_v1_0.json",
+      "sha256": "fa914cf1ee1cf50cb1e81d552690c385858cf2618555813272c981f0284891de"
+    },
+    {
+      "path": "REPO_INTEGRATION_CONTRACT.json",
+      "sha256": "04ba823eb2657a21e0f893cb7dd539ebdcfe4e32f8212e5257d237d542710572"
+    },
+    {
+      "path": "SCOPE_AND_NON_IMPLICATIONS.md",
+      "sha256": "5633eb2703d40a8b1f0eb1d19703837790e54ca4daf0587c891f79c59a3f9175"
+    },
+    {
+      "path": "package.json",
+      "sha256": "97ed647e4d4df2362166d05b3f654cb47ed64a91422026124eb958d34dd02bba"
+    },
+    {
+      "path": "receipts/RESULT_FUZZI_SFH_SOFTWARE_STRESS_v1_0.json",
+      "sha256": "bffde7edc3e5d28cebcfb9be8901d9b98584e93efb7b3a372b44c1147df431ec"
+    },
+    {
+      "path": "receipts/RESULT_GLOBAL_HOLD_RELEASE_ADVERSARIAL_v1_0.json",
+      "sha256": "d2a0afdcbd92297b350313fcb27fe7316d7d1d80e956ae8c63de24e60c21e5cb"
+    },
+    {
+      "path": "schemas/limex-sfh-fuzzi-repo-capsule-receipt-v1.schema.json",
+      "sha256": "0cb5ab39ef28cd67601e514a74c3668a36fc0930b54586b65628c3439a1f53b2"
+    },
+    {
+      "path": "scripts/canonical_state_v2.mjs",
+      "sha256": "521b6d1bbb2508ae69b4f80aa61c985bf60188badcb44941ae5cb30dab62f30c"
+    },
+    {
+      "path": "scripts/defect_event_projector_v4.mjs",
+      "sha256": "d2d34f5dc9867328af0ffcc327161f7349566efacb739f2203d451d45492f0cf"
+    },
+    {
+      "path": "scripts/global_hold_release_adapter_v1.mjs",
+      "sha256": "4b91b28fa4443a1a65bc80bf435170802dddb7b19172e9c864de1532d324546a"
+    },
+    {
+      "path": "scripts/strict_json.mjs",
+      "sha256": "11620b4ecb4904fa29ba0b280f3ecc40846cb05b28765fb0a38c53af6c7711d1"
+    },
+    {
+      "path": "tests/run_fuzzi_sfh_software_stress_v1.mjs",
+      "sha256": "85895016760d339001da797e78e7c87b19324237ba94773778b55565f3e2daed"
+    },
+    {
+      "path": "tests/run_global_hold_release_adapter_v1_adversarial.mjs",
+      "sha256": "8a2e1ded1bcee54bd4e41fcf21ac6b24424220dac1578bb5a0dc45ca8a60f183"
+    }
+  ],
+  "self_exclusion": {
+    "excluded_paths": [
+      "ARTIFACT_MANIFEST.json",
+      "SHA256SUMS"
+    ],
+    "reason": "PREVENT_SELF_REFERENTIAL_HASH_CYCLE"
+  }
+}
