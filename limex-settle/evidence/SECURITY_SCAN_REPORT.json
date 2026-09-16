@@ -1,0 +1,43 @@
+{
+  "schema": "LIMEX_SETTLE_CLEANROOM_SECURITY_REPORT_V1",
+  "status": "PASS_NO_REPORTABLE_FINDINGS",
+  "scope": "FULL_CLEANROOM_CANDIDATE",
+  "evidence_model": "EXACT_SNAPSHOT_DOUBLE_BLIND_STATIC_SCAN",
+  "scan_id": "cca7987d-4bc1-4305-99f6-27f05271be6a",
+  "snapshot_digest": "codex-security-snapshot/v1:sha256:c3fc4ef1deb5af87ce42728f79d2a38d6621f52d0cf1c5e09e5b1533e1fd0318",
+  "scan_manifest_sha256": "3406b17ea8659d082bdb55934f7179767612b5ec2bac4ecb4d6ad071cc6ae239",
+  "raw_findings_sha256": "094b112a378696194c9e8059de179dab55426562aac551d20292c2e53b96be78",
+  "raw_coverage_sha256": "3d2467c788f25bbf10d1847fd3cfaf6511ae5fc8c55d41d024699a5adc8b7ad9",
+  "raw_markdown_report_sha256": "118724f37bcaf69a7c4fb33a10afcadb55747f83abcb8a1db4781df055760faf",
+  "reportable_findings": 0,
+  "reviewed_entries": [
+    {"path":"CLEANROOM_PROVENANCE.json","bytes":2867,"sha256":"58cdee9ebc71dd8206fd867e91f58d573273829620937df426f7541b4904dbd6"},
+    {"path":"LICENSE_GATE.md","bytes":220,"sha256":"9e23243ce6d254408e970da3a9118da286a3f273250814dd3ffc07b7e6681e6f"},
+    {"path":"PUBLIC_RELEASE_GATE.json","bytes":828,"sha256":"6c9effc0ab459e04c32b159f744544d012cc04c2504d1b850f9f22c618dd996e"},
+    {"path":"README.md","bytes":2643,"sha256":"c9bc304c9f4194f5be3fc2999e5440b53c00c34fa0da0e652f0f53648e23446c"},
+    {"path":"README_DE.md","bytes":2951,"sha256":"85bafae784d030f8d5aa6e13d67ec8c8ab8c8288c126d57af00e5772254eb999"},
+    {"path":"SCOPE_AND_NONCLAIMS.md","bytes":2153,"sha256":"f2fc9b8a49f7d949830963c62fc0c8047014dc77b9ee52f6cbaec84e3bb08df5"},
+    {"path":"SECURITY.md","bytes":625,"sha256":"bf0c94f45d0e4627c4c322eca4df68a640d92c1ddbf661880e993c81c759fe85"},
+    {"path":"goldstandard/CLEANROOM_GOLDSTANDARD_HUMAN.md","bytes":2653,"sha256":"5d814068ee2c506d08d4218bfbac0f5cc76dcad029ed6923085cba7697bb2506"},
+    {"path":"goldstandard/CLEANROOM_GOLDSTANDARD_MACHINE.json","bytes":810,"sha256":"99fe383d8f53ad3573ac95a5cbc070799533b545d7b367148ec3369be5cc33a1"},
+    {"path":"release/RELEASE_INSTRUCTIONS.md","bytes":1106,"sha256":"fb46ac0034754c9f311c8f30828ec4517bdea8902d757f1e17bcdf2a38a28e11"},
+    {"path":"release/RELEASE_MANIFEST.json","bytes":381,"sha256":"e04a7b2e1815929906cf69f83107ebc02cd70ad66543ca8df2579edf6e13b9f4"},
+    {"path":"release/RELEASE_NOTES.md","bytes":1122,"sha256":"f75b826de2b2a2d7d973861761a101e8f466bda4ab6003cd5b8bf99bb472687a"},
+    {"path":"schemas/limex-llm-execution-attestation-v1.schema.json","bytes":1675,"sha256":"acc1141d9b1b9a97b63a014c2ebf419a3a2e54ea7420b07632e0b94b19b4e714"},
+    {"path":"scripts/build_manifest.py","bytes":7707,"sha256":"cd3bc3649ad8d1da4d43769aa3f647442ec8ec70cdeeb3b56bf580c449efd127"},
+    {"path":"scripts/validate_cleanroom_release.py","bytes":18567,"sha256":"f1c1259da6241ff883cb45a255202102d9a3423ce5cf5c2951477f032a45d8d2"},
+    {"path":"scripts/verify_frozen_package.py","bytes":8570,"sha256":"7ee22dcbd787600d43c4eefd754acd5c0fc69924e41f6c6dab72b4476841364c"},
+    {"path":"src/release_seal.py","bytes":59696,"sha256":"eaed40eaa54b32433d976f1e44dc1f6805c35dda503adfa2e5ad49dba74d6333"},
+    {"path":"src/settle_core.py","bytes":32803,"sha256":"437a531d2e05637f42ef23298920254b9b18f7ff2aa56cc656a669767ad4d267"},
+    {"path":"tests/test_release_seal.py","bytes":46019,"sha256":"06c5bd4b027180972b509702cbf8608a0d4f24505441bacfd0eb99cf7740332d"},
+    {"path":"tests/test_settle_core.py","bytes":23290,"sha256":"dc7f59347e89f70a1317d43a6726b4094eb258736ddc352bfacdaa10c8e9ffe9"}
+  ],
+  "limitations": [
+    "Static exact-snapshot review; target code and tests were not executed by scan workers.",
+    "The separate local regression run passed 107 of 107 finite tests; finite tests do not prove universal absence of defects.",
+    "No hard OS CPU, address-space, or descendant-process limits are claimed for Git.",
+    "No adversarially atomic multi-file snapshot, hostile same-owner storage protection, cross-platform storage assurance, production deployment, financial, legal, patent, safety, or certification authority is established.",
+    "Bundled security evidence is not independently authentic without an external trusted package-root anchor and signed independent attestation.",
+    "Public release remains blocked by PUBLIC_RELEASE_GATE.json."
+  ]
+}

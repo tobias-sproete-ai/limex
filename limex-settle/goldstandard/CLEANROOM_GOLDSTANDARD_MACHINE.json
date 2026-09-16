@@ -1,0 +1,15 @@
+{
+  "schema": "LIMEX_SETTLE_CLEANROOM_GOLDSTANDARD_MACHINE_V1",
+  "release": "LIMEX_SETTLE_CLEANROOM_V1_1_RC1",
+  "human_artifact": "goldstandard/CLEANROOM_GOLDSTANDARD_HUMAN.md",
+  "human_sha256": "5d814068ee2c506d08d4218bfbac0f5cc76dcad029ed6923085cba7697bb2506",
+  "implementation_status": "IMPLEMENTATION_PRESENT",
+  "test_status": "BOUND_BY_CLEANROOM_VALIDATION_REPORT",
+  "privacy_status": "BOUND_BY_CLEANROOM_VALIDATION_REPORT",
+  "security_status": "BOUND_BY_SECURITY_SCAN_STATUS",
+  "package_manifest_status": "BOUND_BY_PACKAGE_MANIFEST",
+  "trusted_root_status": "CALLER_SUPPLIED_EXPECTED_ROOT_REQUIRED",
+  "atomic_snapshot_status": "OPEN_RELEASE_PREREQUISITE",
+  "independent_security_attestation_status": "OPEN_RELEASE_PREREQUISITE",
+  "publication_status": "BLOCKED__NO_PUBLIC_RELEASE_DISPATCH"
+}

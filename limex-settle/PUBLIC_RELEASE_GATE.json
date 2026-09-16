@@ -1,0 +1,19 @@
+{
+  "schema": "LIMEX_SETTLE_PUBLIC_RELEASE_GATE_V2",
+  "release": "LIMEX_SETTLE_CLEANROOM_V1_1_RC1",
+  "official_filing_receipt": "MISSING",
+  "application_identifier": "MISSING",
+  "priority_timestamp": "MISSING",
+  "authorized_legal_release_for_exact_bytes": "MISSING",
+  "privacy_validation": "BOUND_BY_CLEANROOM_VALIDATION_REPORT",
+  "security_validation": "BOUND_BY_SECURITY_SCAN_STATUS",
+  "licence_selection": "MISSING",
+  "hardware_bound_executive_authorization": "MISSING",
+  "technical_release_confirmation": "MISSING",
+  "trusted_external_package_root_anchor": "MISSING",
+  "immutable_snapshot_or_read_only_source_attestation": "MISSING",
+  "signed_independent_security_attestation": "MISSING",
+  "repository_target": null,
+  "external_effect": "DENY",
+  "publication_status": "BLOCKED__NO_PUBLIC_RELEASE_DISPATCH"
+}

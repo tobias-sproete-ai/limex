@@ -1,0 +1,56 @@
+{
+  "schema": "LIMEX_SETTLE_CLEANROOM_PROVENANCE_V1",
+  "release": "LIMEX_SETTLE_CLEANROOM_V1_1_RC1",
+  "source_class": "SECURITY_HARDENING_SUCCESSOR_OF_FROZEN_V1_0_RC1",
+  "private_source_paths_disclosed": false,
+  "rows": [
+    {
+      "public_path": "schemas/limex-llm-execution-attestation-v1.schema.json",
+      "predecessor_sha256": "14d1946cec8d792741dd1e9fa68357111ae9b4c8b90d170203eed06e0a39def0",
+      "output_sha256": "acc1141d9b1b9a97b63a014c2ebf419a3a2e54ea7420b07632e0b94b19b4e714",
+      "transformation": "PUBLIC_IDENTIFIER_SANITIZATION"
+    },
+    {
+      "public_path": "scripts/build_manifest.py",
+      "predecessor_sha256": "ab5bac96df05a6269ef081fb9f20f629b39973d6c0e9b47b73933b0a5c86592d",
+      "output_sha256": "cd3bc3649ad8d1da4d43769aa3f647442ec8ec70cdeeb3b56bf580c449efd127",
+      "transformation": "SUCCESSOR_RELEASE_VERSION_BINDING"
+    },
+    {
+      "public_path": "scripts/validate_cleanroom_release.py",
+      "predecessor_sha256": "4abea5729f544e45accfa96d76d50b054691f2f00b19e74bd0de5ddc3bf754db",
+      "output_sha256": "f1c1259da6241ff883cb45a255202102d9a3423ce5cf5c2951477f032a45d8d2",
+      "transformation": "TEST_COUNT_AND_RELEASE_GATE_HARDENING"
+    },
+    {
+      "public_path": "scripts/verify_frozen_package.py",
+      "predecessor_sha256": "c254afb43449e70e92d3891801741c93f3319d4d9fa1fa3808711826aaf84059",
+      "output_sha256": "7ee22dcbd787600d43c4eefd754acd5c0fc69924e41f6c6dab72b4476841364c",
+      "transformation": "CALLER_SUPPLIED_TRUST_ROOT_ENFORCEMENT"
+    },
+    {
+      "public_path": "src/release_seal.py",
+      "predecessor_sha256": "fbef374c2fd4e2680553cc328571ffd44c7642821a37cadd33da83bfa44f3866",
+      "output_sha256": "eaed40eaa54b32433d976f1e44dc1f6805c35dda503adfa2e5ad49dba74d6333",
+      "transformation": "REPLAY_REVALIDATION_COMMIT_TYPED_FILTER_AND_REPLACEMENT_FREE_OFFLINE_GIT_BINDING_DESCRIPTOR_STATE_AND_RESOURCE_HARDENING"
+    },
+    {
+      "public_path": "src/settle_core.py",
+      "predecessor_sha256": "5bad39e79ddd9f59373faa2ab0c54f3971f1b82eb4e1c464ceb0e8737d6a33d2",
+      "output_sha256": "437a531d2e05637f42ef23298920254b9b18f7ff2aa56cc656a669767ad4d267",
+      "transformation": "LEDGER_QUOTA_OWNER_MODE_AND_MACOS_ACL_HARDENING"
+    },
+    {
+      "public_path": "tests/test_release_seal.py",
+      "predecessor_sha256": "9492a17f7ed2935be44d681d91b3decaaeb563831b1759dd0074ea2784c83b53",
+      "output_sha256": "06c5bd4b027180972b509702cbf8608a0d4f24505441bacfd0eb99cf7740332d",
+      "transformation": "SECURITY_REGRESSION_CORPUS_EXTENSION"
+    },
+    {
+      "public_path": "tests/test_settle_core.py",
+      "predecessor_sha256": "6a761ba1b3efb6c44855026deca79c7e07b8ebdb040b35cf100fa2a972654f14",
+      "output_sha256": "dc7f59347e89f70a1317d43a6726b4094eb258736ddc352bfacdaa10c8e9ffe9",
+      "transformation": "LEDGER_SECURITY_REGRESSION_CORPUS_EXTENSION"
+    }
+  ]
+}

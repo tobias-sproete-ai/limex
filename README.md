@@ -56,6 +56,23 @@ The minimal release telemetry is recorded in [release/README.md](release/README.
 
 ---
 
+## LIMEX Settle public cleanroom candidate
+
+The isolated [LIMEX Settle V1.1 RC1 candidate](limex-settle/) contains the
+deterministic settlement and release-seal reference implementation, its 107-test
+validation corpus, security-scan evidence, frozen package manifest and complete
+local verification instructions.
+
+Package root SHA-256:
+`90e2793ed93f952b5b3c96b0dccc1fb4036d95ed1205306ccd205a79729b65fa`
+
+This source publication is not a deployed payment rail, wallet, blockchain,
+bank integration, production admission, safety certification or legal release
+opinion. The package preserves its fail-closed gate status and does not silently
+promote missing external attestations to `PASS`.
+
+---
+
 ## Goldbach Lean audit capsule
 
 The [Goldbach v1.8.767 audit capsule](science/goldbach/) contains the exact

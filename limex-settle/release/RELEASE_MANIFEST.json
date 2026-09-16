@@ -1,0 +1,10 @@
+{
+  "schema": "LIMEX_SETTLE_CLEANROOM_RELEASE_MANIFEST_V1",
+  "release": "LIMEX_SETTLE_CLEANROOM_V1_1_RC1",
+  "tag_candidate": "v1.1.0-rc.1",
+  "repository_target": null,
+  "package_identity_source": "PACKAGE_MANIFEST.json",
+  "licence_source": "LICENSE_GATE.md",
+  "release_gate_source": "PUBLIC_RELEASE_GATE.json",
+  "publication_status": "BLOCKED__NO_PUBLIC_RELEASE_DISPATCH"
+}

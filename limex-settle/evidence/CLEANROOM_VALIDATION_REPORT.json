@@ -1,0 +1,50 @@
+{
+  "cleanroom": {
+    "findings": 0,
+    "utf8_files_scanned": 22
+  },
+  "external_effect": "DENY",
+  "json_documents_parsed": 9,
+  "limits": [
+    "LOCAL_MACOS_STATIC_AND_FINITE_TEST_EVIDENCE_ONLY",
+    "NO_PUBLICATION_AUTHORITY",
+    "NO_LEGAL_PATENTABILITY_FTO_REGULATORY_OR_SAFETY_CONCLUSION",
+    "NO_PRODUCTIVE_PAYMENT_WALLET_BANK_CHAIN_OR_PROVIDER_OPERATION",
+    "NO_UNIVERSAL_SECURITY_OR_CROSS_PLATFORM_CLAIM"
+  ],
+  "observed_at_utc": "2026-09-15T23:50:56.741Z",
+  "protected_tree_identity": {
+    "regular_file_count": 22,
+    "total_bytes": 221450,
+    "tree_sha256": "eefdc21b11ee7cc62233ee766ae79dd09f83c134097e4a3317ff49292e324c67"
+  },
+  "provenance": {
+    "output_hashes_verified": 8,
+    "rows": 8
+  },
+  "python_binary_sha256": "71a669c194d5420a517dd3a047ffa9d6b0914d51fcd51ac9e51117d71e60b3d1",
+  "python_version": "3.14.6",
+  "release_gate": {
+    "external_effect": "DENY",
+    "status": "BLOCKED__NO_PUBLIC_RELEASE_DISPATCH"
+  },
+  "schema": "LIMEX_SETTLE_CLEANROOM_VALIDATION_REPORT_V1",
+  "security_scan": {
+    "report_sha256": "78e2206df869789aaceb45e992a45a583fef59a8b4fc7e26468efd9689c6ff28",
+    "scope": "FULL_CLEANROOM_CANDIDATE",
+    "status": "PASS_NO_REPORTABLE_FINDINGS"
+  },
+  "static_source": {
+    "dynamic_code_calls": 0,
+    "forbidden_network_imports": 0,
+    "python_files": 5
+  },
+  "status": "PASS_CLEANROOM_TECHNICAL_WITH_PUBLICATION_BLOCKED",
+  "tests": {
+    "exit_code": 0,
+    "sandbox": "MACOS_SANDBOX_EXEC_DENY_NETWORK",
+    "stderr_sha256": "7b255e8501f8ecf96f8043adafba6c2386902171a44a05e8751b21c4ea656ba0",
+    "stdout_sha256": "badcc9246f23acb54ed4031b611087573aea72e5062a7160b948387464f7cfda",
+    "tests_observed": 107
+  }
+}

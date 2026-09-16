@@ -1,0 +1,139 @@
+{
+  "entries": [
+    {
+      "bytes": 2867,
+      "path": "CLEANROOM_PROVENANCE.json",
+      "sha256": "58cdee9ebc71dd8206fd867e91f58d573273829620937df426f7541b4904dbd6"
+    },
+    {
+      "bytes": 220,
+      "path": "LICENSE_GATE.md",
+      "sha256": "9e23243ce6d254408e970da3a9118da286a3f273250814dd3ffc07b7e6681e6f"
+    },
+    {
+      "bytes": 828,
+      "path": "PUBLIC_RELEASE_GATE.json",
+      "sha256": "6c9effc0ab459e04c32b159f744544d012cc04c2504d1b850f9f22c618dd996e"
+    },
+    {
+      "bytes": 2643,
+      "path": "README.md",
+      "sha256": "c9bc304c9f4194f5be3fc2999e5440b53c00c34fa0da0e652f0f53648e23446c"
+    },
+    {
+      "bytes": 2951,
+      "path": "README_DE.md",
+      "sha256": "85bafae784d030f8d5aa6e13d67ec8c8ab8c8288c126d57af00e5772254eb999"
+    },
+    {
+      "bytes": 2153,
+      "path": "SCOPE_AND_NONCLAIMS.md",
+      "sha256": "f2fc9b8a49f7d949830963c62fc0c8047014dc77b9ee52f6cbaec84e3bb08df5"
+    },
+    {
+      "bytes": 625,
+      "path": "SECURITY.md",
+      "sha256": "bf0c94f45d0e4627c4c322eca4df68a640d92c1ddbf661880e993c81c759fe85"
+    },
+    {
+      "bytes": 14718,
+      "path": "evidence/CLEANROOM_TEST_STDERR.log",
+      "sha256": "7b255e8501f8ecf96f8043adafba6c2386902171a44a05e8751b21c4ea656ba0"
+    },
+    {
+      "bytes": 328,
+      "path": "evidence/CLEANROOM_TEST_STDOUT.log",
+      "sha256": "badcc9246f23acb54ed4031b611087573aea72e5062a7160b948387464f7cfda"
+    },
+    {
+      "bytes": 1685,
+      "path": "evidence/CLEANROOM_VALIDATION_REPORT.json",
+      "sha256": "3f6db593ac63751ec5a177cb819b5ec11954b155b224ddbbe100c7505f46f700"
+    },
+    {
+      "bytes": 4241,
+      "path": "evidence/SECURITY_SCAN_REPORT.json",
+      "sha256": "78e2206df869789aaceb45e992a45a583fef59a8b4fc7e26468efd9689c6ff28"
+    },
+    {
+      "bytes": 523,
+      "path": "evidence/SECURITY_SCAN_STATUS.json",
+      "sha256": "c8d3b7b9835888310390350ba47bd110a2eab15d9460bb1bcadcd1215cec4037"
+    },
+    {
+      "bytes": 2653,
+      "path": "goldstandard/CLEANROOM_GOLDSTANDARD_HUMAN.md",
+      "sha256": "5d814068ee2c506d08d4218bfbac0f5cc76dcad029ed6923085cba7697bb2506"
+    },
+    {
+      "bytes": 810,
+      "path": "goldstandard/CLEANROOM_GOLDSTANDARD_MACHINE.json",
+      "sha256": "99fe383d8f53ad3573ac95a5cbc070799533b545d7b367148ec3369be5cc33a1"
+    },
+    {
+      "bytes": 1106,
+      "path": "release/RELEASE_INSTRUCTIONS.md",
+      "sha256": "fb46ac0034754c9f311c8f30828ec4517bdea8902d757f1e17bcdf2a38a28e11"
+    },
+    {
+      "bytes": 381,
+      "path": "release/RELEASE_MANIFEST.json",
+      "sha256": "e04a7b2e1815929906cf69f83107ebc02cd70ad66543ca8df2579edf6e13b9f4"
+    },
+    {
+      "bytes": 1122,
+      "path": "release/RELEASE_NOTES.md",
+      "sha256": "f75b826de2b2a2d7d973861761a101e8f466bda4ab6003cd5b8bf99bb472687a"
+    },
+    {
+      "bytes": 1675,
+      "path": "schemas/limex-llm-execution-attestation-v1.schema.json",
+      "sha256": "acc1141d9b1b9a97b63a014c2ebf419a3a2e54ea7420b07632e0b94b19b4e714"
+    },
+    {
+      "bytes": 7707,
+      "path": "scripts/build_manifest.py",
+      "sha256": "cd3bc3649ad8d1da4d43769aa3f647442ec8ec70cdeeb3b56bf580c449efd127"
+    },
+    {
+      "bytes": 18567,
+      "path": "scripts/validate_cleanroom_release.py",
+      "sha256": "f1c1259da6241ff883cb45a255202102d9a3423ce5cf5c2951477f032a45d8d2"
+    },
+    {
+      "bytes": 8570,
+      "path": "scripts/verify_frozen_package.py",
+      "sha256": "7ee22dcbd787600d43c4eefd754acd5c0fc69924e41f6c6dab72b4476841364c"
+    },
+    {
+      "bytes": 59696,
+      "path": "src/release_seal.py",
+      "sha256": "eaed40eaa54b32433d976f1e44dc1f6805c35dda503adfa2e5ad49dba74d6333"
+    },
+    {
+      "bytes": 32803,
+      "path": "src/settle_core.py",
+      "sha256": "437a531d2e05637f42ef23298920254b9b18f7ff2aa56cc656a669767ad4d267"
+    },
+    {
+      "bytes": 46019,
+      "path": "tests/test_release_seal.py",
+      "sha256": "06c5bd4b027180972b509702cbf8608a0d4f24505441bacfd0eb99cf7740332d"
+    },
+    {
+      "bytes": 23290,
+      "path": "tests/test_settle_core.py",
+      "sha256": "dc7f59347e89f70a1317d43a6726b4094eb258736ddc352bfacdaa10c8e9ffe9"
+    }
+  ],
+  "hash_algorithm": "SHA-256",
+  "package_root_sha256": "90e2793ed93f952b5b3c96b0dccc1fb4036d95ed1205306ccd205a79729b65fa",
+  "regular_file_count": 25,
+  "release": "LIMEX_SETTLE_CLEANROOM_V1_1_RC1",
+  "schema": "LIMEX_SETTLE_CLEANROOM_PACKAGE_MANIFEST_V1",
+  "self_exclusion": [
+    "PACKAGE_MANIFEST.json",
+    "SHA256SUMS.txt"
+  ],
+  "total_bytes": 238181
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "LIMEX_SETTLE_CLEANROOM_SECURITY_STATUS_V1",
+  "status": "PASS_NO_REPORTABLE_FINDINGS",
+  "scope": "FULL_CLEANROOM_CANDIDATE",
+  "report_path": "evidence/SECURITY_SCAN_REPORT.json",
+  "report_sha256": "78e2206df869789aaceb45e992a45a583fef59a8b4fc7e26468efd9689c6ff28",
+  "evidence_model": "EXACT_SNAPSHOT_DOUBLE_BLIND_STATIC_SCAN",
+  "scan_id": "cca7987d-4bc1-4305-99f6-27f05271be6a",
+  "snapshot_digest": "codex-security-snapshot/v1:sha256:c3fc4ef1deb5af87ce42728f79d2a38d6621f52d0cf1c5e09e5b1533e1fd0318"
+}
