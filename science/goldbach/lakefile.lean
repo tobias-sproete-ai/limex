@@ -1,8 +1,8 @@
 import Lake
 open Lake DSL
 
-package limex_goldbach_v1_8_767 where
-  version := v!"1.8.767"
+package limex_goldbach_v1_8_795 where
+  version := v!"1.8.795"
 
 require mathlib from git
   "https://github.com/leanprover-community/mathlib4.git" @
@@ -12,6 +12,33 @@ require mathlib from git
 lean_lib GoldbachAudit where
   srcDir := "lean"
   roots := #[
+    `GoldbachCircleMethodActualModelQ3CompositeReserveFloorDecisionV18770,
+    `GoldbachCircleMethodActualModelQ3PreLoweringRecombinationV18769,
+    `GoldbachCircleMethodActualQ3BMORProjectScaleObstructionV18795,
+    `GoldbachCircleMethodActualQ3CanonicalProfileAbsorptionGapEventualSignV18776,
+    `GoldbachCircleMethodActualQ3CanonicalProfileCeilingReserveDominanceDecisionV18775,
+    `GoldbachCircleMethodActualQ3DirichletCharacterKernelRepairV18782,
+    `GoldbachCircleMethodActualQ3FinalSignedChannelSplitV18789,
+    `GoldbachCircleMethodActualQ3FullPsiSourceTransferV18794,
+    `GoldbachCircleMethodActualQ3LocalDensityThreeClassSplitV18785,
+    `GoldbachCircleMethodActualQ3OddPrefixExactPsiSplitV18791,
+    `GoldbachCircleMethodActualQ3PrefixLocalDensityReserveFloorDecisionV18768,
+    `GoldbachCircleMethodActualQ3PsiFluctuationChannelSplitV18792,
+    `GoldbachCircleMethodActualQ3ResidueSelectorMainProfileAbsorptionV18774,
+    `GoldbachCircleMethodActualQ3SignedProfileEnergyGateV18783,
+    `GoldbachCircleMethodActualQ3SignedProfileVariationCorrelationV18777,
+    `GoldbachCircleMethodActualQ3SincAbelWeightedPairCorrelationDecisionV18773,
+    `GoldbachCircleMethodActualQ3SincVariationEnergyBoundV18784,
+    `GoldbachCircleMethodActualQ3ThreePowerDebitFinalGateV18790,
+    `GoldbachCircleMethodActualQ3TwoPowerCorrectionFinalGateV18793,
+    `GoldbachCircleMethodActualQ3UnitBalanceScalarizationV18779,
+    `GoldbachCircleMethodActualQ3UnitCharacterSourceBindingV18780,
+    `GoldbachCircleMethodActualQ3UnitCharacterSourceCompatibilityV18781,
+    `GoldbachCircleMethodActualQ3UnsignedPrefixSummaryMethodClassNoGoV18778,
+    `GoldbachCircleMethodActualQ3WeightedPairConvolutionTransferV18772,
+    `GoldbachCircleMethodActualQ3ZeroClassConvolutionBoundV18788,
+    `GoldbachCircleMethodActualQ3ZeroClassExactLogMassV18787,
+    `GoldbachCircleMethodActualQ3ZeroClassThreePowerSupportV18786,
     `GoldbachAnalyticOddFrequencyBoundV1871,
     `GoldbachAnalyticOddFrequencySharpBoundV1872,
     `GoldbachAnalyticOddFrequencySupportV187,

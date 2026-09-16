@@ -1,0 +1,66 @@
+{
+  "schema_version": "sfh.goldbach.total-token-census.coo-synthesis.v1",
+  "date": "2026-09-16",
+  "measurement_window": {
+    "start_utc": "2026-09-01T18:47:42.915Z",
+    "start_turn_id": "01a05e30-a126-7531-a8d4-5e20038edcd3",
+    "start_source_ordinal": 299287,
+    "end_utc": "2026-09-15T01:55:05.072Z",
+    "end_turn_id": "01a0a28c-477e-7ec1-9d1f-9192deedade6",
+    "end_event": "completed deployment of goldbach-v1.8.767"
+  },
+  "verdict": {
+    "global_exact_total": "NOT_IDENTIFIABLE",
+    "local_goldbach_only_classification": "PARTIAL",
+    "mixed_goldbach_share": "NOT_IDENTIFIABLE",
+    "remote_windows_usage": "NOT_IDENTIFIABLE",
+    "energy_inference": "NOT_PERFORMED"
+  },
+  "adjudicated_local_measurement": {
+    "goldbach_only_lower_bound_tokens": 4800018574,
+    "goldbach_only_lower_bound_billions": "4.800018574",
+    "mixed_nonseparable_tokens": 527030352,
+    "mixed_nonseparable_billions": "0.527030352",
+    "goldbach_related_upper_bound_tokens": 5327048926,
+    "goldbach_related_upper_bound_billions": "5.327048926",
+    "full_local_chronology_tokens": 7177296749,
+    "full_local_chronology_billions": "7.177296749",
+    "non_goldbach_sidequest_tokens": 1850247823,
+    "guardian_review_tokens_included": 192354896,
+    "excluded_pre_goldbach_tokens_in_start_turn": 8645268
+  },
+  "double_blind_lines": {
+    "line_a": {
+      "local_chronology_tokens": 7177296749,
+      "goldbach_only_tokens": 4800018574,
+      "mixed_tokens": 527030352,
+      "goldbach_related_upper_tokens": 5327048926,
+      "includes_guardian_reviews": true,
+      "prompt_boundary_split": true,
+      "report_sha256": "b5644c9e2ba93b5ffbfae3acddd1a2bb2b21deb54f12b20256ed15371bd1098b",
+      "result_sha256": "6d749f632f86107d01429c49b5c71dfd2e34619cdb6d75cd0cc5d48e4b07edfe"
+    },
+    "line_b": {
+      "local_chronology_tokens": 6992896767,
+      "goldbach_only_tokens": 4857024799,
+      "mixed_tokens": 368899295,
+      "goldbach_related_upper_tokens": 5225924094,
+      "includes_guardian_reviews": false,
+      "prompt_boundary_split": false,
+      "report_sha256": "c4a280af3f69e43bfb12314a33f5392c828d4aef2a4d56f5d126f5523bff9e69",
+      "result_sha256": "c52f25b4b347eca7d3d9066a89893fe3c1017b5a0985952bc905f2cbf493d3ff"
+    }
+  },
+  "remote_gap": {
+    "visible_remote_windows_goldbach_task_count": 9,
+    "token_ledgers_available_locally": 0,
+    "numeric_contribution": null,
+    "rule": "No imputation and no estimate."
+  },
+  "arithmetic_rules": {
+    "total_tokens": "input_tokens + output_tokens",
+    "cached_input_tokens": "subset of input_tokens; not added again",
+    "reasoning_output_tokens": "subset of output_tokens; not added again"
+  },
+  "coo_adjudication": "Line A is used for the local full-quest scope because it includes real guardian-review model turns and applies the exact prompt boundary. The Goldbach-only result is reported as an interval because semantic classification differed between the two independent lines and mixed turns cannot be prorated."
+}

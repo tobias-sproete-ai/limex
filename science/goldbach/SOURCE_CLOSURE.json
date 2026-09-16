@@ -1,11 +1,14 @@
 {
   "schema": "limex-goldbach-exact-import-closure-v1",
   "root_modules": [
-    "GoldbachCircleMethodActualQ3FullConditionalClosureV18767"
+    "GoldbachCircleMethodActualQ3UnsignedPrefixSummaryMethodClassNoGoV18778",
+    "GoldbachCircleMethodActualQ3DirichletCharacterKernelRepairV18782",
+    "GoldbachCircleMethodActualQ3TwoPowerCorrectionFinalGateV18793",
+    "GoldbachCircleMethodActualQ3BMORProjectScaleObstructionV18795"
   ],
   "lean_toolchain": "leanprover/lean4:v4.33.1",
   "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
-  "custom_source_module_count": 634,
+  "custom_source_module_count": 661,
   "external_mathlib_import_count": 72,
   "external_mathlib_imports": [
     "Mathlib",
@@ -251,6 +254,14 @@
       "sha256": "947ab5ec414b6f82275d0d8a1fe823c830a34626598002bd750b5efaee4342cf"
     },
     {
+      "module": "GoldbachCircleMethodActualModelQ3CompositeReserveFloorDecisionV18770",
+      "sha256": "455ceb984021187117214d641d38a1251ea5dfe2537b8166831fbe805d47f83b"
+    },
+    {
+      "module": "GoldbachCircleMethodActualModelQ3PreLoweringRecombinationV18769",
+      "sha256": "46f8cccc89f9208d2da0198b92007b936df5027d6242f6b235cfb1509fe9727a"
+    },
+    {
       "module": "GoldbachCircleMethodActualMultiplierScaleV18135",
       "sha256": "84b4837e7b55a1874fe1994fa1948f62dea205e24ba67819eac7ebe6460e7f0c"
     },
@@ -303,8 +314,24 @@
       "sha256": "c3953ffac4c96e2150f954f9ed45bc76c43aaf0087d63fb7f0b065977aceeb3c"
     },
     {
+      "module": "GoldbachCircleMethodActualQ3BMORProjectScaleObstructionV18795",
+      "sha256": "d21252023be6ef9bfd449938f5dc4b120c20377f671231b0414b9d967b2320aa"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3CanonicalProfileAbsorptionGapEventualSignV18776",
+      "sha256": "daa63e648e9c7fc6e76b2c23bf318359cb2b8c1165b3eb7f7240458e90105f61"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3CanonicalProfileCeilingReserveDominanceDecisionV18775",
+      "sha256": "c167d25d4cf1fff31d0645cce58807430985d2eb4322984f596e1bdd24a3f15c"
+    },
+    {
       "module": "GoldbachCircleMethodActualQ3DirichletCharacterBindingV18760",
       "sha256": "1b623f81189f7a12a67a260780d543bafca4b08dedd9ba6cba33b832dd5d814b"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3DirichletCharacterKernelRepairV18782",
+      "sha256": "5cadc6fe44e6db6bb5bb0122eaf9b572cc0603a7b33fd91b08ca3ba2b07c5a5c"
     },
     {
       "module": "GoldbachCircleMethodActualQ3EndpointSpectralBudgetV18745",
@@ -319,6 +346,10 @@
       "sha256": "b1b502ff747610d016069a7771d15087c76feff90d91f68f8571363a73dfbe8a"
     },
     {
+      "module": "GoldbachCircleMethodActualQ3FinalSignedChannelSplitV18789",
+      "sha256": "d44f2af27e37458cfa6eed952d3d8dcbd1a2447bedbf0406de00ae870715835a"
+    },
+    {
       "module": "GoldbachCircleMethodActualQ3FullCharacterEvenCorrectionV18758",
       "sha256": "edc8820357ecfd97ef95f38d4d0996f991be74bd162e52b77101117137f5113f"
     },
@@ -331,8 +362,20 @@
       "sha256": "a6073dd119618b7f09d3233c9feb44d87304ef641e5a3f8db85988dce662fd1a"
     },
     {
+      "module": "GoldbachCircleMethodActualQ3FullPsiSourceTransferV18794",
+      "sha256": "331f968c016b6a25a279e50122be909adba9c6396f498199409901461b7ee4a8"
+    },
+    {
       "module": "GoldbachCircleMethodActualQ3LocalDensitySignedReserveV18739",
       "sha256": "6a82779812127831a7e24468cdf5e03f772b240ef1c9a4bcfbe1b3494027eeda"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3LocalDensityThreeClassSplitV18785",
+      "sha256": "bda5647b6b9b640b43c13ca87f4a7275741cf0416c446b622b8e50da21f985c3"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3OddPrefixExactPsiSplitV18791",
+      "sha256": "0a80c804052a00f5fc6607865672c78047250f23d62311a6db219bfd301c8b4f"
     },
     {
       "module": "GoldbachCircleMethodActualQ3PairFourierFactorizationV18743",
@@ -347,6 +390,10 @@
       "sha256": "d2f439522ec9ac1455f85deaeb3b3f6aed610aaec586d18a2c5ea4904f982e60"
     },
     {
+      "module": "GoldbachCircleMethodActualQ3PrefixLocalDensityReserveFloorDecisionV18768",
+      "sha256": "ab999f6440d2fc735fc60f95ce585bfc6a6153eb3d082418a4141d234af46d17"
+    },
+    {
       "module": "GoldbachCircleMethodActualQ3PrefixLocalDensitySignedReserveV18755",
       "sha256": "b49b3a8a95e5cf8b448d2d1cb83de4bbb113b8716d908f3c4fafa8b36abe28a7"
     },
@@ -359,8 +406,16 @@
       "sha256": "5fb7345782a08fe949cbd64dc33e6c81dec8abeb4a6221f163f1eea74f1af365"
     },
     {
+      "module": "GoldbachCircleMethodActualQ3PsiFluctuationChannelSplitV18792",
+      "sha256": "a718ff75b3cff7bb0ba600af72cc1be94bbd9c9eb3b626b4e54b5db07dad474d"
+    },
+    {
       "module": "GoldbachCircleMethodActualQ3RefinedProjectDebitV18746",
       "sha256": "9b376cab536778b76dc0c061cb30d9930f79d592ddd8d0b4a29475c7e65e7cc3"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3ResidueSelectorMainProfileAbsorptionV18774",
+      "sha256": "fba6c1bba3331dbe6ea42a951d9fff8ff556e1361379c38c750b84bc54797198"
     },
     {
       "module": "GoldbachCircleMethodActualQ3ScaleCombinedPrefixEnvelopeV18765",
@@ -379,6 +434,22 @@
       "sha256": "718af6b1129491e15f7a326474b639db43ebc1cce699f38264705a3ee8be01d0"
     },
     {
+      "module": "GoldbachCircleMethodActualQ3SignedProfileEnergyGateV18783",
+      "sha256": "4089f59f57bf899cb2a28e25a967aef871d296b8746605defc7bcc0173a65ec9"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3SignedProfileVariationCorrelationV18777",
+      "sha256": "72c85c38aa5d35b3a344fb2219113660e2eba5ff7d3827b1a1be314aba1b023c"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3SincAbelWeightedPairCorrelationDecisionV18773",
+      "sha256": "26c4892a4f2aa69b17e41367e952a25276402df217549558af4648467227251e"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3SincVariationEnergyBoundV18784",
+      "sha256": "7429ede95ca46054d1eec49387d94b34065860c6d0f3cc33ec52d69bae5d881d"
+    },
+    {
       "module": "GoldbachCircleMethodActualQ3SmallPrefixProjectAbsorptionV18763",
       "sha256": "c49f29d36ec64b8a25610e5d44db0024b18313dfbfd7c9179cc13f6be4a54ab7"
     },
@@ -395,12 +466,32 @@
       "sha256": "89468dabfd002d911da238e86ca9c2070ecb049f3e88cf741f7fe02eae86994f"
     },
     {
+      "module": "GoldbachCircleMethodActualQ3ThreePowerDebitFinalGateV18790",
+      "sha256": "d1cb5fb43827096a7d81b7b09d72a2ba9d4e101f6ac3eb03fe4b66757e524b7a"
+    },
+    {
       "module": "GoldbachCircleMethodActualQ3TriangularOneDimensionalModeReductionV18751",
       "sha256": "0446715c622cd0a84724cab05412e52dbb813fa975a8d5f7e1dde4449a45968c"
     },
     {
       "module": "GoldbachCircleMethodActualQ3TriangularPairCarrierPullbackV18750",
       "sha256": "153c53865afbf368bd488050505e2729a50e0ff30496ef281c6bfbd843cdcf1d"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3TwoPowerCorrectionFinalGateV18793",
+      "sha256": "8991dfc2f19fcc95ff83a4fd31c5c127f4cd232d888a23c303e713d5aef6ae3c"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3UnitBalanceScalarizationV18779",
+      "sha256": "52562e987ba87070f034f37285a990b55f011ce8dcf53d4f7f25bca77a0a0104"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3UnitCharacterSourceBindingV18780",
+      "sha256": "c3fd147d4c3eeb0afcce1d24842b58021b23004dee3ae1b0892ce05e7dc4a6b4"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3UnitCharacterSourceCompatibilityV18781",
+      "sha256": "c6cd7f98b1b59b00546c541d42a82cb28862a5aada26df55fffe10d3d620cdc6"
     },
     {
       "module": "GoldbachCircleMethodActualQ3UnitClassDifferenceV18754",
@@ -419,8 +510,28 @@
       "sha256": "8026fca6553ae958a55d310116fc4b1207a87578ea80469bf214b89db8a2967a"
     },
     {
+      "module": "GoldbachCircleMethodActualQ3UnsignedPrefixSummaryMethodClassNoGoV18778",
+      "sha256": "cd467b0e3e425a2c32920c61666069400882bc367d593d3af61914133d9c018f"
+    },
+    {
       "module": "GoldbachCircleMethodActualQ3WeightedFiberPullbackV18742",
       "sha256": "93cd1f3a770a3742737b6bbbe98ab251ee3a6c6f0fdcd0f52b0bb3f6fdab0cfd"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3WeightedPairConvolutionTransferV18772",
+      "sha256": "31bae59901e91bc37fa09b7969a183a5c6f5e966db930915abe6b14caf62ef21"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3ZeroClassConvolutionBoundV18788",
+      "sha256": "6d53fa4bb5f55e7cbe9576b7bca23d13d35408cc61e1bf3219ed54359a890abb"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3ZeroClassExactLogMassV18787",
+      "sha256": "14d3931e0acc9add380a60397072edd349557b7ede736cd0fc5a3cb0a98ef707"
+    },
+    {
+      "module": "GoldbachCircleMethodActualQ3ZeroClassThreePowerSupportV18786",
+      "sha256": "e08ee9475ea0e78a1e6b303ae85270841d74db7e0410581af2414e3ea7803c43"
     },
     {
       "module": "GoldbachCircleMethodActualRadicalCompanionBoundV18156",

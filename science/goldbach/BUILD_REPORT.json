@@ -1,16 +1,17 @@
 {
   "schema": "limex-goldbach-public-build-report-v1",
-  "capsule_version": "1.8.767",
-  "built_at_utc": "2026-09-15T01:37:28Z",
+  "capsule_version": "1.8.795",
+  "built_at_utc": "2026-09-16T23:06:00Z",
   "build_command": "lake build",
+  "audit_command": "lake env lean -DwarningAsError=true lean/Audit.lean",
   "build_exit_code": 0,
-  "build_job_count": 9341,
-  "custom_source_module_count": 634,
+  "build_job_count": 9375,
+  "custom_source_module_count": 661,
   "lean_toolchain": "leanprover/lean4:v4.33.1",
   "lean_binary_sha256_on_attesting_host": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
   "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
   "warning_as_error": true,
-  "audit_targets": 5,
+  "audit_targets": 8,
   "reported_axioms": [
     "propext",
     "Classical.choice",
@@ -18,5 +19,5 @@
   ],
   "sorry_ax_reported": false,
   "global_goldbach_status": "NO_PROOF",
-  "scope_note": "Exit code and axiom output attest the published conditional Lean closure only. They do not inhabit its open analytic hypotheses and do not prove the binary Goldbach conjecture."
+  "scope_note": "Exit code and axiom output attest the published V1.8.768--V1.8.795 q=3 reduction and method-obstruction chain only. The final asymptotic theorem rules out the documented absolute-majorant route at project scale; it neither inhabits the open sign-sensitive correlation hypothesis nor proves or falsifies the binary Goldbach conjecture."
 }

@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "record_id": "GOLDBACH_Q3_SOURCE_STRENGTH_DECISION_V1_8_795",
+  "attested_at_utc": "2026-09-16T21:42:22Z",
+  "run_status": "FAIL_CLOSED",
+  "global_proof_status": "NO_PROOF",
+  "goldbach_decision_status": "UNRESOLVED",
+  "goldbach_proved": false,
+  "goldbach_falsified": false,
+  "successful_terminal_outcome": null,
+  "terminal_policy": {
+    "permitted_success_outcomes": [
+      "CLASS_I_A__UNCONDITIONAL_UNIVERSAL_PROOF",
+      "CLASS_I_B__CONCRETE_COUNTEREXAMPLE"
+    ],
+    "achieved": []
+  },
+  "kernel_results": [
+    {
+      "version": "V1.8.794",
+      "status": "PASS",
+      "classification": "EXACT_FULL_PSI_SOURCE_TRANSFER",
+      "claims": [
+        "FULL_Q3_ZERO_CLASS_EQUALS_ODD_ZERO_CLASS",
+        "FULL_Q3_ZERO_CLASS_EQUALS_EXACT_THREE_POWER_LOG_MASS",
+        "PSI_EXACTLY_PARTITIONS_OVER_Q3_RESIDUES",
+        "FULL_PSI_ERROR_EQUALS_TWO_REDUCED_CLASS_ERRORS_PLUS_THREE_POWER_CORRECTION"
+      ],
+      "source_sha256": "331f968c016b6a25a279e50122be909adba9c6396f498199409901461b7ee4a8",
+      "audit_source_sha256": "96a071381a1792ca3292112574dfe056a359d508ba40d87a8d1bdc0be7185697",
+      "olean_sha256": "713640d8676afdc83965059c633bc9a82a268ee520c0788c473374d1ab19b5f7",
+      "axiom_log_sha256": "14c141be2d5b712b464ef0c6988d697ed1744400987b5e523e10e46ee334a7ea"
+    },
+    {
+      "version": "V1.8.795",
+      "status": "PASS",
+      "classification": "METHOD_SPECIFIC_STRUCTURAL_NEGATIVE_WITNESS",
+      "exact_normalized_majorant": "2*C*log(M)^20",
+      "asymptotic_result": "TENDSTO_AT_TOP_FOR_EVERY_C_GT_0",
+      "conservative_constant_checked": "1/840",
+      "scope_limits": [
+        "NOT_A_LOWER_BOUND_FOR_ACTUAL_SIGNED_CORRELATION",
+        "NOT_A_GOLDBACH_COUNTEREXAMPLE",
+        "NOT_A_GLOBAL_NO_GO_THEOREM",
+        "DOES_NOT_EXCLUDE_STRONGER_SOURCE_ESTIMATE",
+        "DOES_NOT_EXCLUDE_SIGN_SENSITIVE_CLOSURE"
+      ],
+      "source_sha256": "d21252023be6ef9bfd449938f5dc4b120c20377f671231b0414b9d967b2320aa",
+      "audit_source_sha256": "c909513b9475edb9f711c32aa34839d0846b5c528cb80db0e42d92bf0c3ad7f6",
+      "olean_sha256": "05badf70a2cddfbe4ac74d0fc330d54077ca7a45c2724ed22fdca589f9c35ff2",
+      "axiom_log_sha256": "6f8f1527df50dcdfa13970636d797f27a7587f95b61049495a77122ce0dc4cb7"
+    }
+  ],
+  "axiom_profile": {
+    "allowed_and_observed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "sorryAx_observed": false,
+    "custom_axioms_observed": false
+  },
+  "external_source": {
+    "authors": "Bennett, Martin, O'Bryant, Rechnitzer",
+    "title": "Explicit bounds for primes in arithmetic progressions",
+    "url": "https://arxiv.org/abs/1802.00085",
+    "matched_shape": "x/log(x)",
+    "project_gate_proved_by_source": false
+  },
+  "open_obligations": [
+    {
+      "id": "SOURCE_STRENGTH_COMPATIBLE_ESTIMATE",
+      "status": "OPEN",
+      "required": "A hypothesis-matched decay estimate that survives the actual project normalization"
+    },
+    {
+      "id": "ACTUAL_Q3_PNT_RESIDUAL_SIGNED_CORRELATION",
+      "status": "OPEN",
+      "required": "An unconditional sign-sensitive bound for the linear mean and genuine psi fluctuation channel"
+    },
+    {
+      "id": "GLOBAL_MINOR_ARC_CLOSURE",
+      "status": "OPEN",
+      "required": "Uniform closure of all non-diagonal and minor-arc channels"
+    }
+  ],
+  "human_goldstandard": {
+    "path": "GOLDSTANDARD_HUMAN.md",
+    "sha256": "19372957e748e1faf3beb4cd01d0066a6572425ee10240a6c894183bf23c77b3"
+  },
+  "claim_boundary": "NO_UNCONDITIONAL_PROOF_NO_COUNTEREXAMPLE_NO_PROMOTION"
+}

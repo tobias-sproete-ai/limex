@@ -1,17 +1,18 @@
-# LIMEX Goldbach Lean audit capsule v1.8.767
+# LIMEX Goldbach Lean audit capsule v1.8.795
 
 This directory is a self-contained, reproducible Lean 4 capsule for the
-kernel-checked **conditional** q=3 project-branch closure developed in the
-LIMEX Goldbach research run.
+kernel-checked q=3 reduction chain developed after the public V1.8.767
+baseline.
 
-It is not a proof of the binary Goldbach conjecture.
+It is **not** a proof or falsification of the binary Goldbach conjecture.
 
 ```text
-V1_8_767_THEOREM_STATUS       = KERNEL_PROVED
-CONDITIONAL_COMPOSITION       = PROVED
-SCALE_ESTIMATE_INHABITATION   = OPEN
-SIGNED_RESERVE_INHABITATION   = OPEN
-GLOBAL_GOLDBACH_STATUS        = NO_PROOF
+V1_8_793_REDUCED_GATE          = KERNEL_PROVED_CONDITIONAL
+V1_8_794_FULL_PSI_TRANSFER     = KERNEL_PROVED
+V1_8_795_METHOD_WITNESS        = KERNEL_PROVED
+Q3_SIGN_SENSITIVE_GATE         = OPEN
+GLOBAL_MINOR_ARC_CLOSURE       = OPEN
+GLOBAL_GOLDBACH_STATUS         = NO_PROOF
 ```
 
 ## Reproduce
@@ -20,51 +21,103 @@ Install Git and Elan, then run:
 
 ```bash
 git clone https://github.com/tobias-sproete-ai/limex.git
-cd limex/science/goldbach
+cd limex
+git checkout goldbach-v1.8.795
+cd science/goldbach
 lake exe cache get
 lake build
 ```
 
-`lake build` compiles the exact custom import closure and the `Audit.lean`
-entry point with warnings treated as errors. The printed assumption report is
-expected to contain only Mathlib's standard logical principles used by these
-theorems (`propext`, `Classical.choice`, and `Quot.sound`) and no `sorryAx`.
+`lake build` compiles the exact custom source set and the `Audit.lean` entry
+point with warnings treated as errors. The printed assumption report must
+contain no `sorryAx` and no project-specific axiom.
 
-## What is proved
+## Final reduced q=3 gate
 
-The final theorem
-`GoldbachCircleMethodActualQ3FullConditionalClosureV18767.eventually_actualQ3_projectBranch_positive`
-composes:
+V1.8.793 proves that the following inequality is sufficient for positivity of
+the actual q=3 composite reserve:
 
-1. elementary eventual scale prerequisites;
-2. a source-shaped fixed-modulus distribution estimate supplied as an explicit
-   hypothesis;
-3. a signed local-density reserve floor supplied as an explicit hypothesis;
-4. an audited absorption step for the literal q=3 project branch.
+\[
+\frac{3}{2}D_3(M,q)
++R_{\mathrm{PNT}}(M,q,n)
++\frac{1}{2}D_2(M,q)
+< B_3(M,R,n,P,q),
+\]
 
-Both substantive inputs remain visible in the theorem signature. The capsule
-does not construct inhabitants for them, does not close the other denominator
-channels or the minor arcs, and does not state a top-level Goldbach theorem.
+where
+
+\[
+R_{\mathrm{PNT}}(M,q,n)
+=C_{\mathrm{linear}}(M,q,n)
+-\frac12 C_{\psi-x}(M,q,n).
+\]
+
+Here `D₂` and `D₃` are explicit powers-of-two and powers-of-three debits,
+`B₃` is the positive base reserve, and `R_PNT` is the remaining sign-sensitive
+q=3 residual.
+
+## Exact source transfer
+
+V1.8.794 proves the exact decomposition
+
+\[
+\psi(x)-x=E_1(x)+E_2(x)+\lfloor\log_3x\rfloor\log 3.
+\]
+
+Thus a two-class source estimate of size `C*x/log(x)` yields the full absolute
+envelope
+
+\[
+|\psi(x)-x|
+<2C\frac{x}{\log x}+\lfloor\log_3x\rfloor\log 3.
+\]
+
+## Method-specific negative witness
+
+V1.8.795 proves that inserting this literal `x/log(x)` absolute envelope into
+the present `log(M)^21` project normalization produces
+
+\[
+2C\frac{\log(M)^{21}}{\log(M)}
+=2C\log(M)^{20}\longrightarrow\infty
+\quad(C>0).
+\]
+
+This excludes only that absolute-majorant composition. It is not a lower bound
+for the actual signed correlation, not a counterexample to Goldbach, and not a
+global no-go theorem. A stronger source estimate or a genuinely sign-sensitive
+argument may still close the local gate.
+
+## What remains open
+
+1. an unconditional sign-sensitive bound for
+   `actualQ3PNTResidualSignedCorrelation`;
+2. a source estimate whose exact decay survives the actual project
+   normalization, if the absolute route is retained;
+3. uniform closure of all non-diagonal and minor-arc channels outside this
+   local q=3 branch.
 
 ## Reproducibility and provenance
 
 - Lean: `leanprover/lean4:v4.33.1`
 - Mathlib: `0df444a360eaa60ab8c11dca51a86af692955474`
-- Root module: `GoldbachCircleMethodActualQ3FullConditionalClosureV18767`
-- Exact source closure: `SOURCE_CLOSURE.json`
+- Root modules: V1.8.778, V1.8.782, V1.8.793 and V1.8.795
+- Exact source inventory: `SOURCE_CLOSURE.json`
 - File hashes: `SHA256SUMS`
 - Audit entry: `lean/Audit.lean`
+- Human-readable decision record: `goldstandard/GOLDSTANDARD_HUMAN.md`
+- Machine-readable decision record: `goldstandard/GOLDSTANDARD_AGENTIC.json`
 
 The sources are published for inspection under the licensing terms stated at
 the repository root. No separate permission is implied by this audit capsule.
 
 ## External mathematical reference
 
-The open fixed-modulus estimate is shaped for comparison with explicit bounds
-for primes in arithmetic progressions. The corresponding primary reference is:
+The explicit arithmetic-progression estimate examined by the final method
+witness is documented in:
 
-Ethan S. Lee, Greg Martin, Andrew V. Sutherland, and John D. Thompson,
-"Explicit bounds for primes in arithmetic progressions," arXiv:1802.00085.
+M. A. Bennett, G. Martin, K. O'Bryant and A. Rechnitzer,
+“Explicit bounds for primes in arithmetic progressions,” arXiv:1802.00085.
 
-The paper is a reference for the external analytic input. Its results are not
-silently imported as axioms or claimed as locally proved facts in this capsule.
+The paper is an external analytic source. Its results are not silently imported
+as axioms and are not claimed to prove the project gate.
