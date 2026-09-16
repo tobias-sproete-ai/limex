@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/limex-science-admission-decision-v1.schema.json",
+  "title": "LIMEX Science non-authorizing structural decision",
+  "oneOf": [
+    {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "decision", "reason", "packet_sha256", "external_effect", "access_grant"],
+      "properties": {
+        "schema": {"const": "limex-science-admission-decision-v1"},
+        "decision": {"const": "DENY_FAIL_CLOSED"},
+        "reason": {"type": "string"},
+        "packet_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "external_effect": {"const": "DENY"},
+        "access_grant": {"type": "null"}
+      }
+    },
+    {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "decision", "reason", "packet_sha256", "scope_sha256", "external_effect", "access_grant"],
+      "properties": {
+        "schema": {"const": "limex-science-admission-decision-v1"},
+        "decision": {"const": "HOLD_EXTERNAL_VERIFICATION_REQUIRED"},
+        "reason": {"const": "STRUCTURAL_CONSISTENCY_ONLY__VERIFY_ALL_SIGNATURES_TRUST_CHAINS_AND_REVOCATION_ONLINE"},
+        "packet_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "scope_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "external_effect": {"const": "DENY"},
+        "access_grant": {"type": "null"}
+      }
+    }
+  ]
+}

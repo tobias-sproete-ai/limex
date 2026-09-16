@@ -1,0 +1,24 @@
+{
+  "schema": "limex-science-sponsored-compute-service-gates-v1",
+  "status": "ALL_LIVE_SERVICE_GATES_FAIL_CLOSED",
+  "gates": [
+    {"id": "A0", "name": "PUBLIC_SERVICE_SEPARATION", "status": "PASS_POLICY_ONLY__RUNTIME_UNATTESTED"},
+    {"id": "A1", "name": "IDENTITY_AND_ASSERTION_VERIFIERS", "status": "FAIL_CLOSED_NOT_IMPLEMENTED"},
+    {"id": "A2", "name": "HOLDER_OF_KEY_VERIFIER", "status": "FAIL_CLOSED_NOT_IMPLEMENTED"},
+    {"id": "A3", "name": "SIGNED_ADMISSION_RECEIPT", "status": "FAIL_CLOSED_NOT_IMPLEMENTED"},
+    {"id": "A4", "name": "FOUR_EYES_AND_CONFLICT_GOVERNANCE", "status": "FAIL_CLOSED_SOP_UNATTESTED"},
+    {"id": "A5", "name": "PROJECT_DUAL_USE_AND_CHANGE_CONTROL", "status": "FAIL_CLOSED_NOT_IMPLEMENTED"},
+    {"id": "A6", "name": "SENDER_CONSTRAINED_CAPABILITY_ISSUER", "status": "FAIL_CLOSED_NOT_IMPLEMENTED"},
+    {"id": "A7", "name": "GATEWAY_SECRET_AND_COST_CONTROL", "status": "FAIL_CLOSED_NOT_IMPLEMENTED"},
+    {"id": "A8", "name": "TENANT_RUNTIME_DATA_AND_EGRESS_CONTROL", "status": "FAIL_CLOSED_NOT_IMPLEMENTED"},
+    {"id": "A9", "name": "ATOMIC_BUDGET_AND_SYBIL_CONTROL", "status": "FAIL_CLOSED_NOT_IMPLEMENTED"},
+    {"id": "A10", "name": "ONLINE_REVOCATION_AND_EMERGENCY_HOLD", "status": "FAIL_CLOSED_NOT_IMPLEMENTED"},
+    {"id": "A11", "name": "PRIVACY_AND_RETENTION", "status": "FAIL_CLOSED_LEGAL_AND_RUNTIME_REVIEW_PENDING"},
+    {"id": "A12", "name": "AUDIT_LOG_PRIVACY", "status": "FAIL_CLOSED_NOT_IMPLEMENTED"},
+    {"id": "A13", "name": "FAIR_APPEAL_AND_INDEPENDENT_RESEARCHER_PATH", "status": "FAIL_CLOSED_SOP_UNATTESTED"},
+    {"id": "A14", "name": "INDEPENDENT_ABUSE_PRIVACY_TEST_AND_BOUNDED_PILOT", "status": "FAIL_CLOSED_NOT_EXECUTED"}
+  ],
+  "compute_dispatch": "DENY",
+  "capability_issuance": "DENY",
+  "live_user_accreditation": "DENY"
+}

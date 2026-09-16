@@ -1,0 +1,199 @@
+{
+  "entries": [
+    {
+      "bytes": 753,
+      "path": "CLEANROOM_PROVENANCE.json",
+      "sha256": "a3563e60f120d9aaf5dbce070933eac1f835e6cd6235e1027710c4863aedeedd"
+    },
+    {
+      "bytes": 695,
+      "path": "LICENSE_GATE.md",
+      "sha256": "f80d25c085206a27649d755648ff059473c728a9618aa1dba38dba2854200399"
+    },
+    {
+      "bytes": 6246,
+      "path": "PREFACE.md",
+      "sha256": "5c036286ee7619478b281d2d4360b406ea2d2dee970aacc46a464f97d2038ff1"
+    },
+    {
+      "bytes": 938,
+      "path": "PUBLIC_RELEASE_GATE.json",
+      "sha256": "1cfa2f84e751dd0c79717170cd69ac846151029500976d58b13c2ad731b9f41d"
+    },
+    {
+      "bytes": 2180,
+      "path": "README.md",
+      "sha256": "b5d6687e44b39a87b9e15a97d82336196ecc48188958e54a66c6c947ddca40eb"
+    },
+    {
+      "bytes": 1912,
+      "path": "README_DE.md",
+      "sha256": "2656f1412acce5cb4b9e87fd04477f81e3d5db3300c663f8b7534b7bc016c55f"
+    },
+    {
+      "bytes": 1484,
+      "path": "RESEARCH_PAYLOAD_BINDING.json",
+      "sha256": "d6ecd7afc21aaf0874236873419a1ca0bc8968bc26e77ef6cb4b32a97ef071da"
+    },
+    {
+      "bytes": 1643,
+      "path": "SCOPE_AND_NONCLAIMS.md",
+      "sha256": "0acbcdb99270cb513a4db365ae198c1bb57cb732680115640765f5eaff69c490"
+    },
+    {
+      "bytes": 460,
+      "path": "SECURITY.md",
+      "sha256": "af96ca194e0349f7ad0ec4044b677eb446ec51d601b4e0e59e562d9b83fbd315"
+    },
+    {
+      "bytes": 3272,
+      "path": "access/ACCREDITATION_POLICY.md",
+      "sha256": "d055d5fb4ed6aa989a92caa3c9166d89ae957b9cc90450f6c34ec5717c997a86"
+    },
+    {
+      "bytes": 1229,
+      "path": "access/NEGATIVE_TEST_CATALOG.json",
+      "sha256": "4719493b86cd5e49fcaedc1b20fea9fbbc1bb6e5bbbce6ef952bee7a8ae7000f"
+    },
+    {
+      "bytes": 1797,
+      "path": "access/SERVICE_GATES.json",
+      "sha256": "fbabe26316a2cec511d1b0b63ea0b2e30be5fbb2cc84cda530fc5516d0ad40ca"
+    },
+    {
+      "bytes": 1664,
+      "path": "access/STANDARDS_AND_SOURCES.md",
+      "sha256": "37906b65f033aecb5547d72d61dad258ae0a9e95ab3132c3f7c5f30121577cae"
+    },
+    {
+      "bytes": 3446,
+      "path": "access/THREAT_MODEL.md",
+      "sha256": "14e08b6964a842efc7571ed8a92157cf72d96a2a5f2c61f6c4fba5e14c82dba8"
+    },
+    {
+      "bytes": 6541,
+      "path": "evidence/CLEANROOM_TEST_STDERR.log",
+      "sha256": "b2a973e1846da275c96d84512e3e66ac00edfe4a19f8d487efcacb92d0a0d08d"
+    },
+    {
+      "bytes": 0,
+      "path": "evidence/CLEANROOM_TEST_STDOUT.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1182,
+      "path": "evidence/CLEANROOM_VALIDATION_REPORT.json",
+      "sha256": "3d5eaa39a68ebdb34d1a03cd8b2e385b92101ac0abda45de15cef2ae54a4e711"
+    },
+    {
+      "bytes": 2081,
+      "path": "evidence/DOUBLE_BLIND_AUDIT_LINE_A.md",
+      "sha256": "6dd2cbc16517ce3bb27a96beaddcd5dc52eba0bf2eac0c98fd9a7e270727b65b"
+    },
+    {
+      "bytes": 1571,
+      "path": "evidence/DOUBLE_BLIND_AUDIT_LINE_B.md",
+      "sha256": "ad2ec233437f868950fc8cff37927aa8cc844b310d101af33361d50535573962"
+    },
+    {
+      "bytes": 2411,
+      "path": "evidence/DOUBLE_BLIND_AUDIT_SYNTHESIS.json",
+      "sha256": "7f41cb1b2fee7b69fd1768a726c4b9d6a9c8e22c0b9c7d004a97220c44502d26"
+    },
+    {
+      "bytes": 1590,
+      "path": "evidence/RC4_AUDIT_LINEAGE.md",
+      "sha256": "2e363d01320ea4d8e01af039fd6a41d3a89b566611f1d2a6494b8f25289f1d53"
+    },
+    {
+      "bytes": 7407,
+      "path": "goldstandard/CLEANROOM_GOLDSTANDARD_HUMAN.md",
+      "sha256": "b1081769e1e6fce16d199b0edac482816a8e26b355386ff910ca4e3827c70369"
+    },
+    {
+      "bytes": 2443,
+      "path": "goldstandard/CLEANROOM_GOLDSTANDARD_MACHINE.json",
+      "sha256": "c7b543eea3bcf61e0eaf5a69fe4c9ffb1a7117d12e05a66197eb8a96ff803e05"
+    },
+    {
+      "bytes": 1322,
+      "path": "release/OWNER_RELEASE_APPROVAL.md",
+      "sha256": "602e2fc11fde92b9142a4a8cebf75cdc82d6c88dc921e9d252db7ff9cbeab9db"
+    },
+    {
+      "bytes": 926,
+      "path": "release/RELEASE_INSTRUCTIONS.md",
+      "sha256": "20dd19e199843a2d6539b408d238a9321d583a07a72ef3a1ed1c2b346ccb3dc2"
+    },
+    {
+      "bytes": 903,
+      "path": "release/RELEASE_MANIFEST.json",
+      "sha256": "da869aeb256ff4523ff03d522aad19abd8d3ddaae7bd21ca6b32feae0449b508"
+    },
+    {
+      "bytes": 1178,
+      "path": "release/RELEASE_NOTES.md",
+      "sha256": "3711a0929c1294865640ab98cc8a1e0a412803181b6a7a12b2a4d6d8443dadc1"
+    },
+    {
+      "bytes": 823,
+      "path": "research/README.md",
+      "sha256": "dbc9a428fd382e00a21e67b762ec824028ca7ced188659105e81ed53710b0fe5"
+    },
+    {
+      "bytes": 1475,
+      "path": "schemas/limex-science-admission-decision-v1.schema.json",
+      "sha256": "1ad97f035eb1fbe6ce563267a1fc8ab40396c11ccda3ef559b87ca241dd5d2bc"
+    },
+    {
+      "bytes": 6968,
+      "path": "schemas/limex-science-admission-packet-v1.schema.json",
+      "sha256": "6ac6bef9855313b88286d68c7a61775217912328b7bd1de16d07ef0cf802e453"
+    },
+    {
+      "bytes": 12740,
+      "path": "scripts/build_manifest.py",
+      "sha256": "4b70e642fb68dda2e9b7b8420b24e61b158730a3fba048d6fefb1a8b4ddee20b"
+    },
+    {
+      "bytes": 15054,
+      "path": "scripts/validate_cleanroom_release.py",
+      "sha256": "eb95aad619590d2f0dcf382b46cd2d573ec47851e6419bdd300b51586bfd23bb"
+    },
+    {
+      "bytes": 16583,
+      "path": "scripts/verify_frozen_package.py",
+      "sha256": "c7cec9efbb21b70803909dac69e27dbf061b37a48041e435e3fdf98ac90342cb"
+    },
+    {
+      "bytes": 21198,
+      "path": "src/science_admission_core.py",
+      "sha256": "69ca9c1527d30949a017df5c5c87178d89e5bbab62be120be26d6e77a32c3d0d"
+    },
+    {
+      "bytes": 1393,
+      "path": "tests/test_release_controls.py",
+      "sha256": "9e7b0c3aa46a58c6e20fe9f140573c2a7371476c7e3326fc2998ac4c9cd984d2"
+    },
+    {
+      "bytes": 15390,
+      "path": "tests/test_science_admission_core.py",
+      "sha256": "f56438d6bf9a73abb749ed3b32f8618a8cc4d0f6060e8a366c37d921a5871066"
+    }
+  ],
+  "hash_algorithm": "SHA-256",
+  "package_root_sha256": "8809b493f28d67c8b7732d22c4483ac342034267342bd5a7176413a0796440a1",
+  "regular_file_count": 36,
+  "release": "LIMEX_SCIENCE_CLEANROOM_V1_0_RC4",
+  "schema": "LIMEX_SCIENCE_CLEANROOM_PACKAGE_MANIFEST_V1",
+  "self_exclusion": [
+    "PACKAGE_MANIFEST.json",
+    "SHA256SUMS.txt"
+  ],
+  "test_stderr_sha256": "b2a973e1846da275c96d84512e3e66ac00edfe4a19f8d487efcacb92d0a0d08d",
+  "test_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "total_bytes": 148898,
+  "validated_input_regular_file_count": 33,
+  "validated_input_tree_root_sha256": "fc7dc57471f9aed168ff5e36049cd4bdbcf96b1f0cdfb0fc4b6108158ffaa1a4",
+  "validation_report_sha256": "3d5eaa39a68ebdb34d1a03cd8b2e385b92101ac0abda45de15cef2ae54a4e711"
+}

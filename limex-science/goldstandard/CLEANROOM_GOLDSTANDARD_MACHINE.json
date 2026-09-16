@@ -1,0 +1,51 @@
+{
+  "schema": "limex-science-cleanroom-goldstandard-v1",
+  "release": "LIMEX_SCIENCE_CLEANROOM_V1_0_RC4",
+  "status": "PASS_WITH_DECLARED_LIMITS__LIVE_ACCREDITATION_FAIL_CLOSED",
+  "public_release": "BLOCKED__PENDING_POST_FREEZE_AUDIT_AND_DIGEST_CONFIRMATION",
+  "research_payload": "BOUND_EXTERNAL_REPOSITORY_TAG__GOLDBACH_V1_8_767__NO_PROOF",
+  "goldbach_proof_status": "NO_PROOF",
+  "implemented_scope": [
+    "CLOSED_SCHEMA_STRUCTURAL_ADMISSION_PROJECTION",
+    "INSTITUTIONAL_AND_INDEPENDENT_RESEARCHER_ROUTES",
+    "TWO_DISTINCT_SCOPE_BOUND_REVIEWS",
+    "PROJECT_PURPOSE_KEY_SCOPE_BUDGET_TIME_POLICY_AND_REVOCATION_BINDING",
+    "DENY_OR_EXTERNAL_VERIFICATION_HOLD_ONLY",
+    "LIFECYCLE_BLOCK_ON_EXPIRY_SUSPENSION_REVOCATION_OR_INVALID_TRANSITION",
+    "LOCAL_NO_NETWORK_NEGATIVE_TESTS",
+    "SELF_EXCLUDING_SHA256_PACKAGE_MANIFEST"
+  ],
+  "decision_ceiling": "HOLD_EXTERNAL_VERIFICATION_REQUIRED",
+  "external_effect": "DENY",
+  "access_grant": null,
+  "founder_privileged_access": "NOT_IMPLEMENTED__NO_RECOGNIZED_FOUNDER_KEY_ROLE_OVERRIDE_OR_REOPEN_PATH",
+  "same_identity_mutation": "CRYPTOGRAPHICALLY_DISTINGUISHABLE__SUCCESSOR_REQUIRED",
+  "live_user_accreditation": "FAIL_CLOSED_NOT_IMPLEMENTED",
+  "sponsored_compute_dispatch": "FAIL_CLOSED_NOT_IMPLEMENTED",
+  "absolute_abuse_prevention": "FORBIDDEN_CLAIM",
+  "identity_signals": {
+    "federated_identity": "INPUT_SIGNAL_ONLY__NOT_SCIENTIFIC_AUTHORIZATION",
+    "orcid": "AUTHENTICATED_ID_PROVENANCE_ONLY__NOT_ELIGIBILITY",
+    "reproducible_artifact": "SCOPE_EVIDENCE_ONLY__NOT_IDENTITY_OR_INTENT",
+    "holder_of_key": "KEY_POSSESSION_ONLY__NOT_PERSON_OR_INTENT"
+  },
+  "double_blind_audit": {
+    "line_a": "COMPLETE_READ_ONLY",
+    "line_b": "COMPLETE_READ_ONLY",
+    "cross_line_exchange_before_completion": false,
+    "synthesis": "CONVERGED",
+    "unit_tests": 49,
+    "binding_mutations": 35,
+    "type_and_shape_mutations": 1140,
+    "lifecycle_combinations": 56
+  },
+  "runtime_gates": "ALL_LIVE_SERVICE_GATES_FAIL_CLOSED",
+  "legal_privacy_licence_release_authority": "OWNER_BOUNDARIES_RECORDED__POST_FREEZE_AUDIT_AND_DIGEST_CONFIRMATION_PENDING",
+  "tool_provenance": {
+    "orchestration_product": "LIMEX",
+    "compatibility_package_id": "R5.5",
+    "local_instruction_sha256": "db11a944a041587e1709921d7a923674519fa9824bf9d51255928b09b32fc704",
+    "model_environment": "Codex GPT-6 Astra",
+    "model_attestation": "OPERATOR_ENVIRONMENT_DECLARATION_ONLY"
+  }
+}

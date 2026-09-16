@@ -1,0 +1,23 @@
+{
+  "schema": "limex-science-release-manifest-v1",
+  "release": "LIMEX_SCIENCE_CLEANROOM_V1_0_RC4",
+  "status": "FROZEN_SUCCESSOR_PENDING_EXTERNAL_RELEASE_ENVELOPE",
+  "public_release_authority": "PENDING_POST_FREEZE_AUDIT_AND_DIGEST_CONFIRMATION",
+  "research_payload_included": false,
+  "research_payload_bound": true,
+  "research_payload_binding": "RESEARCH_PAYLOAD_BINDING.json",
+  "sponsored_compute_implemented": false,
+  "live_user_accreditation_enabled": false,
+  "founder_privileged_access_implemented": false,
+  "founder_override_or_reopen_path_implemented": false,
+  "repository_target": "https://github.com/tobias-sproete-ai/limex",
+  "external_release_envelope_required": true,
+  "external_release_envelope_binds": [
+    "PACKAGE_ROOT_SHA256",
+    "ZIP_SHA256",
+    "COMMIT_SHA1",
+    "ANNOTATED_TAG",
+    "POST_FREEZE_AUDIT_RECEIPT_SHA256",
+    "DIGEST_BOUND_EXECUTIVE_CONFIRMATION"
+  ]
+}

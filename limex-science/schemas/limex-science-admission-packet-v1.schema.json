@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/limex-science-admission-packet-v1.schema.json",
+  "title": "LIMEX Science structural admission packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema", "application_id", "route", "subject_id", "subject_kind", "project_id",
+    "purpose_code", "requested_scopes", "requested_budget_units",
+    "requested_not_before", "requested_expires_at", "credential_key_sha256",
+    "policy_sha256", "evidence_receipts", "scientific_reviews",
+    "revocation_snapshot", "terms_acceptance"
+  ],
+  "properties": {
+    "schema": {"const": "limex-science-admission-packet-v1"},
+    "application_id": {"$ref": "#/$defs/id"},
+    "route": {"enum": ["INSTITUTIONAL", "INDEPENDENT_RESEARCHER"]},
+    "subject_id": {"$ref": "#/$defs/id"},
+    "subject_kind": {"const": "NATURAL_PERSON"},
+    "project_id": {"$ref": "#/$defs/id"},
+    "purpose_code": {"const": "FORMAL_SCIENCE_RESEARCH"},
+    "requested_scopes": {
+      "type": "array", "minItems": 1, "maxItems": 3, "uniqueItems": true,
+      "items": {"enum": ["FORMAL_ARTIFACT_BUILD", "FORMAL_ARTIFACT_AUDIT", "BOUNDED_MODEL_INFERENCE"]}
+    },
+    "requested_budget_units": {"type": "integer", "minimum": 1, "maximum": 1000000},
+    "requested_not_before": {"type": "integer", "minimum": 0},
+    "requested_expires_at": {"type": "integer", "minimum": 0},
+    "credential_key_sha256": {"$ref": "#/$defs/digest"},
+    "policy_sha256": {"$ref": "#/$defs/digest"},
+    "evidence_receipts": {
+      "type": "array", "minItems": 3, "maxItems": 6,
+      "items": {"$ref": "#/$defs/evidence"}
+    },
+    "scientific_reviews": {
+      "type": "array", "minItems": 2, "maxItems": 2,
+      "items": {"$ref": "#/$defs/review"}
+    },
+    "revocation_snapshot": {"$ref": "#/$defs/revocation"},
+    "terms_acceptance": {"$ref": "#/$defs/terms"}
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Z0-9][A-Z0-9._:-]{2,127}$"},
+    "digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "kind", "issuer_id", "receipt_id", "application_id", "subject_id", "project_id", "credential_key_sha256", "issued_at", "expires_at", "assurance_profile", "verification_status", "payload_sha256", "signature_sha256"],
+      "properties": {
+        "schema": {"const": "limex-science-external-evidence-receipt-v1"},
+        "kind": {"enum": ["FEDERATED_IDENTITY", "RESEARCH_AFFILIATION", "HOLDER_OF_KEY", "INDEPENDENT_IDENTITY_PROOFING", "REPRODUCIBLE_RESEARCH_ARTIFACT", "ORCID_PROVENANCE"]},
+        "issuer_id": {"$ref": "#/$defs/id"},
+        "receipt_id": {"$ref": "#/$defs/id"},
+        "application_id": {"$ref": "#/$defs/id"},
+        "subject_id": {"$ref": "#/$defs/id"},
+        "project_id": {"$ref": "#/$defs/id"},
+        "credential_key_sha256": {"$ref": "#/$defs/digest"},
+        "issued_at": {"type": "integer", "minimum": 0},
+        "expires_at": {"type": "integer", "minimum": 0},
+        "assurance_profile": {"enum": ["FEDERATED_IDENTITY_HIGH", "RESEARCH_AFFILIATION_CURRENT", "HOLDER_OF_KEY_FRESH_CHALLENGE", "IDENTITY_PROOFING_HIGH", "REPRODUCIBLE_SCOPE_REVIEWED", "AUTHENTICATED_ORCID_ONLY"]},
+        "verification_status": {"const": "SIGNATURE_AND_TRUST_CHAIN_VERIFICATION_REQUIRED"},
+        "payload_sha256": {"$ref": "#/$defs/digest"},
+        "signature_sha256": {"$ref": "#/$defs/digest"}
+      }
+    },
+    "review": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "reviewer_id", "reviewer_organization_id", "application_id", "subject_id", "project_id", "decision", "conflict_status", "scope_sha256", "issued_at", "expires_at", "signature_sha256", "verification_status"],
+      "properties": {
+        "schema": {"const": "limex-science-scientific-review-v1"},
+        "reviewer_id": {"$ref": "#/$defs/id"},
+        "reviewer_organization_id": {"$ref": "#/$defs/id"},
+        "application_id": {"$ref": "#/$defs/id"},
+        "subject_id": {"$ref": "#/$defs/id"},
+        "project_id": {"$ref": "#/$defs/id"},
+        "decision": {"const": "APPROVE_DECLARED_RESEARCH_SCOPE"},
+        "conflict_status": {"const": "NO_KNOWN_CONFLICT_DECLARED"},
+        "scope_sha256": {"$ref": "#/$defs/digest"},
+        "issued_at": {"type": "integer", "minimum": 0},
+        "expires_at": {"type": "integer", "minimum": 0},
+        "signature_sha256": {"$ref": "#/$defs/digest"},
+        "verification_status": {"const": "SIGNATURE_AND_TRUST_CHAIN_VERIFICATION_REQUIRED"}
+      }
+    },
+    "revocation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "issuer_id", "application_id", "subject_id", "project_id", "credential_key_sha256", "epoch", "checked_at", "expires_at", "subject_status", "credential_status", "project_status", "snapshot_sha256", "signature_sha256", "verification_status"],
+      "properties": {
+        "schema": {"const": "limex-science-revocation-snapshot-v1"},
+        "issuer_id": {"$ref": "#/$defs/id"},
+        "application_id": {"$ref": "#/$defs/id"},
+        "subject_id": {"$ref": "#/$defs/id"},
+        "project_id": {"$ref": "#/$defs/id"},
+        "credential_key_sha256": {"$ref": "#/$defs/digest"},
+        "epoch": {"type": "integer", "minimum": 1},
+        "checked_at": {"type": "integer", "minimum": 0},
+        "expires_at": {"type": "integer", "minimum": 0},
+        "subject_status": {"const": "ACTIVE"},
+        "credential_status": {"const": "ACTIVE"},
+        "project_status": {"const": "ACTIVE"},
+        "snapshot_sha256": {"$ref": "#/$defs/digest"},
+        "signature_sha256": {"$ref": "#/$defs/digest"},
+        "verification_status": {"const": "SIGNATURE_AND_TRUST_CHAIN_VERIFICATION_REQUIRED"}
+      }
+    },
+    "terms": {
+      "type": "object", "additionalProperties": false,
+      "required": ["schema", "issuer_id", "receipt_id", "application_id", "subject_id", "project_id", "terms_version", "purpose_code", "policy_sha256", "credential_key_sha256", "accepted_at", "acceptance_sha256", "signature_sha256", "verification_status"],
+      "properties": {
+        "schema": {"const": "limex-science-terms-acceptance-v1"},
+        "issuer_id": {"$ref": "#/$defs/id"},
+        "receipt_id": {"$ref": "#/$defs/id"},
+        "application_id": {"$ref": "#/$defs/id"},
+        "subject_id": {"$ref": "#/$defs/id"},
+        "project_id": {"$ref": "#/$defs/id"},
+        "terms_version": {"$ref": "#/$defs/id"},
+        "purpose_code": {"const": "FORMAL_SCIENCE_RESEARCH"},
+        "policy_sha256": {"$ref": "#/$defs/digest"},
+        "credential_key_sha256": {"$ref": "#/$defs/digest"},
+        "accepted_at": {"type": "integer", "minimum": 0},
+        "acceptance_sha256": {"$ref": "#/$defs/digest"},
+        "signature_sha256": {"$ref": "#/$defs/digest"},
+        "verification_status": {"const": "SIGNATURE_AND_TRUST_CHAIN_VERIFICATION_REQUIRED"}
+      }
+    }
+  }
+}

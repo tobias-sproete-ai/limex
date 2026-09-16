@@ -1,0 +1,31 @@
+{
+  "assertions": [
+    "CLOSED_SCHEMA_STRUCTURAL_DECIDER",
+    "STRONGEST_DECISION_REMAINS_EXTERNAL_VERIFICATION_HOLD",
+    "NO_ACCESS_GRANT_OR_COMPUTE_EFFECT",
+    "PUBLIC_RELEASE_GATE_BLOCKED",
+    "SERVICE_GATES_FAIL_CLOSED",
+    "BOUND_PRIVATE_IDENTIFIER_CLASSES_NOT_DETECTED"
+  ],
+  "nonclaims": [
+    "NO_REAL_PERSON_ACCREDITED",
+    "NO_EXTERNAL_SIGNATURE_OR_TRUST_CHAIN_VERIFIED",
+    "NO_CAPABILITY_ISSUED",
+    "NO_COMPUTE_DISPATCHED",
+    "NO_PUBLIC_RELEASE_AUTHORIZED",
+    "NO_ABSOLUTE_ABUSE_PREVENTION"
+  ],
+  "regular_file_count_before_manifest": 36,
+  "schema": "limex-science-cleanroom-validation-report-v1",
+  "scope": "LOCAL_CANDIDATE_ONLY__NO_ACCREDITATION_OR_RELEASE_AUTHORITY",
+  "status": "PASS_WITH_DECLARED_LIMITS",
+  "test": {
+    "exit_code": 0,
+    "network_profile": "MACOS_SANDBOX_DENY_NETWORK",
+    "stderr_sha256": "b2a973e1846da275c96d84512e3e66ac00edfe4a19f8d487efcacb92d0a0d08d",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "test_count": 49
+  },
+  "validated_input_regular_file_count": 33,
+  "validated_input_tree_root_sha256": "fc7dc57471f9aed168ff5e36049cd4bdbcf96b1f0cdfb0fc4b6108158ffaa1a4"
+}

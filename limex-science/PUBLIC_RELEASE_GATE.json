@@ -1,0 +1,20 @@
+{
+  "schema": "limex-science-public-release-gate-v1",
+  "publication_status": "BLOCKED__PENDING_POST_FREEZE_AUDIT_AND_DIGEST_CONFIRMATION",
+  "external_effect": "DENY",
+  "repository_target": "https://github.com/tobias-sproete-ai/limex",
+  "sponsored_compute_status": "NOT_IMPLEMENTED__NO_ACCESS_GRANTS",
+  "research_payload_status": "BOUND_EXTERNAL_REPOSITORY_TAG__GOLDBACH_V1_8_767__NO_PROOF",
+  "release_terms_status": "OWNER_APPROVED__ALL_RIGHTS_RESERVED__NOT_OPEN_SOURCE",
+  "privacy_status": "OWNER_APPROVED_PUBLIC_ARTIFACT_BOUNDARY__NO_APPLICANT_DATA__NO_LIVE_SERVICE",
+  "closed_prerequisites": [
+    "LEGAL_AND_LICENCE_OWNER_DECISION_FOR_EXACT_RELEASE_CLASS",
+    "PRIVACY_BOUNDARY_FOR_PUBLIC_ARTIFACT",
+    "RESEARCH_PAYLOAD_BUILD_AND_AXIOM_RECEIPTS",
+    "BOUND_REPOSITORY_TARGET"
+  ],
+  "required_before_successor_release": [
+    "POST_FREEZE_INDEPENDENT_SECURITY_REVIEW",
+    "DIGEST_BOUND_EXECUTIVE_RELEASE_AUTHORITY"
+  ]
+}

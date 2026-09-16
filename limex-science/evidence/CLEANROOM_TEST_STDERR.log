@@ -1,0 +1,54 @@
+test_builder_rejects_duplicate_json_keys (test_release_controls.ReleaseControlTests.test_builder_rejects_duplicate_json_keys) ... ok
+test_exclusive_freeze_create_never_replaces (test_release_controls.ReleaseControlTests.test_exclusive_freeze_create_never_replaces) ... ok
+test_frozen_verifier_rejects_duplicate_json_keys (test_release_controls.ReleaseControlTests.test_frozen_verifier_rejects_duplicate_json_keys) ... ok
+test_validator_rejects_duplicate_json_keys (test_release_controls.ReleaseControlTests.test_validator_rejects_duplicate_json_keys) ... ok
+test_deep_nesting_is_denied_without_exception (test_science_admission_core.AdmissionTests.test_deep_nesting_is_denied_without_exception) ... ok
+test_disallowed_scope_is_rejected (test_science_admission_core.AdmissionTests.test_disallowed_scope_is_rejected) ... ok
+test_duplicate_evidence_kind_is_rejected (test_science_admission_core.AdmissionTests.test_duplicate_evidence_kind_is_rejected) ... ok
+test_duplicate_json_key_is_rejected (test_science_admission_core.AdmissionTests.test_duplicate_json_key_is_rejected) ... ok
+test_duplicate_receipt_replay_is_rejected (test_science_admission_core.AdmissionTests.test_duplicate_receipt_replay_is_rejected) ... ok
+test_evidence_must_cover_requested_grant (test_science_admission_core.AdmissionTests.test_evidence_must_cover_requested_grant) ... ok
+test_excessive_budget_is_rejected (test_science_admission_core.AdmissionTests.test_excessive_budget_is_rejected) ... ok
+test_extra_field_is_rejected (test_science_admission_core.AdmissionTests.test_extra_field_is_rejected) ... ok
+test_group_subject_is_rejected (test_science_admission_core.AdmissionTests.test_group_subject_is_rejected) ... ok
+test_holder_key_evidence_too_old_is_rejected (test_science_admission_core.AdmissionTests.test_holder_key_evidence_too_old_is_rejected) ... ok
+test_independent_route_is_not_excluded (test_science_admission_core.AdmissionTests.test_independent_route_is_not_excluded) ... ok
+test_institutional_route_only_reaches_external_hold (test_science_admission_core.AdmissionTests.test_institutional_route_only_reaches_external_hold) ... ok
+test_key_mismatch_is_rejected (test_science_admission_core.AdmissionTests.test_key_mismatch_is_rejected) ... ok
+test_long_lived_grant_is_rejected (test_science_admission_core.AdmissionTests.test_long_lived_grant_is_rejected) ... ok
+test_missing_holder_of_key_is_rejected (test_science_admission_core.AdmissionTests.test_missing_holder_of_key_is_rejected) ... ok
+test_noncanonical_json_bytes_are_rejected (test_science_admission_core.AdmissionTests.test_noncanonical_json_bytes_are_rejected) ... ok
+test_only_one_review_is_rejected (test_science_admission_core.AdmissionTests.test_only_one_review_is_rejected) ... ok
+test_orcid_alone_cannot_replace_route_evidence (test_science_admission_core.AdmissionTests.test_orcid_alone_cannot_replace_route_evidence) ... ok
+test_packet_size_is_bounded (test_science_admission_core.AdmissionTests.test_packet_size_is_bounded) ... ok
+test_review_conflict_is_rejected (test_science_admission_core.AdmissionTests.test_review_conflict_is_rejected) ... ok
+test_review_must_cover_requested_grant (test_science_admission_core.AdmissionTests.test_review_must_cover_requested_grant) ... ok
+test_review_signature_verification_cannot_be_self_asserted (test_science_admission_core.AdmissionTests.test_review_signature_verification_cannot_be_self_asserted) ... ok
+test_revocation_key_mismatch_is_rejected (test_science_admission_core.AdmissionTests.test_revocation_key_mismatch_is_rejected) ... ok
+test_revocation_signature_verification_cannot_be_self_asserted (test_science_admission_core.AdmissionTests.test_revocation_signature_verification_cannot_be_self_asserted) ... ok
+test_revocation_snapshot_max_age_is_enforced (test_science_admission_core.AdmissionTests.test_revocation_snapshot_max_age_is_enforced) ... ok
+test_revocation_snapshot_ttl_is_bounded (test_science_admission_core.AdmissionTests.test_revocation_snapshot_ttl_is_bounded) ... ok
+test_revoked_subject_is_rejected (test_science_admission_core.AdmissionTests.test_revoked_subject_is_rejected) ... ok
+test_same_reviewer_twice_is_rejected (test_science_admission_core.AdmissionTests.test_same_reviewer_twice_is_rejected) ... ok
+test_scope_change_after_review_is_rejected (test_science_admission_core.AdmissionTests.test_scope_change_after_review_is_rejected) ... ok
+test_self_asserted_verified_flag_is_rejected (test_science_admission_core.AdmissionTests.test_self_asserted_verified_flag_is_rejected) ... ok
+test_stale_evidence_is_rejected (test_science_admission_core.AdmissionTests.test_stale_evidence_is_rejected) ... ok
+test_stale_revocation_snapshot_is_rejected (test_science_admission_core.AdmissionTests.test_stale_revocation_snapshot_is_rejected) ... ok
+test_subject_mismatch_is_rejected (test_science_admission_core.AdmissionTests.test_subject_mismatch_is_rejected) ... ok
+test_terms_key_is_bound (test_science_admission_core.AdmissionTests.test_terms_key_is_bound) ... ok
+test_terms_signature_verification_cannot_be_self_asserted (test_science_admission_core.AdmissionTests.test_terms_signature_verification_cannot_be_self_asserted) ... ok
+test_unhashable_route_shape_is_denied_not_crashed (test_science_admission_core.AdmissionTests.test_unhashable_route_shape_is_denied_not_crashed) ... ok
+test_unhashable_scope_shape_is_denied_not_crashed (test_science_admission_core.AdmissionTests.test_unhashable_scope_shape_is_denied_not_crashed) ... ok
+test_wrong_assurance_is_rejected (test_science_admission_core.AdmissionTests.test_wrong_assurance_is_rejected) ... ok
+test_wrong_purpose_is_rejected (test_science_admission_core.AdmissionTests.test_wrong_purpose_is_rejected) ... ok
+test_capability_event_cannot_activate (test_science_admission_core.LifecycleTests.test_capability_event_cannot_activate) ... ok
+test_external_verification_does_not_activate (test_science_admission_core.LifecycleTests.test_external_verification_does_not_activate) ... ok
+test_invalid_transition_halts (test_science_admission_core.LifecycleTests.test_invalid_transition_halts) ... ok
+test_non_string_transition_input_blocks (test_science_admission_core.LifecycleTests.test_non_string_transition_input_blocks) ... ok
+test_revocation_blocks (test_science_admission_core.LifecycleTests.test_revocation_blocks) ... ok
+test_revoked_is_terminal_and_idempotent (test_science_admission_core.LifecycleTests.test_revoked_is_terminal_and_idempotent) ... ok
+
+----------------------------------------------------------------------
+Ran 49 tests in 0.006s
+
+OK

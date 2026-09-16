@@ -1,0 +1,17 @@
+{
+  "schema": "limex-science-cleanroom-provenance-v1",
+  "created_utc": "2026-09-13T10:03:57Z",
+  "method": "DOUBLE_BLIND_READ_ONLY_SPECIALIST_REVIEW_PLUS_COO_SYNTHESIS",
+  "orchestration_profile": {
+    "product_name": "LIMEX",
+    "compatibility_package_id": "R5.5",
+    "local_instruction_sha256": "db11a944a041587e1709921d7a923674519fa9824bf9d51255928b09b32fc704"
+  },
+  "model_environment": {
+    "declared_model": "Codex GPT-6 Astra",
+    "status": "OPERATOR_ENVIRONMENT_DECLARATION__NOT_REMOTE_PROVIDER_ATTESTATION"
+  },
+  "source_policy": "PREDECESSOR_SCIENCE_GOLDSTANDARD_V1_3__HASH_BOUND_IN_PRIVATE_SOURCE_LEDGER",
+  "private_source_content_included": false,
+  "public_release_authority": "PENDING_POST_FREEZE_AUDIT_AND_DIGEST_CONFIRMATION"
+}
