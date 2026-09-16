@@ -26,8 +26,8 @@ If one required term is missing, stale, substituted or contradictory:
 
 ```text
 STATE           LIMITED PUBLIC RELEASE
-PUBLIC SURFACE  GOLDBACH LEAN AUDIT + SEALED LIMEX-LLM CLEANROOM CAPSULE
-CODE            MATHEMATICAL LEAN SOURCES + SEALED CLEANROOM SKILL CAPSULE
+PUBLIC SURFACE  GOLDBACH LEAN AUDIT + TOKEN CENSUS + SEALED LIMEX-LLM CLEANROOM CAPSULE
+CODE            MATHEMATICAL LEAN SOURCES + TELEMETRY EVIDENCE + SEALED CLEANROOM SKILL CAPSULE
 AUDIT           CLEANROOM V1.1.0 RELEASED AS TECHNICAL_PASS_WITH_LIMITS
 AUTHORITY       NO RUNTIME OR DEPLOYMENT GRANT
 ```
@@ -91,6 +91,18 @@ minor arcs remain open. Therefore:
 ```text
 GLOBAL_GOLDBACH_STATUS = NO_PROOF
 ```
+
+### Goldbach token telemetry census
+
+The [Goldbach Token Census v1.0.0](science/goldbach/telemetry/token-census-v1.0.0/)
+reports a locally observed Goldbach-related classification envelope of
+**4.800018574 to 5.327048926 billion provider-reported tokens** for the research
+run ending with `goldbach-v1.8.767`.
+
+The range is a classification envelope, not a confidence interval. Nine visible
+remote Windows tasks lack locally accessible token ledgers, so the exact global
+total is `NOT_IDENTIFIABLE`. The census makes no energy, cost, ROI, efficiency,
+model-superiority, external-peer-review, or mathematical-completion claim.
 
 ---
 
