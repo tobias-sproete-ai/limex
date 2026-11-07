@@ -1,0 +1,39 @@
+{
+  "schema": "limex-goldbach-scientific-review-package-v1",
+  "package_id": "LIMEX-GOLDBACH-SCIENTIFIC-REVIEW-PATH-V1-0-0",
+  "document_version": "1.0.0",
+  "status": "PUBLIC_REVIEW_GUIDANCE_ONLY",
+  "target_capsule": {
+    "tag": "goldbach-v1.8.795",
+    "commit": "0f919d1785fb25dad8719fc8a6cb420037f5139e",
+    "global_goldbach_status": "NO_PROOF",
+    "run_status": "FAIL_CLOSED"
+  },
+  "documents": [
+    "V1_0_0_SCIENTIFIC_REVIEW_PATH.md",
+    "V1_0_0_Q3_METHOD_WITNESS_CLAIM_CARD.md",
+    "V1_0_0_REPRODUCTION_AND_CHALLENGE_GUIDE.md",
+    "V1_0_0_REVIEW_FINDING_TEMPLATE.md"
+  ],
+  "review_sequence": [
+    "orient",
+    "reproduce",
+    "challenge",
+    "report"
+  ],
+  "explicit_non_claims": [
+    "independent validation",
+    "peer review",
+    "proof of the binary Goldbach conjecture",
+    "falsification of the binary Goldbach conjecture",
+    "new public software license grant"
+  ],
+  "required_finding_fields": [
+    "capsule tag",
+    "exact commit",
+    "artifact path",
+    "bounded observation",
+    "reproduction steps",
+    "scope"
+  ]
+}
