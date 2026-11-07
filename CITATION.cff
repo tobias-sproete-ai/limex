@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: >-
+  If you use or discuss this bounded review target, cite the exact
+  goldbach-v1.8.795 tag and commit shown below. This citation does not
+  assert independent validation or a proof of the binary Goldbach conjecture.
+title: "LIMEX Goldbach Lean audit capsule"
+version: "1.8.795"
+date-released: 2026-09-17
+authors:
+  - family-names: "Spröte"
+    given-names: "Tobias"
+abstract: >-
+  A reproducible Lean 4 audit capsule for a bounded q=3 reduction-chain
+  investigation. The capsule records GLOBAL_GOLDBACH_STATUS = NO_PROOF.
+repository-code: "https://github.com/tobias-sproete-ai/limex"
+commit: "0f919d1785fb25dad8719fc8a6cb420037f5139e"
+url: "https://github.com/tobias-sproete-ai/limex/tree/goldbach-v1.8.795/science/goldbach"

@@ -1,0 +1,68 @@
+name: Goldbach bounded formal or scope finding
+description: Report one named theorem, definition, source mapping, or claim-boundary finding.
+title: "[Goldbach finding] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please report one independently assessable finding. Do not use this form for a blanket endorsement or a global proof claim.
+  - type: input
+    id: capsule_tag
+    attributes:
+      label: Capsule tag
+      placeholder: goldbach-v1.8.795
+    validations:
+      required: true
+  - type: input
+    id: commit
+    attributes:
+      label: Exact commit
+      placeholder: 0f919d1785fb25dad8719fc8a6cb420037f5139e
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: Exact artifact and theorem, definition, or statement
+      placeholder: science/goldbach/lean/Audit.lean — named theorem or symbol
+    validations:
+      required: true
+  - type: dropdown
+    id: finding_type
+    attributes:
+      label: Finding type
+      options:
+        - Formal-scope mismatch
+        - Assumption-boundary issue
+        - Mathematical objection
+        - Source/hash mismatch
+        - Documentation mismatch
+        - Open obligation confirmed
+    validations:
+      required: true
+  - type: textarea
+    id: observation
+    attributes:
+      label: Exact observation and reproduction steps
+      description: Include the smallest reproducible argument, command output, theorem signature, or counterexample.
+    validations:
+      required: true
+  - type: textarea
+    id: expected_observed
+    attributes:
+      label: Expected versus observed
+    validations:
+      required: true
+  - type: textarea
+    id: resolution
+    attributes:
+      label: Suggested resolution or precise question
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Claim boundary
+      options:
+        - label: I understand that a bounded finding is not, by itself, a global conclusion about the binary Goldbach conjecture.
+          required: true

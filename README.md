@@ -54,7 +54,7 @@ reaching zero never grants release, runtime or deployment authority.
 
 ## Goldbach Lean audit capsule
 
-The [Goldbach v1.8.767 audit capsule](science/goldbach/) contains the exact
+The [Goldbach v1.8.795 audit capsule](science/goldbach/) contains the exact
 custom source closure, pinned Lean/Mathlib revisions, a public axiom-audit entry
 point and reproducible build instructions.
 
@@ -65,6 +65,22 @@ minor arcs remain open. Therefore:
 ```text
 GLOBAL_GOLDBACH_STATUS = NO_PROOF
 ```
+
+## Goldbach public review route
+
+The Goldbach capsule is presented as a bounded, reproducible review target —
+not as a request for trust or a claim of independent validation. The exact
+target is tag [`goldbach-v1.8.795`](https://github.com/tobias-sproete-ai/limex/tree/goldbach-v1.8.795/science/goldbach)
+at commit `0f919d1785fb25dad8719fc8a6cb420037f5139e`.
+
+- Start with the [scientific review path](science/goldbach/scientific-review/V1_0_0_SCIENTIFIC_REVIEW_PATH.md).
+- Reproduce only the pinned capsule via the [reproduction guide](science/goldbach/scientific-review/V1_0_0_REPRODUCTION_AND_CHALLENGE_GUIDE.md).
+- Report one falsifiable, bounded observation using the [finding template](science/goldbach/scientific-review/V1_0_0_REVIEW_FINDING_TEMPLATE.md).
+
+A successful local build is evidence about the exact checked artifact. It is
+not independent review and does not establish the binary Goldbach conjecture.
+The number of public GitHub issues is not evidence of mathematical correctness
+or review completeness.
 
 ---
 

@@ -108,6 +108,14 @@ argument may still close the local gate.
 - Human-readable decision record: `goldstandard/GOLDSTANDARD_HUMAN.md`
 - Machine-readable decision record: `goldstandard/GOLDSTANDARD_AGENTIC.json`
 
+## Bounded public review route
+
+For a structured review of the exact `goldbach-v1.8.795` capsule, start with
+the [scientific review path](scientific-review/V1_0_0_SCIENTIFIC_REVIEW_PATH.md).
+It identifies one fixed target, a reproducible build route, bounded challenge
+categories, and a finding template. It does not claim independent validation,
+peer review, or proof of the binary Goldbach conjecture.
+
 The sources are published for inspection under the licensing terms stated at
 the repository root. No separate permission is implied by this audit capsule.
 

@@ -1,0 +1,54 @@
+name: Goldbach build or reproduction report
+description: Report one bounded reproduction observation for the pinned Goldbach capsule.
+title: "[Goldbach build] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form concerns only the exact `goldbach-v1.8.795` capsule.
+        A successful build does not establish a proof of the binary Goldbach conjecture.
+  - type: input
+    id: capsule_tag
+    attributes:
+      label: Capsule tag
+      description: Enter the exact tag you checked out.
+      placeholder: goldbach-v1.8.795
+    validations:
+      required: true
+  - type: input
+    id: commit
+    attributes:
+      label: Exact commit
+      description: Enter the output of `git rev-parse HEAD`.
+      placeholder: 0f919d1785fb25dad8719fc8a6cb420037f5139e
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: State operating system, Lean/Elan version, and any material setup detail.
+      placeholder: macOS/Linux/Windows; Lean version; Elan version
+    validations:
+      required: true
+  - type: textarea
+    id: commands
+    attributes:
+      label: Exact commands and output
+      description: Include the minimal commands, complete error output, or a concise success observation.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope of observation
+      description: Explain whether this is a build result, hash/source mismatch, or a documentation discrepancy.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Claim boundary
+      options:
+        - label: I understand that this report does not by itself prove or falsify the binary Goldbach conjecture.
+          required: true
